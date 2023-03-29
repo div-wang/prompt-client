@@ -10,13 +10,31 @@
   height: 150px;
   border-bottom: 2px solid var(--ifm-color-emphasis-200);
 }
-
+/* .showcaseCardTitle {
+  height: 19.125rem;
+  width: 19.125rem;
+} */
 .showcaseCardHeader {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
+  height: 2.325rem;
+  background: linear-gradient(
+    90deg,
+    #e9ebeb -3.12%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  border-radius: 5px 0px 0px 5px;
 }
-
+.showcaseCardLink {
+  display: block;
+  margin-left: 0.5rem;
+  color: #3a3a3a;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
 .showcaseCardTitle {
   margin-bottom: 0;
   flex: 1 1 auto;
@@ -32,9 +50,9 @@
   transition: background-size ease-out 200ms;
 }
 
-.showcaseCardTitle a:not(:focus):hover {
+/* .showcaseCardTitle a:not(:focus):hover {
   background-size: 100% 1px;
-}
+} */
 
 .showcaseCardTitle,
 .showcaseCardHeader .svgIconFavorite {
@@ -46,28 +64,46 @@
 }
 
 .showcaseCardSrcBtn {
-  margin-left: 6px;
-  padding-left: 12px;
-  padding-right: 12px;
-  border: none;
+  margin-left: 0.375rem;
+  background: #fafafa;
+  border: 0.0625rem solid #dde2e4;
+  border-radius: 0.25rem;
+  width: 4.0625rem;
+  padding: 0rem;
+  height: 1.7rem;
+  color: #f13557;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.31875rem, 0.90625rem;
+  cursor: pointer;
 }
 
 .showcaseCardSrcBtn:focus-visible {
   background-color: var(--ifm-color-secondary-dark);
 }
 
-[data-theme='dark'] .showcaseCardSrcBtn {
+[data-theme="dark"] .showcaseCardSrcBtn {
   background-color: var(--ifm-color-emphasis-200) !important;
   color: inherit;
 }
 
-[data-theme='dark'] .showcaseCardSrcBtn:hover {
+/* [data-theme="dark"] .showcaseCardSrcBtn:hover {
   background-color: var(--ifm-color-emphasis-300) !important;
-}
+} */
 
 .showcaseCardBody {
-  font-size: smaller;
-  line-height: 1.66;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #454545;
+  white-space: normal;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+  display: "-webkit-box";
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .cardFooter {
@@ -76,14 +112,18 @@
 }
 
 .tag {
+  /* width: 4.15625rem; */
+  height: 1.7rem;
   font-size: 0.675rem;
-  border: 1px solid var(--ifm-color-secondary-darkest);
   cursor: default;
-  margin-right: 6px;
+  margin-right: 0.375rem;
   margin-bottom: 6px !important;
-  border-radius: 12px;
   display: inline-flex;
   align-items: center;
+  background: #fafafa;
+  border: 0.053125rem solid #dde2e4;
+  box-shadow: 0rem 0.10625rem 0.10625rem rgba(0, 0, 0, 0.06);
+  border-radius: 2.65625rem;
 }
 
 .tag .textLabel {
