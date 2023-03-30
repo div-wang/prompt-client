@@ -125,9 +125,9 @@ function useFilteredUsers() {
 function ShowcaseHeader() {
   return (
     <div className={styles['top-bg']}>
-      <section className={clsx('margin-top--lg margin-bottom--lg text--center', styles['top-text'])}>
+      <section className={clsx('text--center', styles['top-text'])}>
         <Heading as="h1">ChatGPT Shortcut</Heading>
-        <p>{DESCRIPTION}</p>
+        <p className={styles['top-p']}>{DESCRIPTION}</p>
       </section>
     </div>
   );
@@ -192,8 +192,10 @@ function ShowcaseFilters() {
                                 width: 12,
                                 height: 12,
                                 borderRadius: '50%',
-                                marginLeft: 8,
-                                display: 'inline-block'
+                                marginLeft: 6,
+                                display: 'inline-block',
+                                position: 'relative',
+                                zIndex: 2
                               }}
                             />
                           )
