@@ -11378,7 +11378,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "常用/收藏",
       id: "showcase.tag.Favorite.description",
     }),
-    color: "#e9669e",
+    color: "#F13557",
   },
   Marketing: {
     label: translate({ message: "市场营销" }),
@@ -11386,7 +11386,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "市场营销1",
       id: "showcase.tag.Marketing.description",
     }),
-    color: "#e9669e",
+    color: "#9179A7",
   },
 
   Business: {
@@ -11404,16 +11404,16 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "内容",
       id: "showcase.tag.Content.description",
     }),
-    color: "#75581e",
+    color: "#805F2C",
   },
 
   WebDevelopment: {
-    label: translate({ message: "Web 开发" }),
+    label: translate({ message: "Web开发" }),
     description: translate({
       message: "Web 开发",
       id: "showcase.tag.WebDevelopment.description",
     }),
-    color: "#dfd545",
+    color: "#E3D463",
   },
 
   Education: {
@@ -11422,7 +11422,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "教育",
       id: "showcase.tag.Education.description",
     }),
-    color: "#554236",
+    color: "#E3D463",
   },
 
   Teachers: {
@@ -11431,7 +11431,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "教师",
       id: "showcase.tag.Teachers.description",
     }),
-    color: "#BC9F77",
+    color: "#C1A384",
   },
 
   Music: {
@@ -11440,7 +11440,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "音乐",
       id: "showcase.tag.Musicdescription",
     }),
-    color: "#eeef99",
+    color: "#F1EDA3",
   },
 
   Fun: {
@@ -11449,7 +11449,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "乐趣",
       id: "showcase.tag.Fun.description",
     }),
-    color: "#8c2f00",
+    color: "#AB5B41",
   },
 
   HealthcareAndWellbeing: {
@@ -11458,7 +11458,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "医疗保健和福利",
       id: "showcase.tag.HealthcareAndWellbeing.description",
     }),
-    color: "#ff6100", // Facebook blue
+    color: "#FE5D24", // Facebook blue
   },
 
   AIART: {
@@ -11467,7 +11467,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "人工智能艺术（中途）",
       id: "showcase.tag.AIART.description",
     }),
-    color: "#a44fb7",
+    color: "#C373D6",
   },
 
   FoodAndCooking: {
@@ -11476,7 +11476,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "食物和烹饪",
       id: "showcase.tag.FoodAndCooking.description",
     }),
-    color: "#127f82",
+    color: "#CC9BDA",
   },
 
   Games: {
@@ -11485,7 +11485,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "游戏（团队协作）",
       id: "showcase.tag.Games.description",
     }),
-    color: "#9c1d10",
+    color: "#26898A",
   },
 
   Sales: {
@@ -11494,7 +11494,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "销售",
       id: "showcase.tag.Sales.description",
     }),
-    color: "#ee3308",
+    color: "#7A4E4E",
   },
 
   resume: {
@@ -11503,7 +11503,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "个人简历",
       id: "showcase.tag.resume.description",
     }),
-    color: "#ffcaa9",
+    color: "#338668",
   },
 
   Analytics: {
@@ -11512,7 +11512,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "分析",
       id: "showcase.tag.Analytics.description",
     }),
-    color: "#fe6829",
+    color: "#F4B28F",
   },
 
   EmailCampaigns: {
@@ -11521,7 +11521,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "电子邮件活动",
       id: "showcase.tag.EmailCampaigns.description",
     }),
-    color: "#574C57",
+    color: "#F78545",
   },
 
   UX: {
@@ -11530,7 +11530,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "用户体验",
       id: "showcase.tag.UX.description",
     }),
-    color: "#4267b2", // Facebook blue
+    color: "#625F68", // Facebook blue
   },
 
   CustomerService: {
@@ -11539,7 +11539,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "客户服务",
       id: "showcase.tag.CustomerService.description",
     }),
-    color: "#ffa11c", // Facebook blue
+    color: "#1C58B4", // Facebook blue
   },
 
   TradingStrategy: {
@@ -11548,7 +11548,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "交易策略",
       id: "showcase.tag.TradingStrategy.description",
     }),
-    color: "#39ca30",
+    color: "#E7B534",
   },
 
   DataScience: {
@@ -11557,7 +11557,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "数据科学",
       id: "showcase.tag.DataScience.description",
     }),
-    color: "#124f4e",
+    color: "#5AE461",
   },
 
   TravelAndTourism: {
@@ -11566,7 +11566,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "旅行",
       id: "showcase.tag.TravelAndTourism.description",
     }),
-    color: "#0e7774",
+    color: "#1C7371",
   },
 
   commerce: {
@@ -11575,7 +11575,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "电子商务",
       id: "showcase.tag.commerce.description",
     }),
-    color: "#14cfc3",
+    color: "#3DBA28",
   },
 
   SEOs: {
@@ -11584,7 +11584,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "搜索引擎优化",
       id: "showcase.tag.SEOs.description",
     }),
-    color: "#5cecdc",
+    color: "#36F9E5",
   },
 
   Developers: {
@@ -11593,7 +11593,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "开发者",
       id: "showcase.tag.Developers.description",
     }),
-    color: "#ffcfc3",
+    color: "#DC2020",
   },
 
   ExcelSheet: {
@@ -11602,7 +11602,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "来自大家的投稿作品，能帮助我们开拓思路",
       id: "showcase.tag.ExcelSheet.description",
     }),
-    color: "#cecd21",
+    color: "#E38D8D",
   },
 
   Writers: {
@@ -11611,7 +11611,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "作家",
       id: "showcase.tag.Writers.description",
     }),
-    color: "#ebcb63",
+    color: "#93AF86",
   },
 
   HealthAndMedicine: {
@@ -11620,7 +11620,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "健康与医药",
       id: "showcase.tag.HealthAndMedicine.description",
     }),
-    color: "#ebcb63",
+    color: "#C4BFFF",
   },
   Accountants: {
     label: translate({ message: "会计师" }),
@@ -11628,7 +11628,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "会计师",
       id: "showcase.tag.Accountants.description",
     }),
-    color: "#ebcb63",
+    color: "#805F2C",
   },
   GameDevelopers: {
     label: translate({ message: "游戏开发商" }),
@@ -11636,7 +11636,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "游戏开发商",
       id: "showcase.tag.GameDevelopers.description",
     }),
-    color: "#5cecdc",
+    color: "#E3D463",
   },
   SocialMedia: {
     label: translate({ message: "社交媒体" }),
@@ -11644,7 +11644,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "社交媒体",
       id: "showcase.tag.SocialMedia.description",
     }),
-    color: "#ebcb63",
+    color: "#E3D463",
   },
   Programmers: {
     label: translate({ message: "程序员" }),
@@ -11652,7 +11652,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "程序员",
       id: "showcase.tag.Programmers.description",
     }),
-    color: "#ffa11c",
+    color: "#C1A384",
   },
   BloggersAndContentCreators: {
     label: translate({ message: "博主和内容创作者" }),
@@ -11660,7 +11660,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "博主和内容创作者",
       id: "showcase.tag.BloggersAndContentCreators.description",
     }),
-    color: "#5cecdc",
+    color: "#F1EDA3",
   },
   SEO: {
     label: translate({ message: "搜索引擎" }),
@@ -11668,7 +11668,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "搜索引擎",
       id: "showcase.tag.SEO.description",
     }),
-    color: "#ffa11c",
+    color: "#AB5B41",
   },
   MarketingAndCopywriting: {
     label: translate({ message: "营销和文案" }),
@@ -11676,7 +11676,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "营销和文案",
       id: "showcase.tag.MarketingAndCopywriting.description",
     }),
-    color: "#ebcb63",
+    color: "#FE5D24",
   },
   Storytelling: {
     label: translate({ message: "讲故事" }),
@@ -11684,7 +11684,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "讲故事",
       id: "showcase.tag.Storytelling.description",
     }),
-    color: "#ffa11c",
+    color: "#C373D6",
   },
   Students: {
     label: translate({ message: "学生" }),
@@ -11692,7 +11692,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "学生",
       id: "showcase.tag.Students.description",
     }),
-    color: "#ffa11c",
+    color: "#CC9BDA",
   },
   Comedy: {
     label: translate({ message: "有趣的事情" }),
@@ -11700,7 +11700,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "有趣的事情",
       id: "showcase.tag.Comedy.description",
     }),
-    color: "#ebcb63",
+    color: "#26898A",
   },
   History: {
     label: translate({ message: "历史" }),
@@ -11708,7 +11708,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "历史",
       id: "showcase.tag.History.description",
     }),
-    color: "#ffa11c",
+    color: "#7A4E4E",
   },
   Art: {
     label: translate({ message: "艺术" }),
@@ -11716,7 +11716,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "艺术",
       id: "showcase.tag.Art.description",
     }),
-    color: "#ffa11c",
+    color: "#338668",
   },
   Gaming: {
     label: translate({ message: "赌博" }),
@@ -11724,7 +11724,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "赌博",
       id: "showcase.tag.Gaming.description",
     }),
-    color: "#ffa11c",
+    color: "#F4B28F",
   },
   Pets: {
     label: translate({ message: "宠物" }),
@@ -11732,7 +11732,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "宠物",
       id: "showcase.tag.Pets.description",
     }),
-    color: "#ffa11c",
+    color: "#F78545",
   },
   Finance: {
     label: translate({ message: "金融" }),
@@ -11740,7 +11740,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "金融",
       id: "showcase.tag.Finance.description",
     }),
-    color: "#ffa11c",
+    color: "#625F68",
   },
   // ---
   HealthAndFitness: {
@@ -11749,7 +11749,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "健康与健身",
       id: "showcase.tag.HealthAndFitness.description",
     }),
-    color: "#ffa11c",
+    color: "#1C58B4",
   },
   Science: {
     label: translate({ message: "科学" }),
@@ -11757,7 +11757,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "科学",
       id: "showcase.tag.Science.description",
     }),
-    color: "#ffa11c",
+    color: "#E7B534",
   },
   Technology: {
     label: translate({ message: "科技" }),
@@ -11765,7 +11765,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "科技",
       id: "showcase.tag.Technology.description",
     }),
-    color: "#ffa11c",
+    color: "#5AE461",
   },
   Sports: {
     label: translate({ message: "体育" }),
@@ -11773,7 +11773,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "体育",
       id: "showcase.tag.Sports.description",
     }),
-    color: "#ffa11c",
+    color: "#1C7371",
   },
   Travel: {
     label: translate({ message: "旅行和旅游" }),
@@ -11781,7 +11781,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "旅行和旅游",
       id: "showcase.tag.Travel.description",
     }),
-    color: "#ffa11c",
+    color: "#3DBA28",
   },
   HealthMedicine: {
     label: translate({ message: "顾客服务" }),
@@ -11789,7 +11789,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "顾客服务",
       id: "showcase.tag.HealthMedicine.description",
     }),
-    color: "#ffa11c",
+    color: "#36F9E5",
   },
   FoodCooking: {
     label: translate({ message: "食品与烹饪" }),
@@ -11797,7 +11797,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "食品与烹饪",
       id: "showcase.tag.FoodCooking.description",
     }),
-    color: "#ffa11c",
+    color: "#DC2020",
   },
   Game: {
     label: translate({ message: "游戏" }),
@@ -11805,7 +11805,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "游戏",
       id: "showcase.tag.Game.description",
     }),
-    color: "#ffa11c",
+    color: "#E38D8D",
   },
   PromotionalSocialMediaPosts: {
     label: translate({ message: "促销社交媒体帖子" }),
@@ -11813,7 +11813,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "促销社交媒体帖子",
       id: "showcase.tag.PromotionalSocialMediaPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#93AF86",
   },
   SocialMediaCTAs: {
     label: translate({ message: "社交媒体 CTA" }),
@@ -11821,7 +11821,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "社交媒体 CTA",
       id: "showcase.tag.SocialMediaCTAs.description",
     }),
-    color: "#ffa11c",
+    color: "#C4BFFF",
   },
   FunSocialMediaPosts: {
     label: translate({ message: "有趣的社交媒体帖子" }),
@@ -11829,7 +11829,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "有趣的社交媒体帖子",
       id: "showcase.tag.FunSocialMediaPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#F13557",
   },
   EducationalSocialMediaPosts: {
     label: translate({ message: "教育社交媒体帖子" }),
@@ -11837,7 +11837,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "教育社交媒体帖子",
       id: "showcase.tag.EducationalSocialMediaPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#9179A7",
   },
   InteractiveSocialMediaPosts: {
     label: translate({ message: "互动社交媒体帖子" }),
@@ -11845,7 +11845,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "互动社交媒体帖子",
       id: "showcase.tag.InteractiveSocialMediaPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#805F2C",
   },
   InspirationalSocialMediaPosts: {
     label: translate({ message: "鼓舞人心的社交媒体帖子" }),
@@ -11853,7 +11853,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "鼓舞人心的社交媒体帖子",
       id: "showcase.tag.InspirationalSocialMediaPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#E3D463",
   },
   CompanyRelatedSocialMediaPosts: {
     label: translate({ message: "与公司相关的社交媒体帖子" }),
@@ -11861,7 +11861,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "与公司相关的社交媒体帖子",
       id: "showcase.tag.CompanyRelatedSocialMediaPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#E3D463",
   },
   SocialMediaHolidayPosts: {
     label: translate({ message: "社交媒体假日帖子" }),
@@ -11869,7 +11869,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "社交媒体假日帖子",
       id: "showcase.tag.SocialMediaHolidayPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#C1A384",
   },
   DifferentSocialMediaPlatforms: {
     label: translate({ message: "不同的社交媒体平台" }),
@@ -11877,7 +11877,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "不同的社交媒体平台",
       id: "showcase.tag.DifferentSocialMediaPlatforms.description",
     }),
-    color: "#ffa11c",
+    color: "#F1EDA3",
   },
 
   FacebookPosts: {
@@ -11886,7 +11886,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "脸书帖子",
       id: "showcase.tag.FacebookPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#AB5B41",
   },
   InstagramPosts: {
     label: translate({ message: "Instagram 帖子" }),
@@ -11894,7 +11894,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "Instagram 帖子",
       id: "showcase.tag.InstagramPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#FE5D24",
   },
   TwitterPosts: {
     label: translate({ message: "推特帖子" }),
@@ -11902,7 +11902,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "推特帖子",
       id: "showcase.tag.TwitterPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#C373D6",
   },
   LinkedInPosts: {
     label: translate({ message: "LinkedIn帖子" }),
@@ -11910,7 +11910,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "LinkedIn帖子",
       id: "showcase.tag.LinkedInPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#CC9BDA",
   },
   PinterestPosts: {
     label: translate({ message: "Pinterest 帖子" }),
@@ -11918,7 +11918,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "Pinterest 帖子",
       id: "showcase.tag.PinterestPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#26898A",
   },
   GoogleBusinessProfilePosts: {
     label: translate({ message: "谷歌商家资料帖子" }),
@@ -11926,7 +11926,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "LinkedIn帖子",
       id: "showcase.tag.GoogleBusinessProfilePosts.description",
     }),
-    color: "#ffa11c",
+    color: "#7A4E4E",
   },
   TikTokPosts: {
     label: translate({ message: "抖音帖子" }),
@@ -11934,7 +11934,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "LinkedIn帖子",
       id: "showcase.tag.TikTokPosts.description",
     }),
-    color: "#ffa11c",
+    color: "#338668",
   },
   YouTubePosts: {
     label: translate({ message: "YouTube" }),
@@ -11942,7 +11942,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "LinkedIn帖子",
       id: "showcase.tag.YouTubePosts.description",
     }),
-    color: "#ffa11c",
+    color: "#F4B28F",
   },
   BoostYourContent: {
     label: translate({ message: "推荐内容" }),
@@ -11950,7 +11950,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "推荐内容",
       id: "showcase.tag.BoostYourContent.description",
     }),
-    color: "#ffa11c",
+    color: "#F78545",
   },
   FoodandCooking: {
     label: translate({ message: "烹饪" }),
@@ -11958,7 +11958,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "烹饪",
       id: "showcase.tag.FoodandCooking.description",
     }),
-    color: "#ffa11c",
+    color: "#625F68",
   },
   HealthandFitness: {
     label: translate({ message: "健康与健身" }),
@@ -11966,7 +11966,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "健康与健身",
       id: "showcase.tag.HealthandFitness.description",
     }),
-    color: "#ffa11c",
+    color: "#1C58B4",
   },
   HealthandMedicine: {
     label: translate({ message: "健康与医学" }),
@@ -11974,7 +11974,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "健康与医学",
       id: "showcase.tag.HealthandMedicine.description",
     }),
-    color: "#ffa11c",
+    color: "#E7B534",
   },
   HealthcareandWellbeing: {
     label: translate({ message: "保健" }),
@@ -11982,7 +11982,7 @@ export const Tags: { [type in TagType]: Tag } = {
       message: "保健",
       id: "showcase.tag.HealthcareandWellbeingdescription",
     }),
-    color: "#ffa11c",
+    color: "#5AE461",
   },
 };
 
