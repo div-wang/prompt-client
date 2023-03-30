@@ -4,11 +4,10 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
 .checkboxLabel {
-  --height: 25px;
-  --width: 80px;
-  --border: 2px;
+  --height: 23px;
+  --width: 51px;
+  --border: 3px;
   display: flex;
   width: var(--width);
   height: var(--height);
@@ -17,10 +16,11 @@
   border: var(--border) solid var(--ifm-color-primary-darkest);
   cursor: pointer;
   justify-content: space-around;
-  opacity: 0.75;
-  transition: opacity var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
+  transition: opacity var(--ifm-transition-fast) var(--ifm-transition-timing-default);
   box-shadow: var(--ifm-global-shadow-md);
+  background-color: #F13557;
+  border-color: #F13557;
+  color: #fff;
 }
 
 .checkboxLabel:hover {
@@ -32,22 +32,31 @@
 .checkboxLabel::after {
   position: absolute;
   content: '';
+  display: inline-block;
   inset: 0;
-  width: calc(var(--width) / 2);
-  height: 100%;
-  border-radius: var(--height);
-  background-color: var(--ifm-color-primary-darkest);
+  top: -2px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
   transition: transform var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
   transform: translateX(calc(var(--width) / 2 - var(--border)));
+  border: none;
 }
-
+.checkboxLabelSpan {
+  width: 1.2rem;
+  height: .7rem;
+  display: inline-block;
+}
 input:focus-visible ~ .checkboxLabel::after {
   outline: 2px solid currentColor;
 }
 
 .checkboxLabel > * {
-  font-size: 0.8rem;
+  font-size: .6rem;
   color: inherit;
   transition: opacity 150ms ease-in 50ms;
 }

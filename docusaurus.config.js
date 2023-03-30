@@ -8,14 +8,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "标签筛选、关键词搜索和一键复制 Prompts",
   // tagline: '方便中文使用 ChatGPT 快捷指令',
-  favicon: "img/favicon.ico",
+  favicon: 'img/logo.png',
 
   // Set the production url of your site here
   url: "https://newzone.top",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/chatgpt/',
-  baseUrl: "/index.html/",
+  baseUrl: "/index/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -88,29 +88,29 @@ const config = {
         { name: "keywords", content: "prompt,ChatGPT,AI prompts，提示词" },
       ],
       navbar: {
-        title: "ChatGPT SC",
+        title: '',
         logo: {
           alt: "ChatGPT Shortcuts",
           src: "img/logo.svg",
         },
         items: [
           {
-            to: "https://newzone.top/posts/2023-02-27-chatgpt_shortcuts.html",
-            label: "ChatGPT 使用说明",
-            position: "left",
+            to: 'https://ai.redtom.com/console/create',
+            label: 'AI创作',
+            position: 'left',
           },
           {
-            to: "https://nav.newzone.top",
-            label: "开源工具导航",
-            position: "left",
+            to: 'http://chat.redtom.com/',
+            label: 'AI聊天',
+            position: 'left',
           },
-          { href: "/", label: "EN", title: "英文提示词", position: "right" },
-          { to: "/cn", label: "CN", title: "中文提示词", position: "right" },
+          /* { href: '/', label: 'EN', title: '英文提示词', position: 'right' },
+          { to: '/cn', label: 'CN', title: '中文提示词', position: 'right' },
           {
-            href: "https://github.com/rockbenben/ChatGPT-Shortcut",
-            position: "right",
-            className: "header-github-link",
-          },
+            href: 'https://github.com/rockbenben/ChatGPT-Shortcut',
+            position: 'right',
+            className: 'header-github-link',
+          }, */
           /* {
             type: 'doc',
             docId: 'intro',

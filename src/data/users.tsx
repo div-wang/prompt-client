@@ -3,7 +3,7 @@ import { translate } from "@docusaurus/Translate";
 
 export type TagType =
   // DO NOT USE THIS TAG: we choose sites to add to Marketings
-  | "favorite"
+  | "Favorite"
   | "Marketing"
   | "Business"
   | "Content"
@@ -10333,7 +10333,7 @@ const Users: User[] = [
     source: "",
     title: "音乐441",
     descn: "制作一首关于团结和团结的口语诗。",
-    tags: ["favorite"],
+    tags: ["Music"],
   },
   {
     preview: "",
@@ -11229,7 +11229,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子27",
     descn: "创建一个帖子突出我们产品 [产品名称] 的独特功能。",
-    tags: ["PromotionalSocialMediaPosts", "favorite"],
+    tags: ["PromotionalSocialMediaPosts"],
   },
   {
     preview: "",
@@ -11273,7 +11273,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子31",
     descn: "生成帖子以营造购买我们产品 [产品名称] 的紧迫感",
-    tags: ["PromotionalSocialMediaPosts", "favorite"],
+    tags: ["PromotionalSocialMediaPosts"],
   },
   {
     preview: "",
@@ -11351,7 +11351,7 @@ const Users: User[] = [
     source: "",
     title: "个人简历40",
     descn: "为我最近的 [insert job title] 角色创建要点，以展示我的成就和影响。",
-    tags: ["resume", "favorite"],
+    tags: ["resume"],
   },
 ];
 export type User = {
@@ -11372,11 +11372,11 @@ export type Tag = {
 };
 
 export const Tags: { [type in TagType]: Tag } = {
-  favorite: {
+  Favorite: {
     label: translate({ message: "常用" }),
     description: translate({
       message: "常用/收藏",
-      id: "showcase.tag.favorite.description",
+      id: "showcase.tag.Favorite.description",
     }),
     color: "#e9669e",
   },

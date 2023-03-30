@@ -27,8 +27,8 @@ import styles from "./styles.module.css";
 const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   ({ label, color, description }, ref) => (
     <li ref={ref} className={styles.tag} title={description}>
-      <span className={styles.textLabel}>{label.toLowerCase()}</span>
-      <span className={styles.colorLabel} style={{ backgroundColor: color }} />
+      <span className={styles.textLabel}>{label?.toLowerCase()}</span>
+      <span className={styles.colorLabel} style={{backgroundColor: color}} />
     </li>
   )
 );
