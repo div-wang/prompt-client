@@ -229,3 +229,41 @@
    background-color: rgba(0 0 0 / 95%);
  }
  
+
+/* 导航UI调整 */
+.navbar__items--right {
+  display: none;
+}
+.navbar {
+  height: 4.5rem;
+}
+.navbar--fixed-top {
+  padding: 0;
+  margin: 0;
+}
+.navbar__logo {
+  margin-right: 1.25rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  height: 4.5rem;
+}
+.navbar__logo img {
+  display: block;
+  width: 14.375rem;
+  height: 4.5rem;
+}
+.navbar__brand {
+  margin-right: 0;
+}
+.navbar__item {
+  padding: 0;
+  margin-right: 2.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #F13557;
+}
+.navbar__item:hover {
+  color: #F13557;
+}

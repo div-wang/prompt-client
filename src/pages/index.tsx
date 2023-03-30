@@ -124,15 +124,12 @@ function useFilteredUsers() {
 
 function ShowcaseHeader() {
   return (
-    <section className="margin-top--lg margin-bottom--lg text--center">
-      <Heading as="h1">ChatGPT Shortcut</Heading>
-      <p>{DESCRIPTION}</p>
-      <Link className="button button--primary" to={SUBMIT_URL}>
-        <Translate id="showcase.header.button">
-          🙏 请添加你的提示词
-        </Translate>
-      </Link>
-    </section>
+    <div className={styles['top-bg']}>
+      <section className={clsx('margin-top--lg margin-bottom--lg text--center', styles['top-text'])}>
+        <Heading as="h1">ChatGPT Shortcut</Heading>
+        <p>{DESCRIPTION}</p>
+      </section>
+    </div>
   );
 }
 
@@ -157,52 +154,56 @@ function ShowcaseFilters() {
   const filteredUsers = useFilteredUsers();
   const siteCountPlural = useSiteCountPlural();
   return (
-    <section className="container margin-top--l margin-bottom--lg">
-      <div className={clsx('margin-bottom--sm', styles.filterCheckbox)}>
-        <div>
-          <Heading as="h2">
-            <Translate id="showcase.filters.title">Filters</Translate>
-          </Heading>
-          <span>{siteCountPlural(filteredUsers.length)}</span>
+    <section className={clsx('container margin-top--l', styles['filter-view'])}>
+      <div className={styles['filter-view-inner']}>
+        <div className={styles.filterCheckbox}>
+          <div className={styles['filter-bar']}>
+            <Heading as="h2" className={styles.h2}>
+              <Translate id="showcase.filters.title">Filters</Translate>
+            </Heading>
+            <span className={styles['total-span']}>{siteCountPlural(filteredUsers.length)}</span>
+          </div>
+          <ShowcaseFilterToggle />
         </div>
-        <ShowcaseFilterToggle />
-      </div>
-      <ul className={clsx('clean-list', styles.checkboxList)}>
-        {TagList.map((tag, i) => {
-          const { label, description, color } = Tags[tag];
-          const id = `showcase_checkbox_id_${tag}`;
-
-          return (
-            <li key={i} className={styles.checkboxListItem}>
-              <ShowcaseTooltip
-                id={id}
-                text={description}
-                anchorEl="#__docusaurus">
-                <ShowcaseTagSelect
-                  tag={tag}
+        <ul className={clsx('clean-list', styles.checkboxList)}>
+          {TagList.map((tag, i) => {
+            const { label, description, color } = Tags[tag];
+            const id = `showcase_checkbox_id_${tag}`;
+            const isFirstTag = i === 0
+            return (
+              <li key={i} className={styles.checkboxListItem}>
+                <ShowcaseTooltip
                   id={id}
-                  label={label}
-                  icon={
-                    tag === 'favorite' ? (
-                      <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
-                    ) : (
-                      <span
-                        style={{
-                          backgroundColor: color,
-                          width: 10,
-                          height: 10,
-                          borderRadius: '50%',
-                          marginLeft: 8,
-                        }}
-                      />
-                    )
-                  }
-                />
-              </ShowcaseTooltip>
-            </li>
-          );
-        })}
-      </ul>
+                  text={description}
+                  anchorEl="#__docusaurus">
+                  <ShowcaseTagSelect
+                    tag={tag}
+                    id={id}
+                    label={label}
+                    icon={
+                      isFirstTag ? <FavoriteIcon svgClass={styles.svgIconFavoriteXs} /> :
+                        tag === 'favorite' ? (
+                          <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
+                        ) : (
+                          <span
+                            style={{
+                              backgroundColor: color,
+                              width: 12,
+                              height: 12,
+                              borderRadius: '50%',
+                              marginLeft: 8,
+                              display: 'inline-block'
+                            }}
+                          />
+                        )
+                    }
+                  />
+                </ShowcaseTooltip>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </section>
   );
 }

@@ -4,77 +4,33 @@ import { translate } from "@docusaurus/Translate";
 export type TagType =
   // DO NOT USE THIS TAG: we choose sites to add to Marketings
   | "Marketing"
-  | "Business"
-  | "Content"
-  | "WebDevelopment"
-  | "Education"
-  | "Teachers"
-  | "Music"
-  | "Fun"
-  | "HealthcareAndWellbeing"
-  | "AIART"
-  | "FoodAndCooking"
-  | "Games"
-  | "Sales"
-  | "resume"
-  | "Analytics"
-  | "EmailCampaigns"
-  | "UX"
-  | "CustomerService"
-  | "TradingStrategy"
-  | "DataScience"
-  | "TravelAndTourism"
-  | "commerce"
-  | "SEOs"
-  | "Developers"
-  | "ExcelSheet"
-  | "Writers"
-  | "HealthAndMedicine"
-  | "Accountants"
-  | "GameDevelopers"
-  | "SocialMedia"
-  | "Programmers"
-  | "BloggersAndContentCreators"
+  | "CommonlyUsed"
+  | "DivergentThinking"
+  | "WritingAid"
+  | "ArticleStory"
+  | "ArticleWord"
   | "SEO"
-  | "MarketingAndCopywriting"
-  | "Storytelling"
-  | "Students"
-  | "Comedy"
-  | "History"
-  | "Art"
-  | "Gaming"
-  | "Pets"
-  | "Finance"
-  | "HealthAndFitness"
-  | "Science"
-  | "Technology"
-  | "Sports"
-  | "Travel"
-  | "HealthMedicine"
-  | "FoodCooking"
-  | "Game"
-  | "PromotionalSocialMediaPosts"
-  | "SocialMediaCTAs"
-  | "FunSocialMediaPosts"
-  | "EducationalSocialMediaPosts"
-  | "InteractiveSocialMediaPosts"
-  | "InspirationalSocialMediaPosts"
-  | "CompanyRelatedSocialMediaPosts"
-  | "SocialMediaHolidayPosts"
-  | "DifferentSocialMediaPlatforms"
-  | "FacebookPosts"
-  | "InstagramPosts"
-  | "TwitterPosts"
-  | "LinkedInPosts"
-  | "PinterestPosts"
-  | "GoogleBusinessProfilePosts"
-  | "TikTokPosts"
-  | "YouTubePosts"
-  | "BoostYourContent"
-  | "FoodandCooking"
-  | "HealthandFitness"
-  | "HealthandMedicine"
-  | "HealthcareandWellbeing";
+  | "ReviewEvaluation"
+  | "ITProgramming"
+  | "AI"
+  | "SelfHelpEncyclopedia"
+  | "QualityOfLife"
+  | "InterestingKnowledge"
+  | "DebateSpeech"
+  | "PsychologicalSocial"
+  | "PhilosophyReligion"
+  | "AcademicTeacher"
+  | "Recreation"
+  | "Tools"
+  | "TerminalInterpreter"
+  | "LanguageTranslation"
+  | "CorporateJobs"
+  | "Doctors"
+  | "Music"
+  | "FinancialAdvisor"
+  | "IndustryConsultant"
+  | "Contribute"
+  | "PersonalTag";
 
 const Users: User[] = [
   {
@@ -11371,609 +11327,247 @@ export type Tag = {
 };
 
 export const Tags: { [type in TagType]: Tag } = {
-  Marketing: {
-    label: translate({ message: "市场营销" }),
+  CommonlyUsed: {
+    label: translate({ message: "常用" }),
     description: translate({
-      message: "市场营销1",
-      id: "showcase.tag.Marketing.description",
-    }),
-    color: "#e9669e",
-  },
-
-  Business: {
-    label: translate({ message: "商业" }),
-    description: translate({
-      message: "商业",
-      id: "showcase.tag.Business.description",
+      message: "常用",
+      id: "showcase.tag.CommonlyUsed.description",
     }),
     color: "#86699e",
   },
 
-  Content: {
-    label: translate({ message: "内容" }),
+  DivergentThinking: {
+    label: translate({ message: "发散思维" }),
     description: translate({
-      message: "内容",
-      id: "showcase.tag.Content.description",
+      message: "发散思维",
+      id: "showcase.tag.DivergentThinking.description",
     }),
-    color: "#75581e",
+    color: "#9179A7",
   },
 
-  WebDevelopment: {
-    label: translate({ message: "Web 开发" }),
+  WritingAid: {
+    label: translate({ message: "写作辅助" }),
     description: translate({
-      message: "Web 开发",
-      id: "showcase.tag.WebDevelopment.description",
+      message: "写作辅助",
+      id: "showcase.tag.WritingAid.description",
     }),
-    color: "#dfd545",
+    color: "#805F2C",
   },
 
-  Education: {
-    label: translate({ message: "教育" }),
+  ArticleStory: {
+    label: translate({ message: "文章/故事" }),
     description: translate({
-      message: "教育",
-      id: "showcase.tag.Education.description",
+      message: "文章/故事",
+      id: "showcase.tag.ArticleStory.description",
     }),
-    color: "#554236",
+    color: "#E3D463",
   },
 
-  Teachers: {
-    label: translate({ message: "教师" }),
+  ArticleWord : {
+    label: translate({ message: "文章/词语" }),
     description: translate({
-      message: "教师",
-      id: "showcase.tag.Teachers.description",
+      message: "文章/词语",
+      id: "showcase.tag.ArticleWord.description",
     }),
-    color: "#BC9F77",
+    color: "#E3D463",
+  },
+
+  SEO: {
+    label: translate({ message: "SEO" }),
+    description: translate({
+      message: "SEO",
+      id: "showcase.tag.SEO.description",
+    }),
+    color: "#C1A384",
+  },
+
+  ReviewEvaluation : {
+    label: translate({ message: "点评/评鉴" }),
+    description: translate({
+      message: "点评/评鉴",
+      id: "showcase.tag.ReviewEvaluation.description",
+    }),
+    color: "#F1EDA3",
+  },
+
+  ITProgramming : {
+    label: translate({ message: "IT/编程" }),
+    description: translate({
+      message: "IT/编程",
+      id: "showcase.tag.ITProgramming.description",
+    }),
+    color: "#AB5B41", // Facebook blue
+  },
+
+  AI: {
+    label: translate({ message: "AI" }),
+    description: translate({
+      message: "AI",
+      id: "showcase.tag.AI.description",
+    }),
+    color: "#FE5D24",
+  },
+
+  SelfHelpEncyclopedia: {
+    label: translate({ message: "自助百科" }),
+    description: translate({
+      message: "自助百科",
+      id: "showcase.tag.SelfHelpEncyclopedia.description",
+    }),
+    color: "#C373D6",
+  },
+
+  QualityOfLife: {
+    label: translate({ message: "生活质量" }),
+    description: translate({
+      message: "生活质量",
+      id: "showcase.tag.QualityOfLife.description",
+    }),
+    color: "#CC9BDA",
+  },
+
+  InterestingKnowledge: {
+    label: translate({ message: "趣味知识" }),
+    description: translate({
+      message: "趣味知识",
+      id: "showcase.tag.InterestingKnowledge.description",
+    }),
+    color: "#26898A",
+  },
+
+  DebateSpeech: {
+    label: translate({ message: "辩论/演讲" }),
+    description: translate({
+      message: "辩论/演讲",
+      id: "showcase.tag.DebateSpeech.description",
+    }),
+    color: "#7A4E4E",
+  },
+
+  PsychologicalSocial: {
+    label: translate({ message: "心理/社交" }),
+    description: translate({
+      message: "心理/社交",
+      id: "showcase.tag.PsychologicalSocial.description",
+    }),
+    color: "#338668",
+  },
+
+  PhilosophyReligion : {
+    label: translate({ message: "哲学/宗教" }),
+    description: translate({
+      message: "哲学/宗教",
+      id: "showcase.tag.PhilosophyReligion.description",
+    }),
+    color: "#F4B28F",
+  },
+
+  AcademicTeacher : {
+    label: translate({ message: "学术/老师" }),
+    description: translate({
+      message: "学术/老师",
+      id: "showcase.tag.AcademicTeacher.description",
+    }),
+    color: "#F4B28F", // Facebook blue
+  },
+
+  Recreation: {
+    label: translate({ message: "游戏" }),
+    description: translate({
+      message: "游戏",
+      id: "showcase.tag.Recreation.description",
+    }),
+    color: "#625F68", // Facebook blue
+  },
+
+  Tools: {
+    label: translate({ message: "工具" }),
+    description: translate({
+      message: "工具",
+      id: "showcase.tag.Tools.description",
+    }),
+    color: "#1C58B4",
+  },
+
+  TerminalInterpreter : {
+    label: translate({ message: "终端/解释器" }),
+    description: translate({
+      message: "终端/解释器",
+      id: "showcase.tag.TerminalInterpreter.description",
+    }),
+    color: "#E7B534",
+  },
+
+  LanguageTranslation: {
+    label: translate({ message: "语言/翻译" }),
+    description: translate({
+      message: "语言/翻译",
+      id: "showcase.tag.LanguageTranslation.description",
+    }),
+    color: "#5AE461",
+  },
+
+  CorporateJobs: {
+    label: translate({ message: "企业职位" }),
+    description: translate({
+      message: "企业职位",
+      id: "showcase.tag.CorporateJobs.description",
+    }),
+    color: "#1C7371",
+  },
+
+  Doctors: {
+    label: translate({ message: "医生" }),
+    description: translate({
+      message: "医生",
+      id: "showcase.tag.Doctors.description",
+    }),
+    color: "#36F9E5",
   },
 
   Music: {
     label: translate({ message: "音乐" }),
     description: translate({
       message: "音乐",
-      id: "showcase.tag.Musicdescription",
-    }),
-    color: "#eeef99",
-  },
-
-  Fun: {
-    label: translate({ message: "乐趣" }),
-    description: translate({
-      message: "乐趣",
-      id: "showcase.tag.Fun.description",
-    }),
-    color: "#8c2f00",
-  },
-
-  HealthcareAndWellbeing: {
-    label: translate({ message: "医疗保健和福利" }),
-    description: translate({
-      message: "医疗保健和福利",
-      id: "showcase.tag.HealthcareAndWellbeing.description",
-    }),
-    color: "#ff6100", // Facebook blue
-  },
-
-  AIART: {
-    label: translate({ message: "人工智能艺术（中途）" }),
-    description: translate({
-      message: "人工智能艺术（中途）",
-      id: "showcase.tag.AIART.description",
-    }),
-    color: "#a44fb7",
-  },
-
-  FoodAndCooking: {
-    label: translate({ message: "食物和烹饪" }),
-    description: translate({
-      message: "食物和烹饪",
-      id: "showcase.tag.FoodAndCooking.description",
-    }),
-    color: "#127f82",
-  },
-
-  Games: {
-    label: translate({ message: "游戏（团队协作）" }),
-    description: translate({
-      message: "游戏（团队协作）",
-      id: "showcase.tag.Games.description",
-    }),
-    color: "#9c1d10",
-  },
-
-  Sales: {
-    label: translate({ message: "销售" }),
-    description: translate({
-      message: "销售",
-      id: "showcase.tag.Sales.description",
-    }),
-    color: "#ee3308",
-  },
-
-  resume: {
-    label: translate({ message: "个人简历" }),
-    description: translate({
-      message: "个人简历",
-      id: "showcase.tag.resume.description",
-    }),
-    color: "#ffcaa9",
-  },
-
-  Analytics: {
-    label: translate({ message: "分析" }),
-    description: translate({
-      message: "分析",
-      id: "showcase.tag.Analytics.description",
-    }),
-    color: "#fe6829",
-  },
-
-  EmailCampaigns: {
-    label: translate({ message: "电子邮件活动" }),
-    description: translate({
-      message: "电子邮件活动",
-      id: "showcase.tag.EmailCampaigns.description",
-    }),
-    color: "#574C57",
-  },
-
-  UX: {
-    label: translate({ message: "用户体验" }),
-    description: translate({
-      message: "用户体验",
-      id: "showcase.tag.UX.description",
-    }),
-    color: "#4267b2", // Facebook blue
-  },
-
-  CustomerService: {
-    label: translate({ message: "客户服务" }),
-    description: translate({
-      message: "客户服务",
-      id: "showcase.tag.CustomerService.description",
-    }),
-    color: "#ffa11c", // Facebook blue
-  },
-
-  TradingStrategy: {
-    label: translate({ message: "交易策略" }),
-    description: translate({
-      message: "交易策略",
-      id: "showcase.tag.TradingStrategy.description",
-    }),
-    color: "#39ca30",
-  },
-
-  DataScience: {
-    label: translate({ message: "数据科学" }),
-    description: translate({
-      message: "数据科学",
-      id: "showcase.tag.DataScience.description",
-    }),
-    color: "#124f4e",
-  },
-
-  TravelAndTourism: {
-    label: translate({ message: "旅行" }),
-    description: translate({
-      message: "旅行",
-      id: "showcase.tag.TravelAndTourism.description",
-    }),
-    color: "#0e7774",
-  },
-
-  commerce: {
-    label: translate({ message: "电子商务" }),
-    description: translate({
-      message: "电子商务",
-      id: "showcase.tag.commerce.description",
-    }),
-    color: "#14cfc3",
-  },
-
-  SEOs: {
-    label: translate({ message: "搜索引擎优化" }),
-    description: translate({
-      message: "搜索引擎优化",
-      id: "showcase.tag.SEOs.description",
-    }),
-    color: "#5cecdc",
-  },
-
-  Developers: {
-    label: translate({ message: "开发者" }),
-    description: translate({
-      message: "开发者",
-      id: "showcase.tag.Developers.description",
+      id: "showcase.tag.Music.description",
     }),
     color: "#ffcfc3",
   },
 
-  ExcelSheet: {
-    label: translate({ message: "Excel表格" }),
+  FinancialAdvisor: {
+    label: translate({ message: "金融顾问" }),
     description: translate({
-      message: "来自大家的投稿作品，能帮助我们开拓思路",
-      id: "showcase.tag.ExcelSheet.description",
+      message: "金融顾问",
+      id: "showcase.tag.FinancialAdvisor.description",
     }),
-    color: "#cecd21",
+    color: "#DC2020",
   },
 
-  Writers: {
-    label: translate({ message: "作家" }),
+  IndustryConsultant: {
+    label: translate({ message: "行业顾问" }),
     description: translate({
-      message: "作家",
-      id: "showcase.tag.Writers.description",
+      message: "行业顾问",
+      id: "showcase.tag.IndustryConsultant.description",
     }),
-    color: "#ebcb63",
+    color: "#E38D8D",
   },
 
-  HealthAndMedicine: {
-    label: translate({ message: "健康与医药" }),
+  Contribute: {
+    label: translate({ message: "投稿" }),
     description: translate({
-      message: "健康与医药",
-      id: "showcase.tag.HealthAndMedicine.description",
+      message: "投稿",
+      id: "showcase.tag.Contribute.description",
     }),
-    color: "#ebcb63",
-  },
-  Accountants: {
-    label: translate({ message: "会计师" }),
-    description: translate({
-      message: "会计师",
-      id: "showcase.tag.Accountants.description",
-    }),
-    color: "#ebcb63",
-  },
-  GameDevelopers: {
-    label: translate({ message: "游戏开发商" }),
-    description: translate({
-      message: "游戏开发商",
-      id: "showcase.tag.GameDevelopers.description",
-    }),
-    color: "#5cecdc",
-  },
-  SocialMedia: {
-    label: translate({ message: "社交媒体" }),
-    description: translate({
-      message: "社交媒体",
-      id: "showcase.tag.SocialMedia.description",
-    }),
-    color: "#ebcb63",
-  },
-  Programmers: {
-    label: translate({ message: "程序员" }),
-    description: translate({
-      message: "程序员",
-      id: "showcase.tag.Programmers.description",
-    }),
-    color: "#ffa11c",
-  },
-  BloggersAndContentCreators: {
-    label: translate({ message: "博主和内容创作者" }),
-    description: translate({
-      message: "博主和内容创作者",
-      id: "showcase.tag.BloggersAndContentCreators.description",
-    }),
-    color: "#5cecdc",
-  },
-  SEO: {
-    label: translate({ message: "搜索引擎" }),
-    description: translate({
-      message: "搜索引擎",
-      id: "showcase.tag.SEO.description",
-    }),
-    color: "#ffa11c",
-  },
-  MarketingAndCopywriting: {
-    label: translate({ message: "营销和文案" }),
-    description: translate({
-      message: "营销和文案",
-      id: "showcase.tag.MarketingAndCopywriting.description",
-    }),
-    color: "#ebcb63",
-  },
-  Storytelling: {
-    label: translate({ message: "讲故事" }),
-    description: translate({
-      message: "讲故事",
-      id: "showcase.tag.Storytelling.description",
-    }),
-    color: "#ffa11c",
-  },
-  Students: {
-    label: translate({ message: "学生" }),
-    description: translate({
-      message: "学生",
-      id: "showcase.tag.Students.description",
-    }),
-    color: "#ffa11c",
-  },
-  Comedy: {
-    label: translate({ message: "有趣的事情" }),
-    description: translate({
-      message: "有趣的事情",
-      id: "showcase.tag.Comedy.description",
-    }),
-    color: "#ebcb63",
-  },
-  History: {
-    label: translate({ message: "历史" }),
-    description: translate({
-      message: "历史",
-      id: "showcase.tag.History.description",
-    }),
-    color: "#ffa11c",
-  },
-  Art: {
-    label: translate({ message: "艺术" }),
-    description: translate({
-      message: "艺术",
-      id: "showcase.tag.Art.description",
-    }),
-    color: "#ffa11c",
-  },
-  Gaming: {
-    label: translate({ message: "赌博" }),
-    description: translate({
-      message: "赌博",
-      id: "showcase.tag.Gaming.description",
-    }),
-    color: "#ffa11c",
-  },
-  Pets: {
-    label: translate({ message: "宠物" }),
-    description: translate({
-      message: "宠物",
-      id: "showcase.tag.Pets.description",
-    }),
-    color: "#ffa11c",
-  },
-  Finance: {
-    label: translate({ message: "金融" }),
-    description: translate({
-      message: "金融",
-      id: "showcase.tag.Finance.description",
-    }),
-    color: "#ffa11c",
-  },
-  // ---
-  HealthAndFitness: {
-    label: translate({ message: "健康与健身" }),
-    description: translate({
-      message: "健康与健身",
-      id: "showcase.tag.HealthAndFitness.description",
-    }),
-    color: "#ffa11c",
-  },
-  Science: {
-    label: translate({ message: "科学" }),
-    description: translate({
-      message: "科学",
-      id: "showcase.tag.Science.description",
-    }),
-    color: "#ffa11c",
-  },
-  Technology: {
-    label: translate({ message: "科技" }),
-    description: translate({
-      message: "科技",
-      id: "showcase.tag.Technology.description",
-    }),
-    color: "#ffa11c",
-  },
-  Sports: {
-    label: translate({ message: "体育" }),
-    description: translate({
-      message: "体育",
-      id: "showcase.tag.Sports.description",
-    }),
-    color: "#ffa11c",
-  },
-  Travel: {
-    label: translate({ message: "旅行和旅游" }),
-    description: translate({
-      message: "旅行和旅游",
-      id: "showcase.tag.Travel.description",
-    }),
-    color: "#ffa11c",
-  },
-  HealthMedicine: {
-    label: translate({ message: "顾客服务" }),
-    description: translate({
-      message: "顾客服务",
-      id: "showcase.tag.HealthMedicine.description",
-    }),
-    color: "#ffa11c",
-  },
-  FoodCooking: {
-    label: translate({ message: "食品与烹饪" }),
-    description: translate({
-      message: "食品与烹饪",
-      id: "showcase.tag.FoodCooking.description",
-    }),
-    color: "#ffa11c",
-  },
-  Game: {
-    label: translate({ message: "游戏" }),
-    description: translate({
-      message: "游戏",
-      id: "showcase.tag.Game.description",
-    }),
-    color: "#ffa11c",
-  },
-  PromotionalSocialMediaPosts: {
-    label: translate({ message: "促销社交媒体帖子" }),
-    description: translate({
-      message: "促销社交媒体帖子",
-      id: "showcase.tag.PromotionalSocialMediaPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  SocialMediaCTAs: {
-    label: translate({ message: "社交媒体 CTA" }),
-    description: translate({
-      message: "社交媒体 CTA",
-      id: "showcase.tag.SocialMediaCTAs.description",
-    }),
-    color: "#ffa11c",
-  },
-  FunSocialMediaPosts: {
-    label: translate({ message: "有趣的社交媒体帖子" }),
-    description: translate({
-      message: "有趣的社交媒体帖子",
-      id: "showcase.tag.FunSocialMediaPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  EducationalSocialMediaPosts: {
-    label: translate({ message: "教育社交媒体帖子" }),
-    description: translate({
-      message: "教育社交媒体帖子",
-      id: "showcase.tag.EducationalSocialMediaPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  InteractiveSocialMediaPosts: {
-    label: translate({ message: "互动社交媒体帖子" }),
-    description: translate({
-      message: "互动社交媒体帖子",
-      id: "showcase.tag.InteractiveSocialMediaPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  InspirationalSocialMediaPosts: {
-    label: translate({ message: "鼓舞人心的社交媒体帖子" }),
-    description: translate({
-      message: "鼓舞人心的社交媒体帖子",
-      id: "showcase.tag.InspirationalSocialMediaPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  CompanyRelatedSocialMediaPosts: {
-    label: translate({ message: "与公司相关的社交媒体帖子" }),
-    description: translate({
-      message: "与公司相关的社交媒体帖子",
-      id: "showcase.tag.CompanyRelatedSocialMediaPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  SocialMediaHolidayPosts: {
-    label: translate({ message: "社交媒体假日帖子" }),
-    description: translate({
-      message: "社交媒体假日帖子",
-      id: "showcase.tag.SocialMediaHolidayPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  DifferentSocialMediaPlatforms: {
-    label: translate({ message: "不同的社交媒体平台" }),
-    description: translate({
-      message: "不同的社交媒体平台",
-      id: "showcase.tag.DifferentSocialMediaPlatforms.description",
-    }),
-    color: "#ffa11c",
+    color: "#93AF86",
   },
 
-  FacebookPosts: {
-    label: translate({ message: "脸书帖子" }),
+  PersonalTag: {
+    label: translate({ message: "Personal" }),
     description: translate({
-      message: "脸书帖子",
-      id: "showcase.tag.FacebookPosts.description",
+      message: "Personal",
+      id: "showcase.tag.PersonalTag.description",
     }),
-    color: "#ffa11c",
-  },
-  InstagramPosts: {
-    label: translate({ message: "Instagram 帖子" }),
-    description: translate({
-      message: "Instagram 帖子",
-      id: "showcase.tag.InstagramPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  TwitterPosts: {
-    label: translate({ message: "推特帖子" }),
-    description: translate({
-      message: "推特帖子",
-      id: "showcase.tag.TwitterPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  LinkedInPosts: {
-    label: translate({ message: "LinkedIn帖子" }),
-    description: translate({
-      message: "LinkedIn帖子",
-      id: "showcase.tag.LinkedInPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  PinterestPosts: {
-    label: translate({ message: "Pinterest 帖子" }),
-    description: translate({
-      message: "Pinterest 帖子",
-      id: "showcase.tag.PinterestPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  GoogleBusinessProfilePosts: {
-    label: translate({ message: "谷歌商家资料帖子" }),
-    description: translate({
-      message: "LinkedIn帖子",
-      id: "showcase.tag.GoogleBusinessProfilePosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  TikTokPosts: {
-    label: translate({ message: "抖音帖子" }),
-    description: translate({
-      message: "LinkedIn帖子",
-      id: "showcase.tag.TikTokPosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  YouTubePosts: {
-    label: translate({ message: "YouTube" }),
-    description: translate({
-      message: "LinkedIn帖子",
-      id: "showcase.tag.YouTubePosts.description",
-    }),
-    color: "#ffa11c",
-  },
-  BoostYourContent: {
-    label: translate({ message: "推荐内容" }),
-    description: translate({
-      message: "推荐内容",
-      id: "showcase.tag.BoostYourContent.description",
-    }),
-    color: "#ffa11c",
-  },
-  FoodandCooking: {
-    label: translate({ message: "烹饪" }),
-    description: translate({
-      message: "烹饪",
-      id: "showcase.tag.FoodandCooking.description",
-    }),
-    color: "#ffa11c",
-  },
-  HealthandFitness: {
-    label: translate({ message: "健康与健身" }),
-    description: translate({
-      message: "健康与健身",
-      id: "showcase.tag.HealthandFitness.description",
-    }),
-    color: "#ffa11c",
-  },
-  HealthandMedicine: {
-    label: translate({ message: "健康与医学" }),
-    description: translate({
-      message: "健康与医学",
-      id: "showcase.tag.HealthandMedicine.description",
-    }),
-    color: "#ffa11c",
-  },
-  HealthcareandWellbeing: {
-    label: translate({ message: "保健" }),
-    description: translate({
-      message: "保健",
-      id: "showcase.tag.HealthcareandWellbeingdescription",
-    }),
-    color: "#ffa11c",
+    color: "#C4BFFF",
   },
 };
 
