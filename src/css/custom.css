@@ -256,6 +256,7 @@ html[data-theme="dark"] {
 .navbar__item:hover {
   color: #F13557;
 }
+
 [data-theme="dark"] {
   --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 45%);
   --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 41%);

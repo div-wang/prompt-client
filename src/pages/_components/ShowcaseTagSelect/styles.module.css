@@ -27,6 +27,13 @@ input[type='checkbox'] + .checkboxLabel {
   border: 2px solid #DDE2E4;
   border-radius: 2.5rem;
   margin: .5rem .5rem .5rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+input[type='checkbox'] + .checkboxLabel  svg {
+  display: block;
 }
 
 input:focus-visible + .checkboxLabel {

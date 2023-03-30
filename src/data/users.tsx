@@ -3,7 +3,7 @@ import { translate } from "@docusaurus/Translate";
 
 export type TagType =
   // DO NOT USE THIS TAG: we choose sites to add to Marketings
-  | "favorite"
+  | "Favorite"
   | "Marketing"
   | "Business"
   | "Content"
@@ -11372,11 +11372,11 @@ export type Tag = {
 };
 
 export const Tags: { [type in TagType]: Tag } = {
-  favorite: {
+  Favorite: {
     label: translate({ message: "常用" }),
     description: translate({
       message: "常用/收藏",
-      id: "showcase.tag.favorite.description",
+      id: "showcase.tag.Favorite.description",
     }),
     color: "#e9669e",
   },

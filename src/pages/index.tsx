@@ -172,33 +172,35 @@ function ShowcaseFilters() {
             const isFirstTag = i === 0
             return (
               <li key={i} className={styles.checkboxListItem}>
-                <ShowcaseTooltip
-                  id={id}
-                  text={description}
-                  anchorEl="#__docusaurus">
-                  <ShowcaseTagSelect
-                    tag={tag}
+                <div className={styles.checkboxListItemInner}>
+                  <ShowcaseTooltip
                     id={id}
-                    label={label}
-                    icon={
-                      isFirstTag ? <FavoriteIcon svgClass={styles.svgIconFavoriteXs} /> :
-                        tag === 'favorite' ? (
-                          <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
-                        ) : (
-                          <span
-                            style={{
-                              backgroundColor: color,
-                              width: 12,
-                              height: 12,
-                              borderRadius: '50%',
-                              marginLeft: 8,
-                              display: 'inline-block'
-                            }}
-                          />
-                        )
-                    }
-                  />
-                </ShowcaseTooltip>
+                    text={description}
+                    anchorEl="#__docusaurus">
+                    <ShowcaseTagSelect
+                      tag={tag}
+                      id={id}
+                      label={label}
+                      icon={
+                        isFirstTag ? <FavoriteIcon svgClass={styles.svgIconFavoriteXs} /> :
+                          tag === 'favorite' ? (
+                            <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
+                          ) : (
+                            <span
+                              style={{
+                                backgroundColor: color,
+                                width: 12,
+                                height: 12,
+                                borderRadius: '50%',
+                                marginLeft: 8,
+                                display: 'inline-block'
+                              }}
+                            />
+                          )
+                      }
+                    />
+                  </ShowcaseTooltip>
+                </div>
               </li>
             );
           })}

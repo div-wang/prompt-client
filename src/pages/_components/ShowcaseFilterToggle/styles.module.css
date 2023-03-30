@@ -16,8 +16,7 @@
   border: var(--border) solid var(--ifm-color-primary-darkest);
   cursor: pointer;
   justify-content: space-around;
-  transition: opacity var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
+  transition: opacity var(--ifm-transition-fast) var(--ifm-transition-timing-default);
   box-shadow: var(--ifm-global-shadow-md);
   background-color: #F13557;
   border-color: #F13557;
@@ -33,17 +32,25 @@
 .checkboxLabel::after {
   position: absolute;
   content: '';
+  display: inline-block;
   inset: 0;
-  width: 20px;
-  height: 20px;
+  top: -2px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
+  overflow: hidden;
   background-color: #fff;
   transition: transform var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
   transform: translateX(calc(var(--width) / 2 - var(--border)));
   border: none;
 }
-
+.checkboxLabelSpan {
+  width: 1.2rem;
+  height: .7rem;
+  display: inline-block;
+}
 input:focus-visible ~ .checkboxLabel::after {
   outline: 2px solid currentColor;
 }
