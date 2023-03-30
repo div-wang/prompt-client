@@ -1,41 +1,41 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '标签筛选、关键词搜索和一键复制 Prompts',
+  title: "标签筛选、关键词搜索和一键复制 Prompts",
   // tagline: '方便中文使用 ChatGPT 快捷指令',
   favicon: 'img/logo.png',
 
   // Set the production url of your site here
-  url: 'https://newzone.top',
+  url: "https://newzone.top",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/chatgpt/',
-  baseUrl: '/index.html/',
+  baseUrl: "/index.html/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'rockbenben', // Usually your GitHub org/user name.
-  projectName: 'ChatGPT-Shortcut', // Usually your repo name.
+  organizationName: "rockbenben", // Usually your GitHub org/user name.
+  projectName: "ChatGPT-Shortcut", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    defaultLocale: "zh-Hans",
+    locales: ["zh-Hans"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         /* docs: {
@@ -53,10 +53,10 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         }, */
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
         gtag: {
-          trackingID: 'G-RWKZTY2P9R',
+          trackingID: "G-RWKZTY2P9R",
           anonymizeIP: false,
         },
       }),
@@ -64,7 +64,7 @@ const config = {
   ],
   plugins: [
     [
-      'ideal-image',
+      "ideal-image",
       /** @type {import('@docusaurus/plugin-ideal-image').PluginOptions} */
       ({
         quality: 70,
@@ -75,8 +75,8 @@ const config = {
         disableInDev: true,
       }),
     ],
-    './plugins/piwik.js',
-    './plugins/instantpage.js',
+    "./plugins/piwik.js",
+    "./plugins/instantpage.js",
   ],
 
   themeConfig:
@@ -84,12 +84,14 @@ const config = {
     ({
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
-      metadata: [{ name: 'keywords', content: 'prompt,ChatGPT,AI prompts，提示词' }],
+      metadata: [
+        { name: "keywords", content: "prompt,ChatGPT,AI prompts，提示词" },
+      ],
       navbar: {
         title: '',
         logo: {
-          alt: 'ChatGPT Shortcuts',
-          src: 'img/logo.svg',
+          alt: "ChatGPT Shortcuts",
+          src: "img/logo.svg",
         },
         items: [
           {
@@ -120,8 +122,18 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} ChatGPT Shortcut`,
+        style: "dark",
+        copyright: `<div style="display:flex;justify-content: space-between">
+        <div>
+        <a style="color:#FFFFFF" href='https://ai.redtom.com'><u>RedTom</u></a>提供技术支持  © RedTom GmbH ${new Date().getFullYear()} 
+        </div>
+        
+        <div>
+        <a style="margin-right: 1rem;color:#FFFFFF" href='https://ai.redtom.com/terms-of-use'>服务条款</a>
+        
+        <a style="color:#FFFFFF" href='https://ai.redtom.com/privacy-policy'>隐私政策</a>
+        </div>
+        </div>`,
       },
       prism: {
         theme: lightCodeTheme,
