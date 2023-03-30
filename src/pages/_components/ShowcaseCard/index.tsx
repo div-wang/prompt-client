@@ -27,8 +27,8 @@ import styles from "./styles.module.css";
 const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   ({ label, color, description }, ref) => (
     <li ref={ref} className={styles.tag} title={description}>
-      <span className={styles.textLabel}>{label?.toLowerCase()}</span>
-      <span className={styles.colorLabel} style={{backgroundColor: color}} />
+      <span className={styles.textLabel}>{label.toLowerCase()}</span>
+      <span className={styles.colorLabel} style={{ backgroundColor: color }} />
     </li>
   )
 );
@@ -74,12 +74,13 @@ function ShowcaseCard({ user }: { user: User }) {
   const image = getCardImage(user);
   // 复制
   const [copied, setShowCopied] = useState(true);
-  const handleCopyCode = () => {
-    if (user.description) {
+  const toReTom = () => {
+    window.open('https://ai.redtom.com/home', 'target')
+    /* if (user.description) {
       copy(user.description);
     }
     setShowCopied(true);
-    setTimeout(() => setShowCopied(false), 2000);
+    setTimeout(() => setShowCopied(false), 2000); */
   };
   // 点击显示中文文本
   const [paragraphText, setParagraphText] = useState(user.description);
@@ -91,11 +92,7 @@ function ShowcaseCard({ user }: { user: User }) {
     }
   }
   return (
-    <li
-      key={user.title}
-      className="card shadow--md"
-      style={{ height: "300px" }}
-    >
+    <li key={user.title} className={clsx("card", styles.showcaseCardCenter)}>
       <div className="card__body">
         <div className={clsx(styles.showcaseCardHeader)}>
           <Heading as="div" className={styles.showcaseCardTitle}>
@@ -109,9 +106,9 @@ function ShowcaseCard({ user }: { user: User }) {
           <button
             className={styles.showcaseCardSrcBtn}
             type="button"
-            onClick={handleCopyCode}
+            onClick={toReTom}
           >
-            去生成
+            去提问
           </button>
         </div>
         <p className={styles.showcaseCardBody}>👉 {user.remark}</p>

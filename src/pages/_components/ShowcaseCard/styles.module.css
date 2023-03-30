@@ -14,6 +14,11 @@
   height: 19.125rem;
   width: 19.125rem;
 } */
+.showcaseCardCenter {
+  height: 306px;
+  border-radius: 0.4rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
 .showcaseCardHeader {
   display: flex;
   align-items: center;
@@ -21,7 +26,7 @@
   height: 2.325rem;
   background: linear-gradient(
     90deg,
-    #e9ebeb -3.12%,
+    #e9ebeb -26.12%,
     rgba(255, 255, 255, 0) 50%
   );
   border-radius: 5px 0px 0px 5px;
@@ -124,10 +129,12 @@
   border: 0.053125rem solid #dde2e4;
   box-shadow: 0rem 0.10625rem 0.10625rem rgba(0, 0, 0, 0.06);
   border-radius: 2.65625rem;
+  padding: .25rem .55rem;
 }
 
 .tag .textLabel {
-  margin-left: 8px;
+  /* margin-left: 8px; */
+  line-height: 1;
 }
 
 .tag .colorLabel {
@@ -135,5 +142,5 @@
   height: 7px;
   border-radius: 50%;
   margin-left: 6px;
-  margin-right: 6px;
+  line-height: 1;
 }
