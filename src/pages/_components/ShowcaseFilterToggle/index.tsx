@@ -60,10 +60,8 @@ export default function ShowcaseFilterToggle(): JSX.Element {
         checked={operator}
       />
       <label htmlFor={id} className={clsx(styles.checkboxLabel, 'shadow--md')}>
-        {/* eslint-disable @docusaurus/no-untranslated-text */}
-        <span className={clsx(styles.checkboxLabelOr, 'checkboxLabelSpan')}>OR</span>
-        <span className={clsx(styles.checkboxLabelAnd, 'checkboxLabelSpan')}>AND</span>
-        {/* eslint-enable @docusaurus/no-untranslated-text */}
+        <span className={styles.checkboxLabelOr}>{operator ? ' ' : 'OR' }</span>
+        <span className={styles.checkboxLabelAnd}>{operator ? 'AND' : ' ' }</span>
       </label>
     </div>
   );

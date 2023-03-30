@@ -16,7 +16,7 @@ import React, {
 import {useHistory, useLocation} from '@docusaurus/router';
 import {toggleListItem} from '@site/src/utils/jsUtils';
 import type {TagType} from '@site/src/data/users';
-
+import clsx from 'clsx';
 import {prepareUserState} from '../../index';
 import styles from './styles.module.css';
 
@@ -61,7 +61,7 @@ function ShowcaseTagSelect(
     });
   }, [tag, location, history]);
   return (
-    <>
+    <div className={clsx(styles['tag-select'], selected ? styles['tag-select-selected'] : styles['tag-select-normal'])}>
       <input
         type="checkbox"
         id={id}
@@ -89,7 +89,7 @@ function ShowcaseTagSelect(
         {label}
         {icon}
       </label>
-    </>
+    </div>
   );
 }
 
