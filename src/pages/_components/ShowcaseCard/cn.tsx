@@ -91,8 +91,8 @@ function ShowcaseCard({ user }: { user: User }) {
     }
   }
   return (
-    <li key={user.title} className="card shadow--md">
-      {/* <div className={clsx('card__image', styles.showcaseCardImage)}>
+    <li key={user.title} className={clsx("card", styles.showcaseCardCenter)}>
+      {/* <div className={clsx("card__image", styles.showcaseCardImage)}>
         <Image img={image} alt={user.title} />
       </div> */}
       <div className="card__body">
@@ -108,7 +108,7 @@ function ShowcaseCard({ user }: { user: User }) {
             type="button"
             onClick={handleCopyCode}
           >
-            去生成
+            去提问
           </button>
         </div>
         <p className={styles.showcaseCardBody}>👉 {user.remark}</p>

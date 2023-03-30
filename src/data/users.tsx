@@ -3,7 +3,7 @@ import { translate } from "@docusaurus/Translate";
 
 export type TagType =
   // DO NOT USE THIS TAG: we choose sites to add to Marketings
-  | "Favorite"
+  | "favorite"
   | "Marketing"
   | "Business"
   | "Content"
@@ -87,7 +87,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体136",
     descn: "“写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。”",
-    tags: ["SocialMedia"],
+    tags: ["SocialMedia", "favorite"],
   },
   {
     preview: "",
@@ -121,7 +121,7 @@ const Users: User[] = [
     source: "",
     title: "市场营销2",
     descn: "为一则关于[产品、服务或公司]的广告写一分钟长的脚本。",
-    tags: ["Marketing"],
+    tags: ["Marketing", "favorite"],
   },
   {
     preview: "",
@@ -3920,7 +3920,7 @@ const Users: User[] = [
     title: "数据科学328",
     descn:
       "我希望你充当自动机器学习 (AutoML) 机器人，为我使用 TPOT。我正在研究一个预测 [...] 的模型。请编写 python 代码以在测试集上找到具有最高 AUC 分数的最佳分类模型。",
-    tags: ["DataScience"],
+    tags: ["DataScience", "favorite"],
   },
   {
     preview: "",
@@ -11372,11 +11372,11 @@ export type Tag = {
 };
 
 export const Tags: { [type in TagType]: Tag } = {
-  Favorite: {
+  favorite: {
     label: translate({ message: "常用" }),
     description: translate({
       message: "常用/收藏",
-      id: "showcase.tag.Favorite.description",
+      id: "showcase.tag.favorite.description",
     }),
     color: "#e9669e",
   },

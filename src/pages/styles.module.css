@@ -30,13 +30,13 @@
   user-select: none;
   white-space: nowrap;
   height: auto;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 .checkboxListItem:last-child {
   margin-right: 0;
 }
 .checkboxListItem_src-pages-styles-module {
-  border: none!important;
+  border: none !important;
 }
 .checkboxLabel {
   border: none;
@@ -57,14 +57,15 @@
   width: 0.85rem;
   height: 0.85rem;
 }
-.searchmagnifier img {
+.searchmagnifier svg {
+  width: 0.85rem;
+  height: 0.85rem;
   display: block;
 }
 .searchContainer input {
   height: 0.85rem;
   border: none;
   margin: 0.3rem 0.7rem 0.3rem 0.315rem;
-  color: #b4b4b4;
   background-color: #ffffff;
 }
 /* 去掉 选中后的高亮 */
@@ -99,7 +100,7 @@
 
 .svgIconFavoriteXs,
 .svgIconFavorite {
-  color: #F13557;
+  color: #f13557;
 }
 
 .svgIconFavoriteXs {
@@ -111,13 +112,11 @@
   margin-left: 1rem;
 }
 
-
-
 /* UI调整头部 */
 .top-bg {
   position: relative;
 }
-.top-bg::after{
+.top-bg::after {
   content: "";
   position: absolute;
   top: -4rem;
@@ -144,7 +143,7 @@
   left: 50%;
   width: 18.4rem;
   height: 18.4rem;
-  background: #E3F5FF;
+  background: #e3f5ff;
   border-radius: 50%;
   z-index: 1;
   margin-left: -9.2rem;
@@ -155,7 +154,7 @@
   padding: 1.875rem 1.25rem;
   margin-bottom: 3.6rem;
   background: rgba(255, 255, 255, 0.4);
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   box-shadow: 0px 3.25rem 3.5rem rgba(187, 231, 255, 0.25);
   backdrop-filter: blur(2.6563rem);
   /* Note: backdrop-filter has minimal browser support */
@@ -169,17 +168,17 @@
   align-items: center;
   text-align: center;
   letter-spacing: -0.006em;
-  color: #3A3A3A;
-  margin-right: .6rem;
+  color: #3a3a3a;
+  margin-right: 0.6rem;
 }
 
 /* 以上单位需要调整 */
 .filter-bar {
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 .total-span {
   font-weight: 400;
-  font-size: .7rem;
+  font-size: 0.7rem;
   line-height: 1.1rem;
   display: flex;
   align-items: center;

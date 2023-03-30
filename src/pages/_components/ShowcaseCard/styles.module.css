@@ -14,6 +14,11 @@
   height: 19.125rem;
   width: 19.125rem;
 } */
+.showcaseCardCenter {
+  height: 306px;
+  border-radius: 0.4rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
 .showcaseCardHeader {
   display: flex;
   align-items: center;
@@ -21,7 +26,7 @@
   height: 2.325rem;
   background: linear-gradient(
     90deg,
-    #e9ebeb -3.12%,
+    #e9ebeb -26.12%,
     rgba(255, 255, 255, 0) 50%
   );
   border-radius: 5px 0px 0px 5px;

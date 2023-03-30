@@ -27,8 +27,8 @@ import styles from "./styles.module.css";
 const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   ({ label, color, description }, ref) => (
     <li ref={ref} className={styles.tag} title={description}>
-      <span className={styles.textLabel}>{label?.toLowerCase()}</span>
-      <span className={styles.colorLabel} style={{backgroundColor: color}} />
+      <span className={styles.textLabel}>{label.toLowerCase()}</span>
+      <span className={styles.colorLabel} style={{ backgroundColor: color }} />
     </li>
   )
 );
@@ -91,11 +91,7 @@ function ShowcaseCard({ user }: { user: User }) {
     }
   }
   return (
-    <li
-      key={user.title}
-      className="card shadow--md"
-      style={{ height: "300px" }}
-    >
+    <li key={user.title} className={clsx("card", styles.showcaseCardCenter)}>
       <div className="card__body">
         <div className={clsx(styles.showcaseCardHeader)}>
           <Heading as="div" className={styles.showcaseCardTitle}>
@@ -111,7 +107,7 @@ function ShowcaseCard({ user }: { user: User }) {
             type="button"
             onClick={handleCopyCode}
           >
-            去生成
+            去提问
           </button>
         </div>
         <p className={styles.showcaseCardBody}>👉 {user.remark}</p>
