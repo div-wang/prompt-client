@@ -130,14 +130,9 @@ function useFilteredUsers() {
 function ShowcaseHeader() {
   return (
     <div className={styles["top-bg"]}>
-      <section
-        className={clsx(
-          "margin-top--lg margin-bottom--lg text--center",
-          styles["top-text"]
-        )}
-      >
+      <section className={clsx("text--center", styles["top-text"])}>
         <Heading as="h1">ChatGPT Shortcut</Heading>
-        <p>{DESCRIPTION}</p>
+        <p className={styles["top-p"]}>{DESCRIPTION}</p>
       </section>
     </div>
   );
@@ -169,7 +164,7 @@ function ShowcaseFilters() {
         <div className={styles.filterCheckbox}>
           <div className={styles["filter-bar"]}>
             <Heading as="h2" className={styles.h2}>
-              <Translate id="showcase.filters.title">Filters</Translate>
+              <Translate id="showcase.filters.title">筛选</Translate>
             </Heading>
             <span className={styles["total-span"]}>
               {siteCountPlural(filteredUsers.length)}
@@ -196,7 +191,7 @@ function ShowcaseFilters() {
                     icon={
                       isFirstTag ? (
                         <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
-                      ) : tag === "favorite" ? (
+                      ) : tag === "Favorite" ? (
                         <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
                       ) : (
                         <span
@@ -223,10 +218,10 @@ function ShowcaseFilters() {
 }
 
 const favoriteUsers = sortedUsers.filter((user) =>
-  user.tags.includes("favorite")
+  user.tags.includes("Favorite")
 );
 const otherUsers = sortedUsers.filter(
-  (user) => !user.tags.includes("favorite")
+  (user) => !user.tags.includes("Favorite")
 );
 
 function SearchBar() {
@@ -346,7 +341,7 @@ function ShowcaseCards() {
               >
                 <Heading as="h2">
                   <Translate id="showcase.favoritesList.title">
-                    我们的最爱
+                    最爱
                   </Translate>
                 </Heading>
                 <FavoriteIcon svgClass={styles.svgIconFavorite} />
@@ -361,7 +356,7 @@ function ShowcaseCards() {
           </div>
           <div className="container margin-top--lg">
             <Heading as="h2" className={styles.showcaseHeader}>
-              <Translate id="showcase.usersList.allUsers">所有提示</Translate>
+              <Translate id="showcase.usersList.allUsers">全部</Translate>
             </Heading>
             <ul className={clsx("clean-list", styles.showcaseList)}>
               {otherUsers.map((user) => (

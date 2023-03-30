@@ -192,7 +192,7 @@ function ShowcaseFilters() {
                       icon={
                         isFirstTag ? (
                           <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
-                        ) : tag === "favorite" ? (
+                        ) : tag === "Favorite" ? (
                           <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
                         ) : (
                           <span
@@ -222,10 +222,10 @@ function ShowcaseFilters() {
 }
 
 const favoriteUsers = sortedUsers.filter((user) =>
-  user.tags.includes("favorite")
+  user.tags.includes("Favorite")
 );
 const otherUsers = sortedUsers.filter(
-  (user) => !user.tags.includes("favorite")
+  (user) => !user.tags.includes("Favorite")
 );
 
 function SearchBar() {

@@ -94,8 +94,9 @@
 }
 
 .showcaseFavoriteHeader > svg {
-  width: 30px;
-  height: 30px;
+  width: 1.1rem;
+  height: auto;
+  margin-left: .6rem;
 }
 
 .svgIconFavoriteXs,
@@ -120,7 +121,7 @@
 .top-bg::after {
   content: "";
   position: absolute;
-  top: -4rem;
+  top: -1.97rem;
   left: 0;
   width: 100%;
   height: 22.5625rem;

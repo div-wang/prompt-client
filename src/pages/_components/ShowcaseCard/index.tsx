@@ -74,12 +74,13 @@ function ShowcaseCard({ user }: { user: User }) {
   const image = getCardImage(user);
   // 复制
   const [copied, setShowCopied] = useState(true);
-  const handleCopyCode = () => {
-    if (user.description) {
+  const toReTom = () => {
+    window.open('https://ai.redtom.com/home', 'target')
+    /* if (user.description) {
       copy(user.description);
     }
     setShowCopied(true);
-    setTimeout(() => setShowCopied(false), 2000);
+    setTimeout(() => setShowCopied(false), 2000); */
   };
   // 点击显示中文文本
   const [paragraphText, setParagraphText] = useState(user.description);
@@ -105,7 +106,7 @@ function ShowcaseCard({ user }: { user: User }) {
           <button
             className={styles.showcaseCardSrcBtn}
             type="button"
-            onClick={handleCopyCode}
+            onClick={toReTom}
           >
             去提问
           </button>
