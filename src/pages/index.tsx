@@ -12,6 +12,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 import { useHistory, useLocation } from "@docusaurus/router";
 import { usePluralForm } from "@docusaurus/theme-common";
 import { debounce } from "lodash";
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
@@ -35,7 +36,7 @@ import ShowcaseCard from "./_components/ShowcaseCard";
 import ShowcaseTooltip from "./_components/ShowcaseTooltip";
 
 import styles from "./styles.module.css";
-import SearchSvg from "../../static/img/SearchSvg";
+import TopBgPng from '../../static/img/bg.png';
 const TITLE = translate({
   message: "ChatGPT Shortcut - 简单易用的 ChatGPT 快捷指令表，让生产力倍增！",
 });
@@ -130,6 +131,7 @@ function useFilteredUsers() {
 function ShowcaseHeader() {
   return (
     <div className={styles["top-bg"]}>
+      <img className={styles["top-img"]} src={useBaseUrl('/img/bg.png')} alt="背景图" />
       <section className={clsx("text--center", styles["top-text"])}>
         <Heading as="h1">ChatGPT Shortcut</Heading>
         <p className={styles["top-p"]}>{DESCRIPTION}</p>

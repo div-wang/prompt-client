@@ -237,6 +237,9 @@ html[data-theme="dark"] {
   justify-content: center; */
   height: 4.5rem;
 }
+.navbar__logo img:nth-child(2) {
+  display: none;
+}
 .navbar__logo img {
   display: block;
   width: 14.375rem;
