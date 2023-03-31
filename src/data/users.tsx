@@ -85,8 +85,8 @@ const Users: User[] = [
       "“Write a thread of tweets discussing the advantages of using Chat GPT for social media.”",
     remark: "讨论在社交媒体上使用聊天 GPT 的优势的推文",
     source: "",
-    title: "社交媒体136",
-    descn: "“写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。”",
+    title: "社交媒体",
+    descn: "“写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。”",
     tags: ["SocialMedia", "Favorite"],
   },
   {

@@ -229,6 +229,7 @@ function SearchBar() {
   const history = useHistory();
   const location = useLocation();
   const [value, setValue] = useState<string | null>(null);
+  let [inputStatus, setInputStatus] = useState<string | null>(null);
   useEffect(() => {
     setValue(readSearchName(location.search));
   }, [location]);
@@ -276,10 +277,17 @@ function SearchBar() {
       });
     }
   };
+  const handleBlur = (e: React.FormEvent<HTMLInputElement>) => {
+    setInputStatus('searchCenterBlur')
+    console.log(inputStatus, 'inputStatus1')
+  }
+  const handleFocus = (e: React.FormEvent<HTMLInputElement>) => {
+    setInputStatus('searchCenterFocus')
+  }
 
   return (
     <div className={styles.searchContainer}>
-      <div className={styles.searchCenter}>
+      <div className={clsx(styles.searchCenter, inputStatus ? styles[inputStatus] : '')}>
         <div className={styles.searchmagnifier}>
           <svg
             width="32"
@@ -304,6 +312,8 @@ function SearchBar() {
           })}
           value={value ?? undefined}
           onInput={handleInput}
+          onBlur={handleBlur}
+          onFocus={handleFocus}
         />
       </div>
     </div>

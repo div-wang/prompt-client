@@ -14,7 +14,7 @@ interface Props {
   anchorEl?: HTMLElement | string;
   id: string;
   text: string;
-  children: React.ReactElement;
+  children?: React.ReactElement;
 }
 
 export default function Tooltip({

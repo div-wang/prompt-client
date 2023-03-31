@@ -103,7 +103,6 @@ function ShowcaseCard({ user }: { user: User }) {
               {user.title}
             </Link>
           </Heading>
-
           <button
             className={styles.showcaseCardSrcBtn}
             type="button"
@@ -112,11 +111,20 @@ function ShowcaseCard({ user }: { user: User }) {
             去提问
           </button>
         </div>
-        <p className={styles.showcaseCardBody}>👉 {user.remark}</p>
-        {/* <p className={styles.showcaseCardBody}>{user.description}</p> */}
-        <p onClick={handleParagraphClick} className={styles.showcaseCardBody}>
-          {paragraphText}
-        </p>
+        <Tooltip
+          id="remark"
+          text={user.remark}
+        >
+          <p className={styles.showcaseCardBody}>👉 {user.remark}</p>
+        </Tooltip>
+        <Tooltip
+          id="paragraphText"
+          text={paragraphText}
+        >
+          <p onClick={handleParagraphClick} className={styles.showcaseCardBody}>
+            {paragraphText}
+          </p>
+        </Tooltip>
       </div>
       <ul className={clsx("card__footer", styles.cardFooter)}>
         <ShowcaseCardTag tags={user.tags} />

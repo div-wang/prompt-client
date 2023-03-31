@@ -57,6 +57,9 @@ html[data-theme="dark"] {
      var(--site-primary-hue-saturation-light) 73%
    );
  }
+ a:hover {
+  color: #F13557;
+ }
  .main-wrapper {
   background-color: #fafafa;
  }
@@ -159,18 +162,6 @@ html[data-theme="dark"] {
    font-weight: bold;
  }
  
- .screen-reader-only {
-   border: 0;
-   clip: rect(0 0 0 0);
-   clip-path: polygon(0 0, 0 0, 0 0);
-   height: 1px;
-   margin: -1px;
-   overflow: hidden;
-   padding: 0;
-   position: absolute;
-   width: 1px;
-   white-space: nowrap;
- }
  
  [data-theme='light'] img[src$='#gh-dark-mode-only'],
  [data-theme='dark'] img[src$='#gh-light-mode-only'] {
@@ -224,6 +215,13 @@ html[data-theme="dark"] {
 /* 导航UI调整 */
 .navbar__items--right {
   display: none;
+}
+.navbar__item svg {
+  display: none;
+}
+.navbar__items a[href="#!"]{
+  color: #454545;
+  cursor: default;
 }
 .navbar {
   height: 4.625rem;
@@ -389,7 +387,9 @@ div[class^="announcementBar_"] {
   width: 1px;
   white-space: nowrap;
 }
-
+.screen-reader-only:hover {
+  background: none;
+}
 [data-theme="light"] img[src$="#gh-dark-mode-only"],
 [data-theme="dark"] img[src$="#gh-light-mode-only"] {
   display: none;

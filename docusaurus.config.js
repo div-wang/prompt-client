@@ -105,8 +105,12 @@ const config = {
             label: 'AI聊天',
             position: 'left',
           },
-          /* { href: '/', label: 'EN', title: '英文提示词', position: 'right' },
-          { to: '/cn', label: 'CN', title: '中文提示词', position: 'right' },
+          { 
+            href: '#!',
+            label: 'AI提示库',
+            position: 'left' 
+          },
+          /* { to: '/cn', label: 'CN', title: '中文提示词', position: 'right' },
           {
             href: 'https://github.com/rockbenben/ChatGPT-Shortcut',
             position: 'right',

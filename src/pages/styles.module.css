@@ -54,6 +54,12 @@
   border-radius: 1.2rem;
   align-items: center;
 }
+.searchCenterFocus {
+  border: 1px solid #F13557;
+}
+.searchCenterFocus svg{
+  color: #F13557;
+}
 .searchmagnifier {
   width: 0.85rem;
   height: 0.85rem;
