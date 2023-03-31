@@ -91,7 +91,8 @@ const config = {
         title: '',
         logo: {
           alt: "ChatGPT Shortcuts",
-          src: "img/logo.svg"
+          src: "img/logo.svg",
+          href: '/cn',
         },
         items: [
           {
