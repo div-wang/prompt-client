@@ -35,7 +35,6 @@ import ShowcaseFilterToggle, {
 } from "./_components/ShowcaseFilterToggle";
 import ShowcaseCard from "./_components/ShowcaseCard/cn";
 import ShowcaseTooltip from "./_components/ShowcaseTooltip";
-import TopBgPng from '../../static/img/bg.png';
 
 
 import styles from "./styles.module.css";
@@ -46,9 +45,6 @@ const TITLE = translate({
 const DESCRIPTION = translate({
   message: "让生产力加倍的 ChatGPT 快捷指令",
 });
-const SUBMIT_URL =
-  "https://github.com/rockbenben/ChatGPT-Shortcut/discussions/11";
-
 type UserState = {
   scrollTopPosition: number;
   focusedElementId: string | undefined;
@@ -303,7 +299,7 @@ function SearchBar() {
         <input
           id="searchbar"
           placeholder={translate({
-            message: "Search for prompts...",
+            message: "搜索",
             id: "showcase.searchBar.placeholder",
           })}
           value={value ?? undefined}
@@ -359,7 +355,7 @@ function ShowcaseCards() {
               </ul>
             </div>
           </div>
-          <div className="container margin-top--lg">
+          <div className="container">
             <Heading as="h2" className={styles.showcaseHeader}>
               <Translate id="showcase.usersList.allUsers">全部</Translate>
             </Heading>

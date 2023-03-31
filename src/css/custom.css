@@ -57,7 +57,9 @@ html[data-theme="dark"] {
      var(--site-primary-hue-saturation-light) 73%
    );
  }
- 
+ .main-wrapper {
+  background-color: #fafafa;
+ }
  .header-github-link:hover {
    opacity: 0.6;
  }
@@ -224,7 +226,7 @@ html[data-theme="dark"] {
   display: none;
 }
 .navbar {
-  height: 4.5rem;
+  height: 4.625rem;
 }
 .navbar--fixed-top {
   padding: 0;
@@ -235,7 +237,7 @@ html[data-theme="dark"] {
   /* display: flex;
   align-items: center;
   justify-content: center; */
-  height: 4.5rem;
+  height: 4.625rem;
 }
 .navbar__logo img:nth-child(2) {
   display: none;

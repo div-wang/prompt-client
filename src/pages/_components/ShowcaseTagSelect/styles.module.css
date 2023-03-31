@@ -31,7 +31,6 @@
 
 input[type='checkbox'] + .checkboxLabel {
   font-size: .75rem;
-  font-weight: 600;
   height: var(--height);
   line-height: 1;
   display: flex;

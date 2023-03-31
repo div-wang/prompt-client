@@ -109,6 +109,8 @@
   display: "-webkit-box";
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin: 0;
+  margin-bottom: .75rem;
 }
 
 .cardFooter {

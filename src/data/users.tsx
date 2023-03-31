@@ -99,7 +99,7 @@ const Users: User[] = [
     title: "人工智能艺术（中途）1",
     descn:
       "Alex Horley-Orlandelli 拍摄，Bastien Lecouffe-Deharme 拍摄的迷雾树林中一只愤怒的全身狼的照片，黄昏，棕褐色，8k，逼真",
-    tags: ["AIART"],
+    tags: ["AIART", "Favorite"],
   },
   {
     preview: "",
