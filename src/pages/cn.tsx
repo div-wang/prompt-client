@@ -279,7 +279,6 @@ function SearchBar() {
   };
   const handleBlur = (e: React.FormEvent<HTMLInputElement>) => {
     setInputStatus('searchCenterBlur')
-    console.log(inputStatus, 'inputStatus1')
   }
   const handleFocus = (e: React.FormEvent<HTMLInputElement>) => {
     setInputStatus('searchCenterFocus')
