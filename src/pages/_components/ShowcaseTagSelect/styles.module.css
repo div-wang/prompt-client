@@ -52,6 +52,7 @@ input[type='checkbox'] + .checkboxLabel  svg {
   height: 14px;
   position: relative;
   z-index: 2;
+  color: #F13557;
 }
 
 input:focus-visible + .checkboxLabel {

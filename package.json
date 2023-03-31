@@ -5,7 +5,9 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "build:dev": "docusaurus build --out-dir=build/dev",
+    "build:uat": "docusaurus build --out-dir=build/uat",
+    "build:prod": "docusaurus build --out-dir=build/pro",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
