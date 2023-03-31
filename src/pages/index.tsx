@@ -354,8 +354,8 @@ function ShowcaseCards() {
                 <SearchBar />
               </div>
               <ul className={clsx("clean-list", styles.showcaseList)}>
-                {favoriteUsers.map((user) => (
-                  <ShowcaseCard key={user.title} user={user} />
+                {favoriteUsers.map((user, index) => (
+                  <ShowcaseCard key={index} user={user} />
                 ))}
               </ul>
             </div>
@@ -367,8 +367,8 @@ function ShowcaseCards() {
               </Translate>
             </Heading>
             <ul className={clsx("clean-list", styles.showcaseList)}>
-              {otherUsers.map((user) => (
-                <ShowcaseCard key={user.title} user={user} />
+              {otherUsers.map((user, index) => (
+                <ShowcaseCard key={index} user={user} />
               ))}
             </ul>
           </div>
@@ -381,8 +381,8 @@ function ShowcaseCards() {
             <SearchBar />
           </div>
           <ul className={clsx("clean-list", styles.showcaseList)}>
-            {filteredUsers.map((user) => (
-              <ShowcaseCard key={user.title} user={user} />
+            {filteredUsers.map((user, index) => (
+              <ShowcaseCard key={index} user={user} />
             ))}
           </ul>
         </div>
