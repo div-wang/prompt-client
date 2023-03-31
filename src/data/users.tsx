@@ -11816,9 +11816,9 @@ export const Tags: { [type in TagType]: Tag } = {
     color: "#93AF86",
   },
   SocialMediaCTAs: {
-    label: translate({ message: "社交媒体 CTA" }),
+    label: translate({ message: "社交媒体CTA" }),
     description: translate({
-      message: "社交媒体 CTA",
+      message: "社交媒体CTA",
       id: "showcase.tag.SocialMediaCTAs.description",
     }),
     color: "#C4BFFF",
@@ -11913,9 +11913,9 @@ export const Tags: { [type in TagType]: Tag } = {
     color: "#CC9BDA",
   },
   PinterestPosts: {
-    label: translate({ message: "Pinterest 帖子" }),
+    label: translate({ message: "Pinterest帖子" }),
     description: translate({
-      message: "Pinterest 帖子",
+      message: "Pinterest帖子",
       id: "showcase.tag.PinterestPosts.description",
     }),
     color: "#26898A",
