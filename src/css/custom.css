@@ -219,8 +219,8 @@ html[data-theme="dark"] {
 .navbar__item svg {
   display: none;
 }
-.navbar__items a[href="#!"]{
-  color: #454545;
+.nav-text-gray{
+  color: #454545!important;
   cursor: default;
 }
 .navbar {

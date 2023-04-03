@@ -106,24 +106,11 @@ const config = {
             position: 'left',
           },
           { 
-            href: '#!',
+            to: '/cn',
             label: 'AI提示库',
-            position: 'left' 
-          },
-          /* { to: '/cn', label: 'CN', title: '中文提示词', position: 'right' },
-          {
-            href: 'https://github.com/rockbenben/ChatGPT-Shortcut',
-            position: 'right',
-            className: 'header-github-link',
-          }, */
-          /* {
-            type: 'doc',
-            docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          */
+            className: 'nav-text-gray'
+          }
         ],
       },
       footer: {
