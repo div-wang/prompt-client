@@ -4,78 +4,59 @@ import { translate } from "@docusaurus/Translate";
 export type TagType =
   // DO NOT USE THIS TAG: we choose sites to add to Marketings
   | "Favorite"
+  | "SocialMedia"
   | "Marketing"
+  | "SEO"
+  | "Game"
+  | "Music"
+  | "Developers"
+  | "Resume"
+  | "FoodCooking"
+  | "UX"
   | "Business"
   | "Content"
   | "WebDevelopment"
   | "Education"
   | "Teachers"
-  | "Music"
   | "Fun"
-  | "HealthcareAndWellbeing"
-  | "AIART"
-  | "FoodAndCooking"
-  | "Games"
+  | "HealthCareAndWellbeing"
+  | "GameTeamwork"
   | "Sales"
-  | "resume"
   | "Analytics"
   | "EmailCampaigns"
-  | "UX"
   | "CustomerService"
   | "TradingStrategy"
   | "DataScience"
-  | "TravelAndTourism"
-  | "commerce"
-  | "SEOs"
-  | "Developers"
+  | "Travel"
+  | "Commerce"
   | "ExcelSheet"
   | "Writers"
-  | "HealthAndMedicine"
   | "Accountants"
   | "GameDevelopers"
-  | "SocialMedia"
   | "Programmers"
   | "BloggersAndContentCreators"
-  | "SEO"
-  | "MarketingAndCopywriting"
   | "Storytelling"
   | "Students"
   | "Comedy"
   | "History"
   | "Art"
-  | "Gaming"
   | "Pets"
   | "Finance"
   | "HealthAndFitness"
+  | "HealthAndMedicine"
+  | "HealthMedicine"
   | "Science"
   | "Technology"
   | "Sports"
-  | "Travel"
-  | "HealthMedicine"
-  | "FoodCooking"
-  | "Game"
-  | "PromotionalSocialMediaPosts"
-  | "SocialMediaCTAs"
-  | "FunSocialMediaPosts"
-  | "EducationalSocialMediaPosts"
-  | "InteractiveSocialMediaPosts"
-  | "InspirationalSocialMediaPosts"
-  | "CompanyRelatedSocialMediaPosts"
-  | "SocialMediaHolidayPosts"
-  | "DifferentSocialMediaPlatforms"
   | "FacebookPosts"
   | "InstagramPosts"
   | "TwitterPosts"
   | "LinkedInPosts"
   | "PinterestPosts"
-  | "GoogleBusinessProfilePosts"
   | "TikTokPosts"
   | "YouTubePosts"
+  | "GoogleBusinessProfilePosts"
   | "BoostYourContent"
-  | "FoodandCooking"
-  | "HealthandFitness"
-  | "HealthandMedicine"
-  | "HealthcareandWellbeing";
 
 const Users: User[] = [
   {
@@ -85,32 +66,9 @@ const Users: User[] = [
       "“Write a thread of tweets discussing the advantages of using Chat GPT for social media.”",
     remark: "讨论在社交媒体上使用聊天 GPT 的优势的推文",
     source: "",
-    title: "社交媒体",
+    title: "GPT优势的推文",
     descn: "“写一连串推文，讨论将 Chat GPT 用于社交媒体的优势。”",
     tags: ["SocialMedia"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "A photograph of an angry full-bodied wolf in the foggy woods, by Alex Horley-Orlandelli, by Bastien Lecouffe-Deharme, dusk, sepia, 8k, realistic",
-    remark: "一只愤怒的全身狼在雾蒙蒙的树林里的照片",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn:
-      "Alex Horley-Orlandelli 拍摄，Bastien Lecouffe-Deharme 拍摄的迷雾树林中一只愤怒的全身狼的照片，黄昏，棕褐色，8k，逼真",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Can you provide me with some ideas for blog posts about topic of your choice?",
-    remark: "",
-    source: "",
-    title: "市场营销",
-    descn: "你能为我提供一些关于你选择的主题的博客文章的想法吗？",
-    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -119,8 +77,8 @@ const Users: User[] = [
       "Write a minute-long script for an advertisement about product or service or company.",
     remark: "",
     source: "",
-    title: "市场营销",
-    descn: "为一则关于产品、服务或公司的广告写一分钟长的脚本。",
+    title: "广告视频脚本",
+    descn: "为一则关于产品、服务或公司的广告写一分钟长的视频脚本。",
     tags: ["Marketing"],
   },
   {
@@ -130,19 +88,8 @@ const Users: User[] = [
       "Write a product description for my product or service or company.",
     remark: "",
     source: "",
-    title: "市场营销",
+    title: "产品描述",
     descn: "为我的产品、服务或公司写一篇产品描述。",
-    tags: ["Marketing"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Suggest inexpensive ways I can promote my company with/without using Media channel.",
-    remark: "",
-    source: "",
-    title: "市场营销",
-    descn: "建议我在使用/不使用媒体频道的情况下推广我的公司的廉价方式。",
     tags: ["Marketing"],
   },
   {
@@ -152,7 +99,7 @@ const Users: User[] = [
       "How can I obtain high-quality backlinks to raise the SEO of Website name.",
     remark: "",
     source: "",
-    title: "市场营销",
+    title: "反向链接的SEO邮件",
     descn: "我如何获得高质量的反向链接来提高网站名称的SEO。",
     tags: ["Marketing"],
   },
@@ -162,7 +109,7 @@ const Users: User[] = [
     description: "Make 5 distinct CTA messages and buttons for Your product.",
     remark: "",
     source: "",
-    title: "市场营销",
+    title: "CTA消息和按钮",
     descn: "为您的产品制作5个不同的CTA消息和按钮。",
     tags: ["Marketing"],
   },
@@ -173,7 +120,7 @@ const Users: User[] = [
       "Create a social media campaign plan for launching an your product, aimed at  Your target audience",
     remark: "",
     source: "",
-    title: "市场营销",
+    title: "社交媒体活动计划",
     descn: "制定社交媒体活动计划，针对你的目标受众推出你的产品",
     tags: ["Marketing"],
   },
@@ -181,11 +128,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Analyze these below metrics to improve email open rates for a fashion brand <paste metrics>",
+      "Analyze these below metrics to improve email open rates for a fashion brand[paste metrics]",
     remark: "",
     source: "",
-    title: "市场营销",
-    descn: "分析以下指标以提高时尚品牌的电子邮件打开率＜粘贴指标＞",
+    title: "时尚品牌电子邮件",
+    descn: "分析以下指标以提高时尚品牌的电子邮件打开率[粘贴指标]",
     tags: ["Marketing"],
   },
   {
@@ -195,7 +142,7 @@ const Users: User[] = [
       "Write follow-up emails to people who attended my webinar topic webinar",
     remark: "",
     source: "",
-    title: "市场营销",
+    title: "研讨会电子邮件",
     descn: "给参加我的网络研讨会主题网络研讨会的人写后续电子邮件",
     tags: ["Marketing"],
   },
@@ -205,7 +152,7 @@ const Users: User[] = [
     description: "Structure a weekly newsletter topic newsletter",
     remark: "",
     source: "",
-    title: "市场营销",
+    title: "新闻稿",
     descn: "构建每周新闻稿主题新闻稿",
     tags: ["Marketing"],
   },
@@ -216,8 +163,8 @@ const Users: User[] = [
       "Make a post showcasing the benefits of using our product product name for specific problem/issue.",
     remark: "",
     source: "",
-    title: "市场营销",
-    descn: "发表一篇帖子，展示使用我们的产品产品名称解决特定问题/问题的好处。",
+    title: "产品优势帖子",
+    descn: "发表一篇帖子，展示使用我们的产品[产品名称]解决特定问题/问题的好处。",
     tags: ["Marketing"],
   },
   {
@@ -227,7 +174,7 @@ const Users: User[] = [
       "Generate 5 creative ways to use Instagram Reels for your product or service or company",
     remark: "",
     source: "",
-    title: "市场营销",
+    title: "Instagram Reels创意帖子",
     descn: "生成5种创造性的方式，将Instagram Reels用于您的产品、服务或公司",
     tags: ["Marketing"],
   },
@@ -238,7 +185,7 @@ const Users: User[] = [
       "Create a social media post that targets the specific audience and explains how our product product name can help them.",
     remark: "",
     source: "",
-    title: "市场营销",
+    title: "写一篇帖子",
     descn:
       "创建一个针对特定受众的社交媒体帖子，并解释我们的产品产品名称如何帮助他们。",
     tags: ["Marketing"],
@@ -249,7 +196,7 @@ const Users: User[] = [
     description: "Create a personalized email greeting for a VIP customer",
     remark: "",
     source: "",
-    title: "市场营销",
+    title: "电子邮件问候语",
     descn: "为VIP客户创建个性化的电子邮件问候语",
     tags: ["Marketing"],
   },
@@ -260,7 +207,7 @@ const Users: User[] = [
       "Write a list of 5 YouTube video ideas for your product or company",
     remark: "",
     source: "",
-    title: "市场营销",
+    title: "YouTube创意列表",
     descn: "为你的产品或公司写一份5个YouTube视频创意的列表",
     tags: ["Marketing"],
   },
@@ -271,7 +218,7 @@ const Users: User[] = [
       "Create two Google Ads in an RSA format (using multiple headlines and descriptions) for an A/B test for “Your product”.",
     remark: "",
     source: "",
-    title: "市场营销",
+    title: "A/B测试广告文案",
     descn:
       "创建两个RSA格式的谷歌广告（使用多个标题和描述），用于“您的产品”的A/B测试。",
     tags: ["Marketing"],
@@ -280,169 +227,12 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a 100-character meta description for my blog post about <topic>.",
+      "Write a 100-character meta description for my blog post about[topic].",
     remark: "",
     source: "",
-    title: "市场营销",
-    descn: "为我关于<topic>的博客文章写一个100个字符的元描述。",
+    title: "博客文章元描述",
+    descn: "为我关于[topic]的博客文章写一个100个字符的元描述。",
     tags: ["Marketing"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Can you provide me with some ideas for blog posts about unsubscribing from emails?",
-    remark: "",
-    source: "",
-    title: "市场营销",
-    descn: "你能为我提供一些关于取消订阅电子邮件的博客文章的想法吗？",
-    tags: ["Marketing"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description: "Calcium hypoclorite market research in Saudi Arabia",
-    remark: "",
-    source: "",
-    title: "市场营销",
-    descn: "沙特阿拉伯次氯酸钙市场研究",
-    tags: ["Marketing"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "A photograph of an angry full-bodied wolf in the foggy woods, by Alex Horley-Orlandelli, by Bastien Lecouffe-Deharme, dusk, sepia, 8k, realistic",
-    remark: "一只愤怒的全身狼在雾蒙蒙的树林里的照片",
-    source: "",
-    title: "人工智能艺术（中途）.",
-    descn:
-      "Alex Horley-Orlandelli 拍摄，Bastien Lecouffe-Deharme 拍摄的迷雾树林中一只愤怒的全身狼的照片，黄昏，棕褐色，8k，逼真",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "photo of an extremely cute alien fish swimming on an alien habitable underwater planet, coral reefs, dream-like atmosphere, water, plants, peace, serenity, calm ocean, transparent water, reefs, fish, coral, inner peace, awareness, silence, nature, evolution --version 3 --s 42000 --uplight --ar 4:3 --no text, blur",
-    remark: "一张非常可爱的外星鱼在外星宜居的水下星球上游泳的照片",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn:
-      "一条非常可爱的外星鱼在外星人居住的水下星球上游泳的照片，珊瑚礁，梦幻般的气氛，水，植物，和平，宁静，平静的海洋，透明的水，珊瑚礁，鱼，珊瑚，内心的平静，意识，沉默，自然，进化 --version 3 --s 42000 --uplight --ar 4:3 --no text, blur",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "An illustration of a Viking sitting on a rock, dramatic lighting  Explain in detail about the picture or ask ChatSonic to write the illustration for you 😉",
-    remark: "维京人坐在岩石上的插图",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn:
-      "维京人坐在岩石上的插图，戏剧性的灯光 详细解释图片或让 ChatSonic 为您写插图 😉",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description: "Design a modern logo with a sun for a marketing company",
-    remark: "设计一个带有太阳的现代标志",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "为营销公司设计带有太阳的现代标志",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Please generate a surreal landscape with bright colors and organic shapes. Include a small figure in the foreground, with their back, turned to the viewer.",
-    remark: "生成一个超现实的景观",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn:
-      "请生成具有鲜艳色彩和有机形状的超现实景观。在前景中包括一个小人物，他们背对着观众。",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Generate a portrait of a person with a dreamy, ethereal quality, using soft pastel colors and flowing lines.",
-    remark: "生成一个人的肖像与梦幻，空灵的质量",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "使用柔和柔和的色彩和流畅的线条，生成具有梦幻、空灵品质的人像。",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Create an abstract interpretation of a city skyline at night, using geometric shapes and bold, vibrant colors.",
-    remark: "创建夜晚城市天际线的抽象解释",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "使用几何形状和大胆、鲜艳的色彩，对夜晚的城市天际线进行抽象诠释。",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Come up with fresh ideas for coffee mug designs. A brand-new approach to holding hot liquids",
-    remark: "设计一种全新的盛热液体的方法",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "想出咖啡杯设计的新点子。一种全新的盛放热液体的方法",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "A stunning close-up illustration of Ana de Armas in a dramatic, dark, and moody style, inspired by the work of Simon Stålenhag, with intricate details and a sense of mystery",
-    remark: "一幅令人惊叹的安娜·德·阿玛斯特写插图",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn:
-      "安娜·德·阿玛斯 (Ana de Armas) 的惊人特写插图，采用戏剧性、黑暗和喜怒无常的风格，灵感来自 Simon Stålenhag 的作品，具有复杂的细节和神秘感",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "How can I create a compelling concept for a series of illustrations  Describe your vision?",
-    remark: "为一系列插图创造一个引人注目的概念",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "如何为一系列插图创建引人注目的概念 描述您的愿景？",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Create an image description that describes a visually stunning setting that takes place in the year 3030.",
-    remark: "创建一个发生在3030年的视觉上令人惊叹的场景图像描述",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "创建图像描述，描述发生在 3030 年的视觉震撼场景。",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "How can I create a minimalistic logo that conveys a strong brand image? ",
-    remark: "创建一个简约的标志",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "我怎样才能创建一个传达强大品牌形象的简约标志？",
-    tags: ["AIART"],
   },
   {
     preview: "",
@@ -450,9 +240,9 @@ const Users: User[] = [
     description: "Create a happy birthday social media post for an employee.",
     remark: "为员工写一篇生日快乐的帖子",
     source: "",
-    title: "与公司相关的社交媒体帖子",
+    title: "生日快乐的帖子",
     descn: "为员工创建生日快乐社交媒体帖子。",
-    tags: ["CompanyRelatedSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -461,9 +251,9 @@ const Users: User[] = [
       "Create a social media post reinforcing the following mission/values.",
     remark: "创建一个社交媒体帖子",
     source: "",
-    title: "与公司相关的社交媒体帖子",
+    title: "社交媒体帖子",
     descn: "创建社交媒体帖子以强化以下使命/价值观。",
-    tags: ["CompanyRelatedSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -471,9 +261,9 @@ const Users: User[] = [
     description: "Write a social media post introducing a new team member.",
     remark: "写一篇社交媒体文章",
     source: "",
-    title: "与公司相关的社交媒体帖子",
+    title: "社交媒体文章",
     descn: "写一篇介绍新团队成员的社交媒体帖子。",
-    tags: ["CompanyRelatedSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -481,9 +271,9 @@ const Users: User[] = [
     description: "Create a thank-you social media post for a loyal customer.",
     remark: "写一篇感谢文章",
     source: "",
-    title: "与公司相关的社交媒体帖子",
+    title: "感谢文章",
     descn: "为忠实客户创建感谢社交媒体帖子。",
-    tags: ["CompanyRelatedSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -492,7 +282,7 @@ const Users: User[] = [
       "Write a post about product or service to persuade target audience to action.",
     remark: "写一篇关于广告词",
     source: "",
-    title: "谷歌商家资料帖子",
+    title: "广告词",
     descn: "写一篇关于 产品或服务 的帖子来说服 目标受众 采取 行动。",
     tags: ["GoogleBusinessProfilePosts"],
   },
@@ -503,7 +293,7 @@ const Users: User[] = [
       "Generate an intriguing post about upcoming event or promotion that generates traffic for website.",
     remark: "生成一篇关于促销的有趣帖子",
     source: "",
-    title: "谷歌商家资料帖子",
+    title: "关于促销的帖子",
     descn: "生成有关 即将发生的事件或促销 的有趣帖子，从而为 网站 带来流量。",
     tags: ["GoogleBusinessProfilePosts"],
   },
@@ -514,7 +304,7 @@ const Users: User[] = [
       "Create a celebratory post about recent achievement or milestone.",
     remark: "写一篇庆祝里程碑的帖子",
     source: "",
-    title: "谷歌商家资料帖子",
+    title: "庆祝里程碑的帖子",
     descn: "创建一个关于 最近的成就或里程碑 的庆祝帖子。",
     tags: ["GoogleBusinessProfilePosts"],
   },
@@ -525,7 +315,7 @@ const Users: User[] = [
       "Write a post about the benefits of supporting local businesses.",
     remark: "写一篇关于支持当地企业的好处的文章",
     source: "",
-    title: "谷歌商家资料帖子",
+    title: "支持企业的文章",
     descn: "写一篇关于支持本地企业的好处的帖子。",
     tags: ["GoogleBusinessProfilePosts"],
   },
@@ -533,21 +323,10 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description: "Write a witty Instagram caption about topic.",
-    remark: "写一篇关于某话题的诙谐的文字说明",
+    remark: "写一篇诙谐的Instagram标题",
     source: "",
-    title: "Instagram 帖子",
+    title: "诙谐的Instagram标题",
     descn: "写一个关于 主题 的诙谐 Instagram 标题。",
-    tags: ["InstagramPosts"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Give me Instagram photo captions for a picture of/about topic.",
-    remark: "给图片配个标题",
-    source: "",
-    title: "Instagram 帖子",
-    descn: "给我关于 主题 的图片/关于 主题 的图片的 Instagram 照片说明。",
     tags: ["InstagramPosts"],
   },
   {
@@ -556,7 +335,7 @@ const Users: User[] = [
     description: "Generate 10 viral Instagram Reel ideas about topic.",
     remark: "生成10个病毒式Instagram Reel想法",
     source: "",
-    title: "Instagram 帖子",
+    title: "病毒式想法",
     descn: "生成 10 个关于 主题 的病毒式 Instagram Reel 想法。",
     tags: ["InstagramPosts"],
   },
@@ -566,9 +345,9 @@ const Users: User[] = [
     description: '"Compile a list of ten long-tail keywords related to topic."',
     remark: "列出10个长尾关键词",
     source: "",
-    title: "搜索引擎优化",
+    title: "十个长尾关键词",
     descn: "“编制与主题相关的十个长尾关键词列表。”",
-    tags: ["SEOs"],
+    tags: ["SEO"],
   },
   {
     preview: "",
@@ -577,9 +356,9 @@ const Users: User[] = [
       "“Create a blog post with the title ’10 Tips for Using Chat GPT to Improve SEO.'”",
     remark: "写一篇指定标题的博客文章",
     source: "",
-    title: "搜索引擎优化",
-    descn: "“创建一篇标题为‘使用聊天 GPT 改进 SEO 的 10 个技巧’的博客文章。”",
-    tags: ["SEOs"],
+    title: "博客文章",
+    descn: "“创建一篇标题为[使用聊天 GPT 改进 SEO 的 10 个技巧]的博客文章。”",
+    tags: ["SEO"],
   },
   {
     preview: "",
@@ -590,7 +369,7 @@ const Users: User[] = [
     source: "",
     title: "搜索引擎优化",
     descn: " “列出最常见的前五名搜索引擎优化错误以及如何避免它们。”",
-    tags: ["SEOs"],
+    tags: ["SEO"],
   },
   {
     preview: "",
@@ -599,20 +378,10 @@ const Users: User[] = [
       "“Create a case study detailing how Chat GPT assisted a client in improving their search engine rankings.”",
     remark: "创建一个案例研究如何提高搜索引擎排名",
     source: "",
-    title: "搜索引擎优化",
+    title: "提高搜索排名方案",
     descn:
       "“创建一个案例研究，详细说明 Chat GPT 如何帮助客户提高搜索引擎排名。”",
-    tags: ["SEOs"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description: "“Make a list of five Chat GPT tools that SEOs should use.”",
-    remark: "列出seo应该使用的五个聊天GPT工具",
-    source: "",
-    title: "搜索引擎优化",
-    descn: "“列出 SEO 应该使用的五种聊天 GPT 工具。”",
-    tags: ["SEOs"],
+    tags: ["SEO"],
   },
   {
     preview: "",
@@ -621,20 +390,9 @@ const Users: User[] = [
       "“Create a tutorial on how to generate Meta descriptions with Chat GPT.”",
     remark: "创建一个关于如何使用Chat GPT生成元描述的教程",
     source: "",
-    title: "搜索引擎优化",
+    title: "元描述生成教程",
     descn: "“创建一个关于如何使用 Chat GPT 生成元描述的教程。”",
-    tags: ["SEOs"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "“Make a list of five Chat GPT features that can aid in on-page optimization.”",
-    remark: "列出有助于页面优化的聊天GPT功能",
-    source: "",
-    title: "搜索引擎优化",
-    descn: "“列出有助于页面优化的五个聊天 GPT 功能。”",
-    tags: ["SEOs"],
+    tags: ["SEO"],
   },
   {
     preview: "",
@@ -643,7 +401,7 @@ const Users: User[] = [
       "“Write a tutorial on how to generate financial statements using Chat GPT.”",
     remark: "写一篇关于如何使用Chat GPT生成财务报表的教程",
     source: "",
-    title: "会计师",
+    title: "财务报表教程",
     descn: "“编写有关如何使用 Chat GPT 生成财务报表的教程。”",
     tags: ["Accountants"],
   },
@@ -654,20 +412,9 @@ const Users: User[] = [
       "“Create a list of five Chat GPT features that can assist with budgeting and projections.”",
     remark: "列出五个Chat GPT功能的列表",
     source: "",
-    title: "会计师",
+    title: "预算和预测提示词",
     descn:
       "“创建一个包含五个聊天 GPT 功能的列表，这些功能可以帮助进行预算和预测。”",
-    tags: ["Accountants"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "“Create a blog post discussing the advantages of using Chat GPT for accounting and finance.”",
-    remark: "创建一篇博客文章",
-    source: "",
-    title: "会计师",
-    descn: "“创建一篇博文，讨论使用 Chat GPT 进行会计和财务的优势。”",
     tags: ["Accountants"],
   },
   {
@@ -677,7 +424,7 @@ const Users: User[] = [
       "“Create a list of the top five Chat GPT tools that every accountant should employ.”",
     remark: "列出五种聊天GPT工具",
     source: "",
-    title: "会计师",
+    title: "会计师GPT工具",
     descn: "“列出每个会计师都应该使用的前五名聊天 GPT 工具。”",
     tags: ["Accountants"],
   },
@@ -688,7 +435,7 @@ const Users: User[] = [
       "“Write a case study detailing how Chat GPT assisted a company in streamlining its accounting processes.”",
     remark: "写一个案例研究",
     source: "",
-    title: "会计师",
+    title: "案例研究",
     descn:
       "“写一个案例研究，详细说明 Chat GPT 如何帮助一家公司简化其会计流程。”",
     tags: ["Accountants"],
@@ -700,7 +447,7 @@ const Users: User[] = [
       "“Create a list of five Chat GPT tax preparation-related features.”",
     remark: "列出Chat GPT税务准备相关的功能",
     source: "",
-    title: "会计师",
+    title: "税务准备清单",
     descn: "“创建一个包含五个与 Chat GPT 税务准备相关的功能的列表。”",
     tags: ["Accountants"],
   },
@@ -710,7 +457,7 @@ const Users: User[] = [
     description: "“Create a list of five Chat GPT auditing-related features.”",
     remark: "创建包含五个Chat GPT审计相关功能的列表",
     source: "",
-    title: "会计师",
+    title: "会计师审核提示词",
     descn: "“创建一个包含五个 Chat GPT 审核相关功能的列表。”",
     tags: ["Accountants"],
   },
@@ -721,7 +468,7 @@ const Users: User[] = [
       "“Write a tutorial on how to generate client reports using Chat GPT.”",
     remark: "编写关于使用Chat GPT生成客户端报告的教程",
     source: "",
-    title: "会计师",
+    title: "生成客户报告",
     descn: "“编写有关如何使用 Chat GPT 生成客户报告的教程。”",
     tags: ["Accountants"],
   },
@@ -732,145 +479,9 @@ const Users: User[] = [
       "“Write an article on Chat GPT’s future in accounting and finance.”",
     remark: "写一篇关于Chat GPT在特定领域的文章",
     source: "",
-    title: "会计师",
+    title: "会计和金融领域文章",
     descn: "“写一篇关于 Chat GPT 在会计和金融领域的未来的文章。”",
     tags: ["Accountants"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "A photograph of an angry full-bodied wolf in the foggy woods, by Alex Horley-Orlandelli, by Bastien Lecouffe-Deharme, dusk, sepia, 8k, realistic",
-    remark: "一只愤怒的全身狼在雾蒙蒙的树林里的照片",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn:
-      "Alex Horley-Orlandelli 拍摄，Bastien Lecouffe-Deharme 拍摄的迷雾树林中一只愤怒的全身狼的照片，黄昏，棕褐色，8k，逼真",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "photo of an extremely cute alien fish swimming on an alien habitable underwater planet, coral reefs, dream-like atmosphere, water, plants, peace, serenity, calm ocean, transparent water, reefs, fish, coral, inner peace, awareness, silence, nature, evolution --version 3 --s 42000 --uplight --ar 4:3 --no text, blur",
-    remark: "一张非常可爱的外星鱼在外星宜居的水下星球上游泳的照片",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn:
-      "一条非常可爱的外星鱼在外星人居住的水下星球上游泳的照片，珊瑚礁，梦幻般的气氛，水，植物，和平，宁静，平静的海洋，透明的水，珊瑚礁，鱼，珊瑚，内心的平静，意识，沉默，自然，进化 --version 3 --s 42000 --uplight --ar 4:3 --no text, blur",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "An illustration of a Viking sitting on a rock, dramatic lighting  Explain in detail about the picture or ask ChatSonic to write the illustration for you 😉",
-    remark: "维京人坐在岩石上的插图",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn:
-      "维京人坐在岩石上的插图，戏剧性的灯光 详细解释图片或让 ChatSonic 为您写插图 😉",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description: "Design a modern logo with a sun for a marketing company",
-    remark: "设计一个带有太阳的现代标志",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "为营销公司设计带有太阳的现代标志",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Please generate a surreal landscape with bright colors and organic shapes. Include a small figure in the foreground, with their back, turned to the viewer.",
-    remark: "用明亮的颜色和有机的形状生成一个超现实的景观",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn:
-      "请生成具有鲜艳色彩和有机形状的超现实景观。在前景中包括一个小人物，他们背对着观众。",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Generate a portrait of a person with a dreamy, ethereal quality, using soft pastel colors and flowing lines.",
-    remark: "生成一个人的肖像与梦幻",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "使用柔和柔和的色彩和流畅的线条，生成具有梦幻、空灵品质的人像。",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Create an abstract interpretation of a city skyline at night, using geometric shapes and bold, vibrant colors.",
-    remark: "创建夜晚城市天际线的抽象解释",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "使用几何形状和大胆、鲜艳的色彩，对夜晚的城市天际线进行抽象诠释。",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Come up with fresh ideas for coffee mug designs. A brand-new approach to holding hot liquids",
-    remark: "设计一种全新的盛热液体的方法",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "想出咖啡杯设计的新点子。一种全新的盛放热液体的方法",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "A stunning close-up illustration of Ana de Armas in a dramatic, dark, and moody style, inspired by the work of Simon Stålenhag, with intricate details and a sense of mystery",
-    remark: "一幅令人惊叹的安娜·德·阿玛斯特写插图",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn:
-      "安娜·德·阿玛斯 (Ana de Armas) 的惊人特写插图，采用戏剧性、黑暗和喜怒无常的风格，灵感来自 Simon Stålenhag 的作品，具有复杂的细节和神秘感",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "How can I create a compelling concept for a series of illustrations  Describe your vision?",
-    remark: "为一系列插图创造一个引人注目的概念",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "如何为一系列插图创建引人注目的概念 描述您的愿景？",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Create an image description that describes a visually stunning setting that takes place in the year 3030.",
-    remark: "创建一个图像描述",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "创建图像描述，描述发生在 3030 年的视觉震撼场景。",
-    tags: ["AIART"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "How can I create a minimalistic logo that conveys a strong brand image? Give me an example",
-    remark: "创建一个简约的标志",
-    source: "",
-    title: "人工智能艺术（中途）",
-    descn: "我怎样才能创建一个传达强大品牌形象的简约标志？举个例子",
-    tags: ["AIART"],
   },
   {
     preview: "",
@@ -878,8 +489,8 @@ const Users: User[] = [
     description: "What are the most important KPIs for insert industry/field",
     remark: "insert industry/field 最重要的kpi是什么",
     source: "",
-    title: "分析",
-    descn: "插入行业/领域最重要的 KPI 是什么",
+    title: "行业/领域KPI",
+    descn: "插入[行业/领域]最重要的 KPI 是什么",
     tags: ["Analytics"],
   },
   {
@@ -889,8 +500,8 @@ const Users: User[] = [
       "Can you provide me with the mathematical formulas for the most important KPIs for insert industry/field",
     remark: "insert industry/field 最重要的kpi数学公式",
     source: "",
-    title: "分析",
-    descn: "您能否为我提供 插入行业/领域 最重要的 KPI 的数学公式？",
+    title: "KPI 的数学公式",
+    descn: "您能否为我提供 插入[行业/领域] 最重要的 KPI 的数学公式？",
     tags: ["Analytics"],
   },
   {
@@ -899,19 +510,8 @@ const Users: User[] = [
     description: "Can you give the 4 formulas for metrics in SQL code?",
     remark: "根据metrics在SQL代码中给出4个公式",
     source: "",
-    title: "分析",
+    title: "metrics公式",
     descn: "你能给出 SQL 代码中 metrics 的 4 个公式吗？",
-    tags: ["Analytics"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Generate an example of a transactions dataset that company can create",
-    remark: "生成一个company可以创建的事务数据集示例 ",
-    source: "",
-    title: "分析",
-    descn: "生成 公司 可以创建的交易数据集示例",
     tags: ["Analytics"],
   },
   {
@@ -920,59 +520,7 @@ const Users: User[] = [
     description: "Please write a SWOT analysis for EGO power products",
     remark: "为EGO电源产品写一份SWOT分析",
     source: "",
-    title: "分析",
-    descn: "请写一份EGO电源产品的SWOT分析",
-    tags: ["Analytics"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description: "What are the most important KPIs for insert industry/field",
-    remark: "某领域最重要的kpi是什么",
-    source: "",
-    title: "分析学",
-    descn: "插入行业/领域最重要的 KPI 是什么",
-    tags: ["Analytics"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Can you provide me with the mathematical formulas for the most important KPIs for insert industry/field",
-    remark: "某领域最重要的kpi的数学公式",
-    source: "",
-    title: "分析学",
-    descn: "您能否为我提供 插入行业/领域 最重要的 KPI 的数学公式？",
-    tags: ["Analytics"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description: "Can you give the 4 formulas for metrics in SQL code?",
-    remark: "用SQL代码的4个公式",
-    source: "",
-    title: "分析学",
-    descn: "你能给出 SQL 代码中 metrics 的 4 个公式吗？",
-    tags: ["Analytics"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "Generate an example of a transactions dataset that company can create",
-    remark: "生成事务数据集示例",
-    source: "",
-    title: "分析学",
-    descn: "生成 公司 可以创建的交易数据集示例",
-    tags: ["Analytics"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description: "Please write a SWOT analysis for EGO power products",
-    remark: "为EGO电源产品写一份SWOT分析",
-    source: "",
-    title: "分析学",
+    title: "EGO电源产品分析",
     descn: "请写一份EGO电源产品的SWOT分析",
     tags: ["Analytics"],
   },
@@ -1246,7 +794,7 @@ const Users: User[] = [
       "Make original and motivational phrases that will inspire others to act and achieve their goals. Original and thought-provoking, these statements ought to compel readers to reflect thoroughly on the strength of their own potential and the opportunities open to them. To deliver your message in a unique and interesting way, think about employing a number of various quotes styles and formats. You should also feel free to try out new words and expressions.",
     remark: "说一些原创的、激励人心的短语，激励别人行动起来，实现他们的目标",
     source: "",
-    title: "艺术",
+    title: "口号生成",
     descn:
       "制作原创和激励性的短语，以激励他人采取行动并实现他们的目标。这些陈述新颖且发人深省，应该迫使读者彻底反思自己的潜力和机会。要以独特而有趣的方式传达您的信息，请考虑采用多种不同的引用风格和格式。您还应该随意尝试新的单词和表达方式。",
     tags: ["Art"],
@@ -1258,7 +806,7 @@ const Users: User[] = [
       "Write a lengthy poem about a group of construction vehicles cooperating to find a solution. It ought to rhyme.",
     remark: "写一首长诗",
     source: "",
-    title: "艺术",
+    title: "写一首长诗",
     descn: "写一首关于一群工程车辆合作寻找解决方案的长诗。它应该押韵。",
     tags: ["Art"],
   },
@@ -1269,7 +817,7 @@ const Users: User[] = [
       "Create a children’s book about an elephant who rides a train for the first time.",
     remark: "创作一本儿童读物",
     source: "",
-    title: "艺术",
+    title: "创作儿童读物",
     descn: "创作一本关于大象第一次乘坐火车的儿童读物。",
     tags: ["Art"],
   },
@@ -1280,7 +828,7 @@ const Users: User[] = [
       "Write a story about the first person to build a telescope and the moment she raises her potent creation to the sky and sees the stars for what they truly are.",
     remark: "写一个故事",
     source: "",
-    title: "艺术",
+    title: "写一个故事",
     descn:
       "写一个关于第一个建造望远镜的人的故事，以及她将她强大的创造物举向天空并看到星星真实面目的那一刻。",
     tags: ["Art"],
@@ -1289,9 +837,9 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description: "Do a flash fiction piece on the Battle of Hattin.",
-    remark: "写一篇关于短篇小说",
+    remark: "写一篇短篇小说",
     source: "",
-    title: "艺术",
+    title: "写一篇短篇小说",
     descn: "写一篇关于哈丁战役的短篇小说。",
     tags: ["Art"],
   },
@@ -1302,7 +850,7 @@ const Users: User[] = [
       "Continue the narrative while introducing a villain who is vanquished.",
     remark: "续写故事",
     source: "",
-    title: "艺术",
+    title: "续写故事",
     descn: "继续叙述，同时介绍一个被打败的反派。",
     tags: ["Art"],
   },
@@ -1313,7 +861,7 @@ const Users: User[] = [
       "Complete the dialogue between a California family law attorney in the example below.",
     remark: "完成对话",
     source: "",
-    title: "艺术",
+    title: "完成对话",
     descn: "在下面的例子中完成加州家庭法律师之间的对话。",
     tags: ["Art"],
   },
@@ -1324,7 +872,7 @@ const Users: User[] = [
       "People may now think of queries and replies in novel and creative ways thanks to new AI text systems. What are some crucial inquiries we may pose to these text-based AIs that would yield original and admirable insights into humanity? Make six specific questions that don’t contain the phrase “AI.”",
     remark: "提出六个不包含“AI”的具体问题。",
     source: "",
-    title: "艺术",
+    title: "提出问题。",
     descn:
       "得益于新的 AI 文本系统，人们现在可能会以新颖和创造性的方式思考查询和回复。我们可以向这些基于文本的 AI 提出哪些关键问题，以产生对人类的原创和令人钦佩的见解？提出六个不包含短语“AI”的具体问题。",
     tags: ["Art"],
@@ -1333,10 +881,10 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "What are some of the top long-tail keywords currently trending in the X niche?",
+      "What are some of the top long-tail keywords currently trending in the[X]niche?",
     remark: "细分市场中最热门的长尾关键词",
     source: "",
-    title: "博主和内容创作者",
+    title: "热门长尾关键词",
     descn: "利基市场中目前最热门的长尾关键词有哪些？",
     tags: ["BloggersAndContentCreators"],
   },
@@ -1347,7 +895,7 @@ const Users: User[] = [
       "Make an outline for a blog post about XYZ using related keywords based on Google search data",
     remark: "使用相关关键字为博客文章列出大纲",
     source: "",
-    title: "博主和内容创作者",
+    title: "博客文章大纲",
     descn: "使用基于 Google 搜索数据的相关关键字为有关 XYZ 的博客文章制定大纲",
     tags: ["BloggersAndContentCreators"],
   },
@@ -1357,8 +905,8 @@ const Users: User[] = [
     description: "Write an introduction to a blog post about XYZ",
     remark: "写一篇关于某文章博客文章的介绍",
     source: "",
-    title: "博主和内容创作者",
-    descn: "为有关 XYZ 的博客文章写简介",
+    title: "博客文章简介",
+    descn: "为有关 [马斯克] 的博客文章写简介",
     tags: ["BloggersAndContentCreators"],
   },
   {
@@ -1368,29 +916,9 @@ const Users: User[] = [
       "Write a blog post about XYZ (this is good instruction for each section of your blog post to get longer content)",
     remark: "写一篇关于某主题的博客文章",
     source: "",
-    title: "博主和内容创作者",
+    title: "写博客文章",
     descn:
-      "写一篇关于 XYZ 的博文（这对你的博文的每个部分来说是一个很好的指导，以获得更长的内容）",
-    tags: ["BloggersAndContentCreators"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description: "What’s a good example of XYZ",
-    remark: "举一个关于某主题的例子",
-    source: "",
-    title: "博主和内容创作者",
-    descn: "XYZ 的一个很好的例子是什么",
-    tags: ["BloggersAndContentCreators"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description: "Give me a step-by-step process for XYZ",
-    remark: "给我一个关于某主题的循序渐进的过程",
-    source: "",
-    title: "博主和内容创作者",
-    descn: "给我一个 XYZ 的分步过程",
+      "写一篇关于 [xyz] 的博文（这对你的博文的每个部分来说是一个很好的指导，以获得更长的内容）",
     tags: ["BloggersAndContentCreators"],
   },
   {
@@ -1400,18 +928,18 @@ const Users: User[] = [
       "What are the pros and cons of XYZ? Present the information in a table.",
     remark: "在表格中显示某主题的优点和缺点",
     source: "",
-    title: "博主和内容创作者",
-    descn: "XYZ 的优点和缺点是什么？在表格中显示信息。",
+    title: "优缺点",
+    descn: "[XYZ] 的优点和缺点是什么？在表格中显示信息。",
     tags: ["BloggersAndContentCreators"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Give me a personal example of someone using X product for Y.",
+    description: "Give me a personal example of someone using[X]product for Y.",
     remark: "例举一个某人用某产品来做某的例子",
     source: "",
-    title: "博主和内容创作者",
-    descn: "举一个个人例子，某人使用 X 产品换取 Y。",
+    title: "产品列子",
+    descn: "举一个个人例子，某人使用[X]产品换取[Y]。",
     tags: ["BloggersAndContentCreators"],
   },
   {
@@ -1420,20 +948,20 @@ const Users: User[] = [
     description: "Tell a personal story about X",
     remark: "讲一个关于某事物的故事",
     source: "",
-    title: "博主和内容创作者",
-    descn: "讲一个关于 X 的个人故事",
+    title: "个人故事",
+    descn: "讲一个关于[X]的个人故事",
     tags: ["BloggersAndContentCreators"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a blog post about X using this keyword (insert keyword) several times naturally throughout the content.",
+      "Write a blog post about[X]using this keyword (insert keyword) several times naturally throughout the content.",
     remark: "写一篇关于某主题的博客文章",
     source: "",
-    title: "博主和内容创作者",
+    title: "生成SEO文章",
     descn:
-      "在整个内容中自然地多次使用此关键字（插入关键字）撰写有关 X 的博客文章。",
+      "在整个内容中自然地多次使用此关键字[插入关键字]撰写有关 [x] 的博客文章。",
     tags: ["BloggersAndContentCreators"],
   },
   {
@@ -1443,19 +971,8 @@ const Users: User[] = [
       "Give me a list of the most frequently asked questions about X.",
     remark: "给我一个关于某主题最常被问到的问题的列表",
     source: "",
-    title: "博主和内容创作者",
-    descn: "给我一份关于 X 的最常见问题列表。",
-    tags: ["BloggersAndContentCreators"],
-  },
-  {
-    preview: "",
-    website: "https://ai.redtom.com",
-    description:
-      "What is the best approach for creating SEO-friendly content in X niche?",
-    remark: "在某个利基市场上创建seo友好内容的最佳方法",
-    source: "",
-    title: "博主和内容创作者",
-    descn: "在 X niche 中创建对 SEO 友好的内容的最佳方法是什么？",
+    title: "常见问题列表",
+    descn: "给我一份关于[X]的最常见问题列表。",
     tags: ["BloggersAndContentCreators"],
   },
   {
@@ -1465,7 +982,7 @@ const Users: User[] = [
       "How can highlighting key points and stats make a blog post more effective?",
     remark: "如何突出重点和统计数据使博客文章更有效",
     source: "",
-    title: "博主和内容创作者",
+    title: "关键数据统计",
     descn: "突出关键点和统计数据如何使博客文章更有效？",
     tags: ["BloggersAndContentCreators"],
   },
@@ -1475,7 +992,7 @@ const Users: User[] = [
     description: "What are some creative ways to repurpose old blog posts?",
     remark: "重新利用旧博客文章的方法",
     source: "",
-    title: "博主和内容创作者",
+    title: "旧博客文章方法",
     descn: "有哪些创造性的方法可以重新利用旧博客文章？",
     tags: ["BloggersAndContentCreators"],
   },
@@ -1486,7 +1003,7 @@ const Users: User[] = [
       "How can bloggers effectively target specific audiences through their content?",
     remark: "博客作者如何有效地瞄准特定的受众",
     source: "",
-    title: "博主和内容创作者",
+    title: "特定的受众文章",
     descn: "博主如何通过他们的内容有效地瞄准特定的受众？",
     tags: ["BloggersAndContentCreators"],
   },
@@ -1497,7 +1014,7 @@ const Users: User[] = [
       "What tips and tricks can be used to write high-converting blog headlines?",
     remark: "可以用来写高转化率的博客标题的技巧",
     source: "",
-    title: "博主和内容创作者",
+    title: "高转化率标题",
     descn: "可以使用哪些提示和技巧来编写高转化率的博客标题？",
     tags: ["BloggersAndContentCreators"],
   },
@@ -1516,11 +1033,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "What questions should be asked when researching topics for a blog post in X niche?",
+      "What questions should be asked when researching topics for a blog post in[X]niche?",
     remark: "在为某利基的博客文章研究主题时，应该问什么问题",
     source: "",
     title: "博主和内容创作者",
-    descn: "在 X niche 中研究博客文章的主题时应该问什么问题？",
+    descn: "在[X]niche 中研究博客文章的主题时应该问什么问题？",
     tags: ["BloggersAndContentCreators"],
   },
   {
@@ -1550,11 +1067,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "How does blogging help increase brand awareness and generate leads for businesses in X niche?",
+      "How does blogging help increase brand awareness and generate leads for businesses in[X]niche?",
     remark: "博客如何帮助提高品牌知名度",
     source: "",
     title: "博主和内容创作者",
-    descn: "博客如何帮助提高品牌知名度并为 X 利基市场的企业带来潜在客户？",
+    descn: "博客如何帮助提高品牌知名度并为[X]利基市场的企业带来潜在客户？",
     tags: ["BloggersAndContentCreators"],
   },
   {
@@ -1594,11 +1111,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Should bloggers focus more on quantity or quality when it comes to producing content in X niche?",
+      "Should bloggers focus more on quantity or quality when it comes to producing content in[X]niche?",
     remark: "博客作者应该更注重数量还是质量",
     source: "",
     title: "博主和内容创作者",
-    descn: "在 X 利基市场制作内容时，博主应该更关注数量还是质量？",
+    descn: "在[X]利基市场制作内容时，博主应该更关注数量还是质量？",
     tags: ["BloggersAndContentCreators"],
   },
   {
@@ -1628,572 +1145,572 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of keywords related to this topic: <insert topic>",
+      "Write a list of keywords related to this topic:[insert topic]",
     remark: "写一个与指定主题相关的关键字列表",
     source: "",
     title: "提升您的内容",
-    descn: "写一个与此主题相关的关键字列表：<insert topic>",
+    descn: "写一个与此主题相关的关键字列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of long-tail keywords for this topic: <insert topic>",
+      "Write a list of long-tail keywords for this topic:[insert topic]",
     remark: "为这个主题写一个长尾关键字列表",
     source: "",
     title: "提升您的内容",
-    descn: "为这个主题写一个长尾关键词列表：<insert topic>",
+    descn: "为这个主题写一个长尾关键词列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential search queries a user might enter to find information on this topic: <insert topic>",
+      "Write a list of potential search queries a user might enter to find information on this topic:[insert topic]",
     remark: "编写一个用户可能输入的搜索查询列表",
     source: "",
     title: "提升您的内容",
     descn:
-      "编写用户可能输入的潜在搜索查询列表以查找有关此主题的信息：<insert topic>",
+      "编写用户可能输入的潜在搜索查询列表以查找有关此主题的信息：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential questions a user might have about this topic: <insert topic>",
+      "Write a list of potential questions a user might have about this topic:[insert topic]",
     remark: "写一个用户可能对这个主题有潜在问题的列表",
     source: "",
     title: "提升您的内容",
-    descn: "写下用户可能对此主题提出的潜在问题列表：<insert topic>",
+    descn: "写下用户可能对此主题提出的潜在问题列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Classify the following keyword list in groups based on their search intent, whether commercial, transactional or informational: <insert list of keywords>",
+      "Classify the following keyword list in groups based on their search intent, whether commercial, transactional or informational:[insert list of keywords]",
     remark: "根据搜索意图对以下关键字列表进行分组",
     source: "",
     title: "提升您的内容",
     descn:
-      "根据搜索意图对以下关键字列表进行分组，无论是商业、交易还是信息：<插入关键字列表>",
+      "根据搜索意图对以下关键字列表进行分组，无论是商业、交易还是信息：[插入关键字列表]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Cluster the following keywords into groups based on their semantic relevance: <insert list of keywords>",
+      "Cluster the following keywords into groups based on their semantic relevance:[insert list of keywords]",
     remark: "将以下关键字根据语义相关性进行分组",
     source: "",
     title: "提升您的内容",
-    descn: "根据语义相关性将以下关键词分组：<insert list of keywords>",
+    descn: "根据语义相关性将以下关键词分组：[insert list of keywords]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Generate <X> unique title tags, of a maximum of 60 characters, for the following text. They should be descriptive and include the term <insert keyword> in them: <insert a paragraph or more of text>",
+      "Generate[X]unique title tags, of a maximum of 60 characters, for the following text. They should be descriptive and include the term[insert keyword] in them:[insert a paragraph or more of text]",
     remark: "为以下文本生成多个唯一标题标签",
     source: "",
     title: "提升您的内容",
     descn:
-      "为以下文本生成最多 60 个字符的 <X> 个唯一标题标签。它们应该是描述性的，并在其中包含术语 <insert keyword>：<insert a paragraph or more of text>",
+      "为以下文本生成最多 60 个字符的[X]个唯一标题标签。它们应该是描述性的，并在其中包含术语[关键词]：[文字]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Generate <X> unique meta descriptions, of a maximum of 150 characters, for the following text. They should be catchy with a call to action, including the term <insert keyword> in them: <insert a paragraph or two of text>",
+      "Generate[X]unique meta descriptions, of a maximum of 150 characters, for the following text. They should be catchy with a call to action, including the term[insert keyword] in them:[insert a paragraph or two of text]",
     remark: "为以下文本生成多个唯一的元描述，",
     source: "",
     title: "提升您的内容",
     descn:
-      "为以下文本生成最多 150 个字符的 <X> 个唯一元描述。他们应该用号召性用语吸引人，包括术语<插入关键字>：<插入一段或两段文字>",
+      "为以下文本生成最多 150 个字符的[X]个唯一元描述。他们应该用号召性用语吸引人，包括术语[插入关键字]：[插入一段或两段文字]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "What are the benefits of <product/service> for <target audience>?",
+      "What are the benefits of[product/service] for[target audience]?",
     remark: "某产对目标受众有什么好处?",
     source: "",
     title: "提升您的内容",
-    descn: "<product/service> 对 <target audience> 有什么好处？",
+    descn: "[product/service] 对[target audience] 有什么好处？",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "What are the most common misconceptions about <topic>?",
+    description: "What are the most common misconceptions about[topic]?",
     remark: "关于某主题最常见的误解是什么",
     source: "",
     title: "提升您的内容",
-    descn: "关于 <topic> 最常见的误解是什么？",
+    descn: "关于[topic] 最常见的误解是什么？",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "What are the pros and cons of <product/service/topic>?",
+    description: "What are the pros and cons of[product/service/topic]?",
     remark: "某产品的优点和缺点是什么",
     source: "",
     title: "提升您的内容",
-    descn: "<product/service/topic> 的优点和缺点是什么？",
+    descn: "[product/service/topic] 的优点和缺点是什么？",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "What are the top trends in <industry/niche>?",
+    description: "What are the top trends in[industry/niche]?",
     remark: "某行业的最大趋势是什么",
     source: "",
     title: "提升您的内容",
-    descn: "<industry/niche> 的主要趋势是什么？",
+    descn: "[industry/niche] 的主要趋势是什么？",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Generate a list of blog topic ideas within <industry/niche>",
+    description: "Generate a list of blog topic ideas within[industry/niche]",
     remark: "生成一个博客主题想法列表",
     source: "",
     title: "提升您的内容",
-    descn: "在 <industry/niche> 中生成博客主题创意列表",
+    descn: "在[industry/niche] 中生成博客主题创意列表",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Answer the following question in a short paragraph: <insert question>",
+      "Answer the following question in a short paragraph:[insert question]",
     remark: "在短段内回答以下问题",
     source: "",
     title: "提升您的内容",
-    descn: "在一个简短的段落中回答以下问题：<insert question>",
+    descn: "在一个简短的段落中回答以下问题：[insert question]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Write a FAQ section about <insert topic>",
+    description: "Write a FAQ section about[insert topic]",
     remark: "写一个关于某主题的FAQ部分",
     source: "",
     title: "提升您的内容",
-    descn: "写一个关于 <insert topic> 的常见问题解答部分",
+    descn: "写一个关于[insert topic] 的常见问题解答部分",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential sections for a blog post on this topic: <insert topic>",
+      "Write a list of potential sections for a blog post on this topic:[insert topic]",
     remark: "写一个关于这个主题的博客文章的潜在章节列表",
     source: "",
     title: "提升您的内容",
-    descn: "为有关此主题的博客文章写下可能的部分列表：<插入主题>",
+    descn: "为有关此主题的博客文章写下可能的部分列表：[插入主题]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential headings and sub headings for a blog post on this topic: <insert topic>",
+      "Write a list of potential headings and sub headings for a blog post on this topic:[insert topic]",
     remark: "写一个关于这个主题的博客文章的潜在标题和子标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "为关于此主题的博文写一个潜在标题和副标题列表：<插入主题>",
+    descn: "为关于此主题的博文写一个潜在标题和副标题列表：[插入主题]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential key takeaways or points to focus in a blog post on this topic: <insert topic>",
+      "Write a list of potential key takeaways or points to focus in a blog post on this topic:[insert topic]",
     remark: "写一份关于这个主题的博客文章的潜在关键要点的列表",
     source: "",
     title: "提升您的内容",
-    descn: "在有关此主题的博客文章中列出潜在的关键要点或重点关注点：<插入主题>",
+    descn: "在有关此主题的博客文章中列出潜在的关键要点或重点关注点：[插入主题]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential tips or tricks to include in a blog post on this topic: <insert topic>",
+      "Write a list of potential tips or tricks to include in a blog post on this topic:[insert topic]",
     remark: "写一个关于这个主题的潜在提示或技巧的列表",
     source: "",
     title: "提升您的内容",
     descn:
-      "写一个潜在提示或技巧的列表，以包含在关于此主题的博客文章中：<insert topic>",
+      "写一个潜在提示或技巧的列表，以包含在关于此主题的博客文章中：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential challenges or problems to address in a blog post on this topic: <insert topic>",
+      "Write a list of potential challenges or problems to address in a blog post on this topic:[insert topic]",
     remark: "在一篇关于这个主题的博客文章中列出潜在的挑战或问题",
     source: "",
     title: "提升您的内容",
-    descn: "在有关此主题的博客文章中列出要解决的潜在挑战或问题：<插入主题>",
+    descn: "在有关此主题的博客文章中列出要解决的潜在挑战或问题：[插入主题]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential solutions or answers to include in a blog post on this topic: <insert topic>",
+      "Write a list of potential solutions or answers to include in a blog post on this topic:[insert topic]",
     remark: "写一个潜在的解决方案或答案的列表",
     source: "",
     title: "提升您的内容",
     descn:
-      "写下可能的解决方案或答案列表，以包含在有关此主题的博客文章中：<insert topic>",
+      "写下可能的解决方案或答案列表，以包含在有关此主题的博客文章中：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential blog titles for this topic: <insert topic>",
+      "Write a list of potential blog titles for this topic:[insert topic]",
     remark: "为这个主题写一个潜在的博客标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "为这个主题写一个可能的博客标题列表：<insert topic>",
+    descn: "为这个主题写一个可能的博客标题列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of catchy blog titles for this topic: <insert topic>",
+      "Write a list of catchy blog titles for this topic:[insert topic]",
     remark: "为这个主题写一个吸引人的博客标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "为这个主题写一个吸引人的博客标题列表：<insert topic>",
+    descn: "为这个主题写一个吸引人的博客标题列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of actionable blog titles for this topic: <insert topic>",
+      "Write a list of actionable blog titles for this topic:[insert topic]",
     remark: "为这个主题写一个可操作的博客标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "为这个主题写一个可操作的博客标题列表：<insert topic>",
+    descn: "为这个主题写一个可操作的博客标题列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of descriptive blog titles for this topic: <insert topic>",
+      "Write a list of descriptive blog titles for this topic:[insert topic]",
     remark: "为这个主题写一个描述性博客标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "为这个主题写一个描述性博客标题列表：<insert topic>",
+    descn: "为这个主题写一个描述性博客标题列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of blog titles at include a call to action on this topic: <insert topic>",
+      "Write a list of blog titles at include a call to action on this topic:[insert topic]",
     remark: "写一个包含行动呼吁的博客标题的列表",
     source: "",
     title: "提升您的内容",
-    descn: "写一个博客标题列表，包括对该主题的号召性用语：<insert topic>",
+    descn: "写一个博客标题列表，包括对该主题的号召性用语：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of log titles that include a list or number on this topic: <insert topic>",
+      "Write a list of log titles that include a list or number on this topic:[insert topic]",
     remark: "编写一个日志标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "写一个日志标题列表，其中包含关于此主题的列表或编号：<insert topic>",
+    descn: "写一个日志标题列表，其中包含关于此主题的列表或编号：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of blog titles that include keywords related to the topic: <insert topic>",
+      "Write a list of blog titles that include keywords related to the topic:[insert topic]",
     remark: "写一个博客标题列表，其中包含与主题相关的关键字",
     source: "",
     title: "提升您的内容",
-    descn: "写一个博客标题列表，其中包含与主题相关的关键字：<insert topic>",
+    descn: "写一个博客标题列表，其中包含与主题相关的关键字：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of blog titles that include an emotion on this topic: <insert topic>",
+      "Write a list of blog titles that include an emotion on this topic:[insert topic]",
     remark: "写一个包含关于某主题的情感的博客标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "写一个包含关于这个主题的情感的博客标题列表：<insert topic>",
+    descn: "写一个包含关于这个主题的情感的博客标题列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of blog titles that include a tip or a trick on this topic: <insert topic>",
+      "Write a list of blog titles that include a tip or a trick on this topic:[insert topic]",
     remark: "写一个包含关于这个主题的技巧或技巧的博客标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "写一个博客标题列表，其中包含有关此主题的提示或技巧：<insert topic>",
+    descn: "写一个博客标题列表，其中包含有关此主题的提示或技巧：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of blog titles that include a metaphor or simile on this topic: <insert topic>",
+      "Write a list of blog titles that include a metaphor or simile on this topic:[insert topic]",
     remark: "写一个包含这个主题的隐喻或明喻的博客标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "写一个博客标题列表，其中包含关于该主题的隐喻或明喻：<insert topic>",
+    descn: "写一个博客标题列表，其中包含关于该主题的隐喻或明喻：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of blog titles that include a question on this topic: <insert topic>",
+      "Write a list of blog titles that include a question on this topic:[insert topic]",
     remark: "写一个包含关于这个主题的问题的博客标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "写一个博客标题列表，其中包含关于该主题的问题：<insert topic>",
+    descn: "写一个博客标题列表，其中包含关于该主题的问题：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of blog titles that include a statistic on this topic: <insert topic>",
+      "Write a list of blog titles that include a statistic on this topic:[insert topic]",
     remark: "写一个包含这个主题的统计数据的博客标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "写一个博客标题列表，其中包含有关此主题的统计信息：<insert topic>",
+    descn: "写一个博客标题列表，其中包含有关此主题的统计信息：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Rewrite this paragraph to make it more concise: <insert paragraph>",
+      "Rewrite this paragraph to make it more concise:[insert paragraph]",
     remark: "重写这段话，使之更简洁",
     source: "",
     title: "提升您的内容",
-    descn: "重写这一段以使其更简洁：<插入段落>",
+    descn: "重写这一段以使其更简洁：[插入段落]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Edit this paragraph for grammar, flow and coherence: <insert paragraph>",
+      "Edit this paragraph for grammar, flow and coherence:[insert paragraph]",
     remark: "编辑这段话",
     source: "",
     title: "提升您的内容",
-    descn: "为语法、流程和连贯性编辑此段：<插入段落>",
+    descn: "为语法、流程和连贯性编辑此段：[插入段落]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Rewrite this paragraph to make it more engaging: <insert paragraph>",
+      "Rewrite this paragraph to make it more engaging:[insert paragraph]",
     remark: "重写这段话，使之更吸引人",
     source: "",
     title: "提升您的内容",
-    descn: "重写此段以使其更具吸引力：<插入段落>",
+    descn: "重写此段以使其更具吸引力：[插入段落]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Rewrite this paragraph to make it more formal: <insert paragraph>",
+      "Rewrite this paragraph to make it more formal:[insert paragraph]",
     remark: "重写这段话，使其更正式",
     source: "",
     title: "提升您的内容",
-    descn: "重写这一段使其更正式：<插入段落>",
+    descn: "重写这一段使其更正式：[插入段落]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Rewrite this paragraph to make it less formal: <insert paragraph>",
+      "Rewrite this paragraph to make it less formal:[insert paragraph]",
     remark: "重写这段话，使其不那么正式",
     source: "",
     title: "提升您的内容",
-    descn: "重写这一段，使其不那么正式：<插入段落>",
+    descn: "重写这一段，使其不那么正式：[插入段落]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Rewrite this paragraph to make it funny: <insert paragraph>",
+    description: "Rewrite this paragraph to make it funny:[insert paragraph]",
     remark: "重写这段话，让它变得有趣",
     source: "",
     title: "提升您的内容",
-    descn: "重写这段使其变得有趣：<插入段落>",
+    descn: "重写这段使其变得有趣：[插入段落]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Rewrite this paragraph to make it persuasive: <insert paragraph>",
+      "Rewrite this paragraph to make it persuasive:[insert paragraph]",
     remark: "重写这段话，使之更有说服力",
     source: "",
     title: "提升您的内容",
-    descn: "重写这一段以使其具有说服力：<插入段落>",
+    descn: "重写这一段以使其具有说服力：[插入段落]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Rewrite this paragraph to make it more detailed: <insert paragraph>",
+      "Rewrite this paragraph to make it more detailed:[insert paragraph]",
     remark: "重写这段使其更详细",
     source: "",
     title: "提升您的内容",
-    descn: "重写这一段以使其更详细：<插入段落>",
+    descn: "重写这一段以使其更详细：[插入段落]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Rewrite this paragraph to make it readable for a <insert grade level>: <insert paragraph>",
+      "Rewrite this paragraph to make it readable for a[insert grade level]:[insert paragraph]",
     remark: "重写这一段，使其可读",
     source: "",
     title: "提升您的内容",
-    descn: "重写此段以使其对 <insert grade level> 可读：<insert paragraph>",
+    descn: "重写此段以使其对[insert grade level] 可读：[insert paragraph]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Rewrite this paragraph to change the tone to be more <insert tone>: <insert paragraph>",
+      "Rewrite this paragraph to change the tone to be more[insert tone]:[insert paragraph]",
     remark: "重写这段话，更改其音调",
     source: "",
     title: "提升您的内容",
-    descn: "重写此段以将基调更改为更<insert tone>：<insert paragraph>",
+    descn: "重写此段以将基调更改为更[insert tone]：[insert paragraph]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential h1 headings for this topic: <insert topic>",
+      "Write a list of potential h1 headings for this topic:[insert topic]",
     remark: "为这个主题写一个潜在的h1标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "为这个主题写一个潜在的 h1 标题列表：<insert topic>",
+    descn: "为这个主题写一个潜在的 h1 标题列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential h2 headings for this topic: <insert topic>",
+      "Write a list of potential h2 headings for this topic:[insert topic]",
     remark: "为这个主题写一个潜在的h2标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "为这个主题写一个潜在的 h2 标题列表：<insert topic>",
+    descn: "为这个主题写一个潜在的 h2 标题列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential h3 headings for this topic: <insert topic>",
+      "Write a list of potential h3 headings for this topic:[insert topic]",
     remark: "为这个主题写一个潜在的h3标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "为该主题写一个潜在的 h3 标题列表：<insert topic>",
+    descn: "为该主题写一个潜在的 h3 标题列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential section headings for this topic: <insert topic>",
+      "Write a list of potential section headings for this topic:[insert topic]",
     remark: "为这个主题写一个潜在的节标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "为该主题写一个可能的章节标题列表：<insert topic>",
+    descn: "为该主题写一个可能的章节标题列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential sections for this topic that include a question: <insert topic>",
+      "Write a list of potential sections for this topic that include a question:[insert topic]",
     remark: "为这个主题写一个潜在的部分列表，包含一个问题",
     source: "",
     title: "提升您的内容",
-    descn: "写下该主题的潜在部分列表，其中包括一个问题：<insert topic>",
+    descn: "写下该主题的潜在部分列表，其中包括一个问题：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential sections for this topic that include an emotion: <insert topic>",
+      "Write a list of potential sections for this topic that include an emotion:[insert topic]",
     remark: "为这个主题写一个包含情感的潜在部分列表",
     source: "",
     title: "提升您的内容",
-    descn: "为该主题写一个包含情感的潜在部分列表：<insert topic>",
+    descn: "为该主题写一个包含情感的潜在部分列表：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential headings that include a statistic for this topic: <insert topic>",
+      "Write a list of potential headings that include a statistic for this topic:[insert topic]",
     remark: "写一个潜在的标题列表，包括这个主题的统计数据",
     source: "",
     title: "提升您的内容",
-    descn: "写下可能的标题列表，其中包括该主题的统计信息：<insert topic>",
+    descn: "写下可能的标题列表，其中包括该主题的统计信息：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a list of potential headings that include a list or number for this topic: <insert topic>",
+      "Write a list of potential headings that include a list or number for this topic:[insert topic]",
     remark: "写一个包含这个主题的列表或数字的潜在标题列表",
     source: "",
     title: "提升您的内容",
-    descn: "写一个可能的标题列表，其中包括该主题的列表或编号：<insert topic>",
+    descn: "写一个可能的标题列表，其中包括该主题的列表或编号：[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a sophisticated paragraph about this <insert product name>",
+      "Write a sophisticated paragraph about this[insert product name]",
     remark: "写一段关于某产品的介绍",
     source: "",
     title: "提升您的内容",
-    descn: "写一段关于此 <insert product name> 的复杂段落",
+    descn: "写一段关于此[insert product name] 的复杂段落",
     tags: ["BoostYourContent"],
   },
   {
@@ -2209,23 +1726,23 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Write a compelling value proposition for <product name>",
+    description: "Write a compelling value proposition for[product name]",
     remark: "为某产品写一个引人注目的价值主张",
     source: "",
     title: "提升您的内容",
-    descn: "为 <product name> 写下引人注目的价值主张",
+    descn: "为[product name] 写下引人注目的价值主张",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Given the key features, write a <insert adjective> paragraph that will move customers to action in buying <insert product name>",
+      "Given the key features, write a[insert adjective] paragraph that will move customers to action in buying[insert product name]",
     remark: "写一段介绍来促使顾客购买某产品",
     source: "",
     title: "提升您的内容",
     descn:
-      "给定关键特征，写一个 <insert adjective> 段落，让客户采取行动购买 <insert product name>",
+      "给定关键特征，写一个[insert adjective] 段落，让客户采取行动购买[insert product name]",
     tags: ["BoostYourContent"],
   },
   {
@@ -2252,44 +1769,44 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Write a poem about <insert topic>",
+    description: "Write a poem about[insert topic]",
     remark: "写一首关于某主题的诗歌",
     source: "",
     title: "提升您的内容",
-    descn: "写一首关于<插入主题>的诗",
+    descn: "写一首关于[插入主题]的诗",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Describe feeling like a <insert job title> in 10 adjectives",
+    description: "Describe feeling like a[insert job title] in 10 adjectives",
     remark: "用10个形容词描述某职位的感觉",
     source: "",
     title: "提升您的内容",
-    descn: "用 10 个形容词描述感觉像 <insert job title>",
+    descn: "用 10 个形容词描述感觉像[insert job title]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      'Write song lyrics in the lyrical tone of "Fresh Prince of Bel Air" about <insert topic>',
+      'Write song lyrics in the lyrical tone of "Fresh Prince of Bel Air" about[insert topic]',
     remark: "写歌词的抒情语气",
     source: "",
     title: "提升您的内容",
-    descn: "用“Bel Air 的新鲜王子”的抒情基调写歌词关于 <insert topic>",
+    descn: "用“Bel Air 的新鲜王子”的抒情基调写歌词关于[insert topic]",
     tags: ["BoostYourContent"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a dialogue between a business owner and a potential client in the <insert industry> that discusses a pain point and how the business addresses it",
+      "Write a dialogue between a business owner and a potential client in the[insert industry] that discusses a pain point and how the business addresses it",
     remark: "编写一段企业所有者和潜在客户之间的对话",
     source: "",
     title: "提升您的内容",
     descn:
-      "在 <insert industry> 的企业主和潜在客户之间写一段对话，讨论痛点以及企业如何解决它",
+      "在[insert industry] 的企业主和潜在客户之间写一段对话，讨论痛点以及企业如何解决它",
     tags: ["BoostYourContent"],
   },
   {
@@ -2307,24 +1824,24 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Analyze the current state of <industry> and its trends, challenges, and opportunities, including relevant data and statistics. Provide a list of key players and a short and long-term industry forecast, and explain any potential impact of current events or future developments.",
+      "Analyze the current state of[industry] and its trends, challenges, and opportunities, including relevant data and statistics. Provide a list of key players and a short and long-term industry forecast, and explain any potential impact of current events or future developments.",
     remark: "分析某行业的现状及其趋势、挑战和机遇",
     source: "",
     title: "商业",
     descn:
-      "分析<行业>的现状及其趋势、挑战和机遇，包括相关数据和统计数据。提供主要参与者名单和短期和长期行业预测，并解释当前事件或未来发展的任何潜在影响。",
+      "分析[行业]的现状及其趋势、挑战和机遇，包括相关数据和统计数据。提供主要参与者名单和短期和长期行业预测，并解释当前事件或未来发展的任何潜在影响。",
     tags: ["Business"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Offer a detailed review of a <specific software or tool>  for <describe your business>.",
+      "Offer a detailed review of a[specific software or tool]  for[describe your business].",
     remark: "对某软件或工具提供详细的评论",
     source: "",
     title: "商业",
     descn:
-      "为 <describe your business> 提供对 <specific software or tool> 的详细评论。",
+      "为[describe your business] 提供对[specific software or tool] 的详细评论。",
     tags: ["Business"],
   },
   {
@@ -2376,12 +1893,12 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "I want to create an agenda for a meeting about<Meeting info> with my team. Can you give me some examples of what should be included?",
+      "I want to create an agenda for a meeting about[Meeting info] with my team. Can you give me some examples of what should be included?",
     remark: "制定会议议程",
     source: "",
     title: "商业",
     descn:
-      "我想为与我的团队召开的关于 <Meeting info> 的会议制定议程。你能给我一些应该包括什么的例子吗？",
+      "我想为与我的团队召开的关于[Meeting info] 的会议制定议程。你能给我一些应该包括什么的例子吗？",
     tags: ["Business"],
   },
   {
@@ -2422,36 +1939,36 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "I need to prepare a presentation for a potential investor on <presentation topic>. Can you give me some guidance on what to include?",
+      "I need to prepare a presentation for a potential investor on[presentation topic]. Can you give me some guidance on what to include?",
     remark: "演示文档撰写指导",
     source: "",
     title: "商业",
     descn:
-      "我需要为潜在投资者准备关于 <presentation topic> 的演示文稿。你能给我一些关于包括什么的指导吗？",
+      "我需要为潜在投资者准备关于[presentation topic] 的演示文稿。你能给我一些关于包括什么的指导吗？",
     tags: ["Business"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Analyze the current state of <industry> and its trends, challenges, and opportunities, including relevant data and statistics. Provide a list of key players and a short and long-term industry forecast, and explain any potential impact of current events or future developments.",
+      "Analyze the current state of[industry] and its trends, challenges, and opportunities, including relevant data and statistics. Provide a list of key players and a short and long-term industry forecast, and explain any potential impact of current events or future developments.",
     remark: "分析某产业的现状、趋势、挑战和机遇",
     source: "",
     title: "商务",
     descn:
-      "分析<行业>的现状及其趋势、挑战和机遇，包括相关数据和统计数据。提供主要参与者名单和短期和长期行业预测，并解释当前事件或未来发展的任何潜在影响。",
+      "分析[行业]的现状及其趋势、挑战和机遇，包括相关数据和统计数据。提供主要参与者名单和短期和长期行业预测，并解释当前事件或未来发展的任何潜在影响。",
     tags: ["Business"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Offer a detailed review of a <specific software or tool> for <describe your business>.",
+      "Offer a detailed review of a[specific software or tool] for[describe your business].",
     remark: "为某业务提供一份关于特定软件或工具的详细回顾",
     source: "",
     title: "商务",
     descn:
-      "为 <describe your business> 提供对 <specific software or tool> 的详细评论。",
+      "为[describe your business] 提供对[specific software or tool] 的详细评论。",
     tags: ["Business"],
   },
   {
@@ -2503,12 +2020,12 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "I want to create an agenda for a meeting about<Meeting info> with my team. Can you give me some examples of what should be included?",
+      "I want to create an agenda for a meeting about[Meeting info] with my team. Can you give me some examples of what should be included?",
     remark: "创建一个会议议程",
     source: "",
     title: "商务",
     descn:
-      "我想为与我的团队召开的关于 <Meeting info> 的会议制定议程。你能给我一些应该包括什么的例子吗？",
+      "我想为与我的团队召开的关于[Meeting info] 的会议制定议程。你能给我一些应该包括什么的例子吗？",
     tags: ["Business"],
   },
   {
@@ -2549,12 +2066,12 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "I need to prepare a presentation for a potential investor on <presentation topic>. Can you give me some guidance on what to include?",
+      "I need to prepare a presentation for a potential investor on[presentation topic]. Can you give me some guidance on what to include?",
     remark: "基于某主题为一位潜在投资者准备一份报告",
     source: "",
     title: "商务",
     descn:
-      "我需要为潜在投资者准备关于 <presentation topic> 的演示文稿。你能给我一些关于包括什么的指导吗？",
+      "我需要为潜在投资者准备关于[presentation topic] 的演示文稿。你能给我一些关于包括什么的指导吗？",
     tags: ["Business"],
   },
   {
@@ -3294,7 +2811,7 @@ const Users: User[] = [
     remark: "",
     source: "",
     title: "喜剧",
-    descn: "两名美国公民清醒地离开了爱尔兰酒吧。请继续这个笑话。",
+    descn: "两名中国公民清醒地离开了爱尔兰酒吧。请继续这个笑话。",
     tags: ["Comedy"],
   },
   {
@@ -3345,11 +2862,11 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Write a case study detailing <Topic of your choice>",
+    description: "Write a case study detailing[Topic of your choice]",
     remark: "针对某主题撰写案例研究详细说明",
     source: "",
     title: "内容",
-    descn: "写一个案例研究详细说明<您选择的主题>",
+    descn: "写一个案例研究详细说明[您选择的主题]",
     tags: ["Content"],
   },
   {
@@ -3413,12 +2930,12 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Create a content calendar with six blog titles, including the keyword <paste text here>. Pick suitable publishing dates for each guide spread across May 2023.",
+      "Create a content calendar with six blog titles, including the keyword[paste text here]. Pick suitable publishing dates for each guide spread across May 2023.",
     remark: "创建内容日历",
     source: "",
     title: "内容",
     descn:
-      "创建一个包含六个博客标题的内容日历，包括关键字 <paste text here>。为分布在 2023 年 5 月的每份指南选择合适的发布日期。",
+      "创建一个包含六个博客标题的内容日历，包括关键字[paste text here]。为分布在 2023 年 5 月的每份指南选择合适的发布日期。",
     tags: ["Content"],
   },
   {
@@ -3481,11 +2998,11 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Write a case study detailing <Topic of your choice>",
+    description: "Write a case study detailing[Topic of your choice]",
     remark: "",
     source: "",
     title: "内容",
-    descn: "写一个案例研究详细说明<您选择的主题>",
+    descn: "写一个案例研究详细说明[您选择的主题]",
     tags: ["Content"],
   },
   {
@@ -3560,23 +3077,23 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Create a content calendar with six blog titles, including the keyword <paste text here>. Pick suitable publishing dates for each guide spread across May 2023.",
+      "Create a content calendar with six blog titles, including the keyword[paste text here]. Pick suitable publishing dates for each guide spread across May 2023.",
     remark: "",
     source: "",
     title: "内容",
     descn:
-      "创建一个包含六个博客标题的内容日历，包括关键字 <paste text here>。为分布在 2023 年 5 月的每份指南选择合适的发布日期。",
+      "创建一个包含六个博客标题的内容日历，包括关键字[paste text here]。为分布在 2023 年 5 月的每份指南选择合适的发布日期。",
     tags: ["Content"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Please provide X example phrases that customer service agents can use to display empathy",
+      "Please provide[X]example phrases that customer service agents can use to display empathy",
     remark: "请提供X个客户服务人员可以用来表达同理心的例子短语 ",
     source: "",
     title: "客户服务",
-    descn: "请提供客户服务代理可以用来表达同理心的 X 个示例短语",
+    descn: "请提供客户服务代理可以用来表达同理心的[X]个示例短语",
     tags: ["CustomerService"],
   },
   {
@@ -3629,11 +3146,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Please provide X example phrases that customer service agents can use to display empathy",
+      "Please provide[X]example phrases that customer service agents can use to display empathy",
     remark: "",
     source: "",
     title: "顾客服务",
-    descn: "请提供客户服务代理可以用来表达同理心的 X 个示例短语",
+    descn: "请提供客户服务代理可以用来表达同理心的[X]个示例短语",
     tags: ["CustomerService"],
   },
   {
@@ -3685,11 +3202,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Please provide X example phrases that customer service agents can use to display empathy",
+      "Please provide[X]example phrases that customer service agents can use to display empathy",
     remark: "",
     source: "",
     title: "顾客服务",
-    descn: "请提供客户服务代理可以用来表达同理心的 X 个示例短语",
+    descn: "请提供客户服务代理可以用来表达同理心的[X]个示例短语",
     tags: ["CustomerService"],
   },
   {
@@ -3787,11 +3304,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "I need a dataset that has x rows and y columns: insert column names.",
+      "I need a dataset that has[X]rows and y columns: insert column names.",
     remark: "",
     source: "",
     title: "数据科学",
-    descn: "我需要一个包含 x 行和 y 列的数据集：插入列名。",
+    descn: "我需要一个包含[X]行和 y 列的数据集：插入列名。",
     tags: ["DataScience"],
   },
   {
@@ -3866,11 +3383,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "I need a dataset that has x rows and y columns: insert column names.",
+      "I need a dataset that has[X]rows and y columns: insert column names.",
     remark: "",
     source: "",
     title: "数据科学",
-    descn: "我需要一个包含 x 行和 y 列的数据集：插入列名。",
+    descn: "我需要一个包含[X]行和 y 列的数据集：插入列名。",
     tags: ["DataScience"],
   },
   {
@@ -3945,11 +3462,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "I need a dataset that has x rows and y columns: insert column names.",
+      "I need a dataset that has[X]rows and y columns: insert column names.",
     remark: "",
     source: "",
     title: "数据科学",
-    descn: "我需要一个包含 x 行和 y 列的数据集：插入列名。",
+    descn: "我需要一个包含[X]行和 y 列的数据集：插入列名。",
     tags: ["DataScience"],
   },
   {
@@ -4039,7 +3556,7 @@ const Users: User[] = [
     title: "不同的社交媒体平台",
     descn:
       "您可以在 AI 命令中使用的细节数量惊人。那么，为什么不指定您所针对的社交媒体渠道以获得更个性化的结果呢？",
-    tags: ["DifferentSocialMediaPlatforms"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -4051,7 +3568,7 @@ const Users: User[] = [
     title: "不同的社交媒体平台",
     descn:
       "让我们探索一些 AI 命令示例，您可以使用这些命令为不同的社交媒体渠道生成具有挑战性和吸引力的材料！",
-    tags: ["DifferentSocialMediaPlatforms"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -4063,7 +3580,7 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "一位顾客最近购买了运动鞋，您能否为我推荐顾客可能喜欢的类似或互补产品",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4075,7 +3592,7 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "为 Google 标签管理器编写一个 javascript，在点击回调按钮时发送 Facebook 自定义转化事件",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4087,7 +3604,7 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "为 trader joes awake blend coffee beans 写一篇 50 字的产品描述。 以乐观、信息丰富的语气写作。",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4099,18 +3616,18 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "为我们的 公司名称 创建一条聊天消息，以一种亲切而简单的方式解释我们的退货政策。 14 天退货，无运费，产品需要完好无损",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Here is a list of product titles: product titles, Perform the following modifications to each product title: <modifications>",
+      "Here is a list of product titles: product titles, Perform the following modifications to each product title:[modifications]",
     remark: "",
     source: "",
     title: "电子商务",
-    descn: "以下是产品标题列表：产品标题，对每个产品标题执行以下修改：<修改>",
-    tags: ["commerce"],
+    descn: "以下是产品标题列表：产品标题，对每个产品标题执行以下修改：[修改]",
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4122,7 +3639,7 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "一位顾客最近购买了运动鞋，您能否为我推荐顾客可能喜欢的类似或互补产品",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4134,7 +3651,7 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "为 Google 标签管理器编写一个 javascript，在点击回调按钮时发送 Facebook 自定义转化事件",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4146,7 +3663,7 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "为 trader joes awake blend coffee beans 写一篇 50 字的产品描述。 以乐观、信息丰富的语气写作。",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4158,18 +3675,18 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "为我们的 公司名称 创建一条聊天消息，以一种亲切而简单的方式解释我们的退货政策。 14 天退货，无运费，产品需要完好无损",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Here is a list of product titles: product titles, Perform the following modifications to each product title: <modifications>",
+      "Here is a list of product titles: product titles, Perform the following modifications to each product title:[modifications]",
     remark: "",
     source: "",
     title: "电子商务",
-    descn: "以下是产品标题列表：产品标题，对每个产品标题执行以下修改：<修改>",
-    tags: ["commerce"],
+    descn: "以下是产品标题列表：产品标题，对每个产品标题执行以下修改：[修改]",
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4181,7 +3698,7 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "一位顾客最近购买了运动鞋，您能否为我推荐顾客可能喜欢的类似或互补产品",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4193,7 +3710,7 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "为 Google 标签管理器编写一个 javascript，在点击回调按钮时发送 Facebook 自定义转化事件",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4205,7 +3722,7 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "为 trader joes awake blend coffee beans 写一篇 50 字的产品描述。 以乐观、信息丰富的语气写作。",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4217,7 +3734,7 @@ const Users: User[] = [
     title: "电子商务",
     descn:
       "为我们的 公司名称 创建一条聊天消息，以一种亲切而简单的方式解释我们的退货政策。 14 天退货，无运费，产品需要完好无损",
-    tags: ["commerce"],
+    tags: ["Commerce"],
   },
   {
     preview: "",
@@ -4234,22 +3751,22 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Teach me the <topic of your choice> and give me a quiz at the end, but don’t give me the answers and then tell me if I answered correctly.",
+      "Teach me the[topic of your choice] and give me a quiz at the end, but don’t give me the answers and then tell me if I answered correctly.",
     remark: "针对某知识点进行教学并进行测验",
     source: "",
     title: "教育",
     descn:
-      "教我 <topic of your choice> 并在最后给我一个测验，但不要给我答案然后告诉我我是否回答正确。",
+      "教我[topic of your choice] 并在最后给我一个测验，但不要给我答案然后告诉我我是否回答正确。",
     tags: ["Education"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Describe <topic of your choice> in detail.",
+    description: "Describe[topic of your choice] in detail.",
     remark: "生成针对某主题的详细描述",
     source: "",
     title: "教育",
-    descn: "详细描述<您选择的主题>。",
+    descn: "详细描述[您选择的主题]。",
     tags: ["Education"],
   },
   {
@@ -4508,22 +4025,22 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Teach me the <topic of your choice> and give me a quiz at the end, but don’t give me the answers and then tell me if I answered correctly.",
+      "Teach me the[topic of your choice] and give me a quiz at the end, but don’t give me the answers and then tell me if I answered correctly.",
     remark: "",
     source: "",
     title: "教育",
     descn:
-      "教我 <topic of your choice> 并在最后给我一个测验，但不要给我答案然后告诉我我是否回答正确。",
+      "教我[topic of your choice] 并在最后给我一个测验，但不要给我答案然后告诉我我是否回答正确。",
     tags: ["Education"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Describe <topic of your choice> in detail.",
+    description: "Describe[topic of your choice] in detail.",
     remark: "",
     source: "",
     title: "教育",
-    descn: "详细描述<您选择的主题>。",
+    descn: "详细描述[您选择的主题]。",
     tags: ["Education"],
   },
   {
@@ -4697,7 +4214,7 @@ const Users: User[] = [
     remark: "",
     source: "",
     title: "教育",
-    descn: "概述美国革命的事件和意义。",
+    descn: "概述中国革命的事件和意义。",
     tags: ["Education"],
   },
   {
@@ -4982,7 +4499,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "根据上述统计数据/信息撰写社交媒体帖子。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -4992,7 +4509,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "提及一个关于主题的鲜为人知的事实。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5002,7 +4519,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "写一篇关于主题的社交媒体指南帖子。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5013,17 +4530,17 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "写一篇社交媒体帖子，解释主题的重要性。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Explain in a social media post how X works.",
+    description: "Explain in a social media post how[X]works.",
     remark: "",
     source: "",
     title: "教育社交媒体帖子",
-    descn: "在社交媒体帖子中解释 X 的工作原理。",
-    tags: ["EducationalSocialMediaPosts"],
+    descn: "在社交媒体帖子中解释[X]的工作原理。",
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5033,7 +4550,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "创建一个简短的社交媒体帖子回答：问题？",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5043,7 +4560,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "撰写有关 主题 的提示和技巧社交媒体帖子。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5053,7 +4570,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "根据关于主题的统计数据写一篇社交媒体帖子。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5063,7 +4580,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "写一篇社交媒体帖子，讨论关于 topic 的神话。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5074,7 +4591,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "创建一个社交媒体帖子，讨论 topic 的注意事项。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5084,7 +4601,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "在社交媒体上发布关于 主题 技巧/好处的帖子。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5094,7 +4611,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "撰写关于 产品 的社交媒体评论。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5104,18 +4621,18 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "创建关于主题历史的社交媒体帖子。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "List X industry/profession/practice challenges to post on social media platform for audience.",
+      "List[X]industry/profession/practice challenges to post on social media platform for audience.",
     remark: "",
     source: "",
     title: "教育社交媒体帖子",
-    descn: "列出 X 行业/专业/实践 在 社交媒体平台 上发布给 观众 的挑战。",
-    tags: ["EducationalSocialMediaPosts"],
+    descn: "列出[X]行业/专业/实践 在 社交媒体平台 上发布给 观众 的挑战。",
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5125,7 +4642,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "写一篇比较主题和主题的社交媒体帖子。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5135,7 +4652,7 @@ const Users: User[] = [
     source: "",
     title: "教育社交媒体帖子",
     descn: "为主题创建一个利弊列表。",
-    tags: ["EducationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5231,7 +4748,7 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Please provide tips to improve the deliverability of our weekly Ecommerce newsletter, making sure it lands in the inbox.",
+      "Please provide tips to improve the deliverability of our weekly ECommerce newsletter, making sure it lands in the inbox.",
     remark:
       "请提供建议，以提高我们每周电子商务通讯的可交付性，确保它到达收件箱。 ",
     source: "",
@@ -5244,13 +4761,13 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Take the Newsletter below, polish and improve its structure and tone. Make it more Friendly, Expert Like, Funny, Catchy, You can add any other tone you like Don’t exceed X Words",
+      "Take the Newsletter below, polish and improve its structure and tone. Make it more Friendly, Expert Like, Funny, Catchy, You can add any other tone you like Don’t exceed[X]Words",
     remark:
       "参考下面的通讯，优化和改进它的结构和语气。 让它更友好，专家喜欢，有趣，朗朗上口，你可以添加任何其他你喜欢的音调不要超过X个单词 ",
     source: "",
     title: "电子邮件活动",
     descn:
-      "以下面的时事通讯为例，对其结构和语气进行润色和改进。让它更 友好，专家喜欢，有趣，朗朗上口，你可以添加你喜欢的任何其他语气 不要超过 X Words",
+      "以下面的时事通讯为例，对其结构和语气进行润色和改进。让它更 友好，专家喜欢，有趣，朗朗上口，你可以添加你喜欢的任何其他语气 不要超过[X]Words",
     tags: ["EmailCampaigns"],
   },
   {
@@ -5346,7 +4863,7 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Please provide tips to improve the deliverability of our weekly Ecommerce newsletter, making sure it lands in the inbox.",
+      "Please provide tips to improve the deliverability of our weekly ECommerce newsletter, making sure it lands in the inbox.",
     remark:
       "请提供提示以提高我们每周电子商务通讯的可交付性，确保它出现在收件箱中",
     source: "",
@@ -5359,12 +4876,12 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Take the Newsletter below, polish and improve its structure and tone. Make it more Friendly, Expert Like, Funny, Catchy, You can add any other tone you like Don’t exceed X Words",
+      "Take the Newsletter below, polish and improve its structure and tone. Make it more Friendly, Expert Like, Funny, Catchy, You can add any other tone you like Don’t exceed[X]Words",
     remark: "阅读下面的时事通讯，润色并改进其结构和语气。",
     source: "",
     title: "电子邮件活动",
     descn:
-      "以下面的时事通讯为例，对其结构和语气进行润色和改进。让它更 友好，专家喜欢，有趣，朗朗上口，你可以添加你喜欢的任何其他语气 不要超过 X Words",
+      "以下面的时事通讯为例，对其结构和语气进行润色和改进。让它更 友好，专家喜欢，有趣，朗朗上口，你可以添加你喜欢的任何其他语气 不要超过[X]Words",
     tags: ["EmailCampaigns"],
   },
   {
@@ -5660,7 +5177,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "你能帮我计划两个成年人一周的晚餐吗",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5671,7 +5188,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "生成两天的膳食计划并给我购物清单",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5682,7 +5199,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "我有西红柿、生菜和西兰花。我可以和他们一起为纯素午餐准备什么？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5693,7 +5210,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "制作以白酱和蘑菇为特色的意大利面食谱的简单方法是什么？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5704,7 +5221,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "什么酒适合搭配烤鸡晚餐？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5716,7 +5233,7 @@ const Users: User[] = [
     title: "食物和烹饪",
     descn:
       "我只有三种配料——洋葱、西红柿和菠菜。你能告诉我我可以用这些食材做 3 顿饭吗？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5727,7 +5244,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "对于一天过得很糟糕的人来说，有什么好的食物建议",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5737,7 +5254,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "我是一名素食主义者，正在寻找健康的晚餐点子。",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5747,7 +5264,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "你能在压力大的一天给点甜点建议吗",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5758,7 +5275,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "推荐包含冬季食材的多道菜晚宴菜单",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5769,7 +5286,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "向潜在雇主写一封有说服力的信息，解释我为担任厨师职位而搬迁的原因。",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5780,7 +5297,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "给我可以用这些配料制作的食谱（列出配料）。",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5791,7 +5308,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "添加到菜肴中以增强其风味的最佳香料是什么？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5802,7 +5319,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "如何正确烹制牛排才能达到完美的嫩度和风味？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5813,7 +5330,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "传统面食有哪些健康美味的替代品？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5823,7 +5340,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "如何从头开始制作经典番茄酱？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5833,7 +5350,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "每个厨房都应该有哪些必备工具？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5844,7 +5361,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "在忙碌的工作日晚上可以做哪些简单快捷的饭菜？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5855,7 +5372,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "您如何正确储存新鲜香草以防止它们过快枯萎？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5865,7 +5382,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "人们在烤蛋糕时常犯的一些错误是什么？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5875,7 +5392,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "用椰子油烹饪对健康有哪些好处？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5885,7 +5402,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "如何正确清洁和保养铸铁锅？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5896,7 +5413,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "醋有哪些不同类型，它们在味道和用途上有何不同？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5906,7 +5423,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "如何制作传统肉类菜肴的纯素版本？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5917,7 +5434,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "关于无麸质烹饪和烘焙的一些常见误解是什么？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5928,7 +5445,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "在寒冷的冬日，你如何做一碗丰盛的汤？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5938,7 +5455,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "什么是用于高温烹饪的最佳油？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5948,7 +5465,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "使用剩菜有哪些独特而有趣的方法？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5958,7 +5475,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "如何制作奶油般顺滑的荷兰酱？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5969,7 +5486,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "准备和烹饪蔬菜以获得最大风味和营养的不同方法有哪些？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5979,7 +5496,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "如何正确清洗和储存新鲜蘑菇？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -5990,7 +5507,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "有哪些健康美味的工作或学校零食选择？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6000,7 +5517,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "如何制作美味又松软的炒鸡蛋？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6011,7 +5528,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "在烹饪中使用新鲜食材和罐装食材有什么好处？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6022,7 +5539,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "如何为烤肉制作简单而美味的腌料？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6033,7 +5550,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "世界各地的不同菜系有哪些常见的烹饪技巧？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6043,7 +5560,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "如何制作传统而正宗的寿司卷？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6054,7 +5571,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "成功烧烤的一些提示和技巧是什么？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6064,7 +5581,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "你如何制作美味芳香的肉汤或高汤？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6075,7 +5592,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "豆腐在烹饪中有哪些美味又健康的做法？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6085,7 +5602,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "如何制作清淡香脆的天妇罗面糊？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6096,7 +5613,7 @@ const Users: User[] = [
     source: "",
     title: "食物与烹饪",
     descn: "有哪些不同的烹调方法和食用鱼的方法，以获得健康美味的一餐？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6106,7 +5623,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "你能帮我计划两个成年人一周的晚餐吗",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6117,7 +5634,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "生成两天的膳食计划并给我购物清单",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6128,7 +5645,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "我有西红柿、生菜和西兰花。我可以和他们一起为纯素午餐准备什么？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6139,7 +5656,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "制作以白酱和蘑菇为特色的意大利面食谱的简单方法是什么？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6150,7 +5667,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "什么酒适合搭配烤鸡晚餐？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6162,7 +5679,7 @@ const Users: User[] = [
     title: "食物和烹饪",
     descn:
       "我只有三种配料——洋葱、西红柿和菠菜。你能告诉我我可以用这些食材做 3 顿饭吗？",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6173,7 +5690,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "对于一天过得很糟糕的人来说，有什么好的食物建议",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6183,7 +5700,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "我是一名素食主义者，正在寻找健康的晚餐点子。",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6193,7 +5710,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "你能在压力大的一天给点甜点建议吗",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6204,7 +5721,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "推荐包含冬季食材的多道菜晚宴菜单",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6215,7 +5732,7 @@ const Users: User[] = [
     source: "",
     title: "食物和烹饪",
     descn: "向潜在雇主写一封有说服力的信息，解释我为担任厨师职位而搬迁的原因。",
-    tags: ["FoodandCooking"],
+    tags: ["FoodCooking"],
   },
   {
     preview: "",
@@ -6266,10 +5783,10 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description: "Top ten most popular recipes in the United States in 2023",
-    remark: "2023年美国十大最受欢迎的食谱",
+    remark: "2023年中国十大最受欢迎的食谱",
     source: "",
     title: "食品与烹饪",
-    descn: "2023年美国最受欢迎的十大食谱",
+    descn: "2023年中国最受欢迎的十大食谱",
     tags: ["FoodCooking"],
   },
   {
@@ -6406,18 +5923,18 @@ const Users: User[] = [
     source: "",
     title: "乐趣",
     descn:
-      "就我 1 月 17 日星期二从纽约飞往洛杉矶的航班行李延误向美国联合航空公司写一封正式的投诉电子邮件。",
+      "就我 1 月 17 日星期二从纽约飞往洛杉矶的航班行李延误向中国联合航空公司写一封正式的投诉电子邮件。",
     tags: ["Fun"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Translate the following text into Portuguese: <paste text below>",
+      "Translate the following text into Portuguese:[paste text below]",
     remark: "",
     source: "",
     title: "乐趣",
-    descn: "将以下文本翻译成葡萄牙语：<在下面粘贴文本>",
+    descn: "将以下文本翻译成葡萄牙语：[在下面粘贴文本]",
     tags: ["Fun"],
   },
   {
@@ -6564,18 +6081,18 @@ const Users: User[] = [
     source: "",
     title: "乐趣",
     descn:
-      "就我 1 月 17 日星期二从纽约飞往洛杉矶的航班行李延误向美国联合航空公司写一封正式的投诉电子邮件。",
+      "就我 1 月 17 日星期二从纽约飞往洛杉矶的航班行李延误向中国联合航空公司写一封正式的投诉电子邮件。",
     tags: ["Fun"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Translate the following text into Portuguese: <paste text below>",
+      "Translate the following text into Portuguese:[paste text below]",
     remark: "",
     source: "",
     title: "乐趣",
-    descn: "将以下文本翻译成葡萄牙语：<在下面粘贴文本>",
+    descn: "将以下文本翻译成葡萄牙语：[在下面粘贴文本]",
     tags: ["Fun"],
   },
   {
@@ -6596,7 +6113,7 @@ const Users: User[] = [
     source: "",
     title: "有趣的社交媒体帖子",
     descn: "写一个关于 主题 的有趣笑话发布在社交媒体上。",
-    tags: ["FunSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -6607,7 +6124,7 @@ const Users: User[] = [
     source: "",
     title: "有趣的社交媒体帖子",
     descn: "提及关于 主题 的有趣事实并创建关于它的社交媒体帖子。",
-    tags: ["FunSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -6618,7 +6135,7 @@ const Users: User[] = [
     source: "",
     title: "有趣的社交媒体帖子",
     descn: "写一个类比来解释主题并创建一个关于它的社交媒体帖子。",
-    tags: ["FunSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -6628,7 +6145,7 @@ const Users: User[] = [
     source: "",
     title: "有趣的社交媒体帖子",
     descn: "写一篇关于 主题 的有趣社交媒体帖子。",
-    tags: ["FunSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -6639,7 +6156,7 @@ const Users: User[] = [
     source: "",
     title: "有趣的社交媒体帖子",
     descn: "创建社交媒体挑战以鼓励人们活动。",
-    tags: ["FunSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -6649,7 +6166,7 @@ const Users: User[] = [
     source: "",
     title: "有趣的社交媒体帖子",
     descn: "想出关于话题的诙谐双关语。",
-    tags: ["FunSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -6660,7 +6177,7 @@ const Users: User[] = [
     source: "",
     title: "有趣的社交媒体帖子",
     descn: "创建社交媒体帖子，推荐 书籍、电影、播客、产品、服务等。",
-    tags: ["FunSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -6830,7 +6347,7 @@ const Users: User[] = [
     title: "游戏（团队协作）",
     descn:
       "开始一场“20 个问题”的游戏。你可以问我是或否的问题来尝试猜测我在想的词。我给你一个提示：它是一种水果。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6840,7 +6357,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）",
     descn: "让我们玩井字游戏吧。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6850,7 +6367,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）",
     descn: "让我们玩字梯吧。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6860,7 +6377,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）",
     descn: "和我一起玩刽子手。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6870,7 +6387,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）",
     descn: "让我们玩 Mad Libs 游戏吧。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6880,7 +6397,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）",
     descn: "让我们玩琐事吧。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6891,7 +6408,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）",
     descn: "让我们玩“你愿意吗？”。我给你两个选择，你必须选择你喜欢的一个。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6903,7 +6420,7 @@ const Users: User[] = [
     title: "游戏（团队协作）",
     descn:
       "让我们玩“两个真相和一个谎言”。给我三个关于你自己的陈述，我会试着猜测哪一个是谎言。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6915,7 +6432,7 @@ const Users: User[] = [
     title: "游戏（团队协作）",
     descn:
       "让我们玩一个“我是间谍”的游戏。我给你一个线索，你要猜我想的是什么东西。线索是：“这是你穿在脚上的东西。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6925,7 +6442,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）",
     descn: "让我们玩石头剪刀布",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6936,7 +6453,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）",
     descn: "提出关于人工智能接管世界的编码挑战。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6948,7 +6465,7 @@ const Users: User[] = [
     title: "游戏（团队协作）。",
     descn:
       "开始一场“20 个问题”的游戏。你可以问我是或否的问题来尝试猜测我在想的词。我给你一个提示：它是一种水果。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6958,7 +6475,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）。",
     descn: "让我们玩井字游戏吧。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6968,7 +6485,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）。",
     descn: "让我们玩字梯吧。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6978,7 +6495,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）。",
     descn: "和我一起玩刽子手。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6988,7 +6505,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）。",
     descn: "让我们玩 Mad Libs 游戏吧。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -6998,7 +6515,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）。",
     descn: "让我们玩琐事吧。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -7009,7 +6526,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）。",
     descn: "让我们玩“你愿意吗？”。我给你两个选择，你必须选择你喜欢的一个。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -7021,7 +6538,7 @@ const Users: User[] = [
     title: "游戏（团队协作）。",
     descn:
       "让我们玩“两个真相和一个谎言”。给我三个关于你自己的陈述，我会试着猜测哪一个是谎言。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -7033,7 +6550,7 @@ const Users: User[] = [
     title: "游戏（团队协作）。",
     descn:
       "让我们玩一个“我是间谍”的游戏。我给你一个线索，你要猜我想的是什么东西。线索是：“这是你穿在脚上的东西。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -7043,7 +6560,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）。",
     descn: "让我们玩石头剪刀布",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -7054,7 +6571,7 @@ const Users: User[] = [
     source: "",
     title: "游戏（团队协作）。",
     descn: "提出关于人工智能接管世界的编码挑战。",
-    tags: ["Games"],
+    tags: ["GameTeamwork"],
   },
   {
     preview: "",
@@ -7063,9 +6580,9 @@ const Users: User[] = [
       "Looking for some great single-player games for your Xbox? Let’s explore some options.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "正在为您的 Xbox 寻找一些很棒的单人游戏吗？让我们探讨一些选项。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7074,9 +6591,9 @@ const Users: User[] = [
       "PC is the ultimate platform for multiplayer games. Let’s discover some of the most popular ones.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "PC 是多人游戏的终极平台。让我们发现一些最受欢迎的。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7085,10 +6602,10 @@ const Users: User[] = [
       "Not all open-world games get the recognition they deserve. Let’s uncover some hidden gems.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn:
       "并非所有的开放世界游戏都能获得应有的认可。让我们揭开一些隐藏的宝石。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7097,9 +6614,9 @@ const Users: User[] = [
       "Virtual Reality is an immersive experience, and these games make the most of it.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "虚拟现实是一种身临其境的体验，这些游戏充分利用了它。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7108,9 +6625,9 @@ const Users: User[] = [
       "Survival games can be nail-bitingly tense. Let’s count down the best ones of all time.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "生存游戏可能会非常紧张。让我们倒数有史以来最好的。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7119,9 +6636,9 @@ const Users: User[] = [
       "Mobile gaming is big business and these games are incredibly addictive.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "手机游戏是一项大生意，这些游戏令人上瘾。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7130,9 +6647,9 @@ const Users: User[] = [
       "Console fighting games have come a long way. Let’s take a look at the best ones.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "控制台格斗游戏已经走了很长一段路。让我们来看看最好的。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7141,9 +6658,9 @@ const Users: User[] = [
       "Xbox is perfect for co-op games. Let’s find out which ones to play with your friends.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Xbox 非常适合合作游戏。让我们找出哪些可以与您的朋友一起玩。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7152,9 +6669,9 @@ const Users: User[] = [
       "PC gaming is at its best when played with friends. Here are some of the best games to try.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "与朋友一起玩 PC 游戏时效果最佳。这里有一些值得尝试的最佳游戏。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7163,9 +6680,9 @@ const Users: User[] = [
       "Nintendo Switch is a versatile platform and these RPGs are just the ticket.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Nintendo Switch 是一个多功能平台，而这些角色扮演游戏恰恰是入场券。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7174,9 +6691,9 @@ const Users: User[] = [
       "Puzzle games can be fiendishly difficult. Let’s find the most challenging ones.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "益智游戏可能非常困难。让我们找到最具挑战性的。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7185,9 +6702,9 @@ const Users: User[] = [
       "Racing games are all about speed and style. Here are the best ones for PS5.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "赛车游戏关乎速度和风格。这是 PS5 的最佳选择。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7196,9 +6713,9 @@ const Users: User[] = [
       "Nintendo Switch is great for kids and these games will keep them entertained.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Nintendo Switch 非常适合儿童，这些游戏会让他们乐在其中。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7207,9 +6724,9 @@ const Users: User[] = [
       "Xbox is capable of some stunning graphics, and these games are the proof.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Xbox 能够提供一些令人惊叹的图形，这些游戏就是证明。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7218,9 +6735,9 @@ const Users: User[] = [
       "PC is the king of strategy games. Let’s explore some of the best ones.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "PC是策略游戏之王。让我们探索一些最好的。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7229,9 +6746,9 @@ const Users: User[] = [
       "Xbox is the perfect platform for horror games. Let’s dive into some of the scariest ones.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Xbox 是恐怖游戏的完美平台。让我们深入了解一些最可怕的问题。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7240,9 +6757,9 @@ const Users: User[] = [
       "PS4 is home to some great games for sports fans. Let’s find the best ones.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "PS4 拥有一些适合体育迷的精彩游戏。让我们找到最好的。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7251,9 +6768,9 @@ const Users: User[] = [
       "Nintendo Switch is a relaxing platform and these games will help you unwind.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Nintendo Switch 是一个休闲平台，这些游戏将帮助您放松身心。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7262,9 +6779,9 @@ const Users: User[] = [
       "PC games can be educational, and these ones are perfect for history buffs.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "PC 游戏可以具有教育意义，而这些游戏非常适合历史爱好者。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7273,9 +6790,9 @@ const Users: User[] = [
       "Xbox has some great games for space enthusiasts. Let’s take a look.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Xbox 为太空爱好者提供了一些很棒的游戏。让我们来看看。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7284,9 +6801,9 @@ const Users: User[] = [
       "PS5 is packed with action games, and these are the most engaging.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "PS5 充满了动作游戏，而这些是最吸引人的。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7295,9 +6812,9 @@ const Users: User[] = [
       "Nintendo Switch is perfect for adventure games. Let’s find the best ones.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Nintendo Switch 非常适合冒险游戏。让我们找到最好的。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7306,9 +6823,9 @@ const Users: User[] = [
       "PC games can be musical too, and these ones are perfect for music lovers.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "PC 游戏也可以是音乐的，这些游戏非常适合音乐爱好者。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7317,9 +6834,9 @@ const Users: User[] = [
       "Xbox has some great games for car enthusiasts. Let’s discover them.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Xbox 为汽车爱好者提供了一些很棒的游戏。让我们发现它们。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7328,9 +6845,9 @@ const Users: User[] = [
       "PS5 is home to some of the most creative sandbox games. List the most popular.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "PS5 是一些最具创意的沙盒游戏的发源地。列出最受欢迎的。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7339,9 +6856,9 @@ const Users: User[] = [
       "Nintendo Switch has some great games for animal lovers. Let’s find them.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Nintendo Switch 为动物爱好者提供了一些很棒的游戏。让我们找到他们。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7349,9 +6866,9 @@ const Users: User[] = [
     description: "PC games can be visually stunning, and these ones are proof.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "PC 游戏可以在视觉上令人惊叹，这些就是证明。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7360,9 +6877,9 @@ const Users: User[] = [
       "Xbox has some great games for mystery fans. Let’s explore them.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Xbox 为神秘迷们提供了一些很棒的游戏。让我们探索它们。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7371,9 +6888,9 @@ const Users: User[] = [
       "PS5 has some great games for book lovers. Let’s find the best ones.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "PS5 为书迷们提供了一些很棒的游戏。让我们找到最好的。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7382,9 +6899,9 @@ const Users: User[] = [
       "Nintendo Switch is a great platform for indie games, and these are the most innovative.",
     remark: "",
     source: "",
-    title: "赌博",
+    title: "游戏",
     descn: "Nintendo Switch 是独立游戏的绝佳平台，而这些都是最具创新性的。",
-    tags: ["Gaming"],
+    tags: ["Game"],
   },
   {
     preview: "",
@@ -7395,7 +6912,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "将力量训练纳入健身程序有哪些好处？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7405,7 +6922,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "锻炼腿部和臀部肌肉的最佳运动是什么？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7415,7 +6932,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "健康饮食的关键要素是什么？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7425,7 +6942,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "成年人每天推荐的饮水量是多少？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7436,7 +6953,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "瑜伽对身心健康有哪些好处？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7447,7 +6964,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "以健康和可持续的方式减肥的最佳方法是什么？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7458,7 +6975,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "不良姿势如何影响我们的健康，如何纠正？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7469,7 +6986,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "压力对我们的身心健康有何影响？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7480,7 +6997,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "我们如何才能保持良好的肠道健康并预防消化问题？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7491,7 +7008,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "慢性疼痛的一些常见原因是什么？如何治疗？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7502,7 +7019,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "成人和儿童的推荐睡眠时间是多少？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7513,7 +7030,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "我们如何通过锻炼和身体活动来改善我们的心理健康？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7524,7 +7041,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "久坐不动的行为有哪些危险，如何预防？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7535,7 +7052,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "在剧烈运动中保持水分的最佳方法是什么？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7545,7 +7062,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "适当的营养如何提高免疫力和预防疾病？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7555,7 +7072,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "戒烟最有效的方法有哪些？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7566,7 +7083,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "长期喝酒对身体有什么影响？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7576,7 +7093,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "随着年龄的增长，我们如何改善平衡能力并防止跌倒？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7587,7 +7104,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "最常见的运动损伤是什么？如何预防？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7598,7 +7115,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "营养在维持健康妊娠中的作用是什么？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7609,7 +7126,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "我们如何通过正念和冥想来改善心理健康？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7620,7 +7137,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "冷疗的好处是什么？它如何用于康复和疼痛管理？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7631,7 +7148,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "提高心血管耐力的最佳运动是什么？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7642,7 +7159,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "我们如何通过改变生活方式来预防和管理 2 型糖尿病？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7653,7 +7170,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "营养不良对孩子的生长发育有什么影响？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7663,7 +7180,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "我们如何预防和治疗腰痛？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7674,7 +7191,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "提高灵活性和机动性的最佳练习是什么？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7685,7 +7202,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "我们如何通过人体工程学改善我们的姿势并减少背痛？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7696,7 +7213,7 @@ const Users: User[] = [
     source: "",
     title: "健康与健身",
     descn: "压力管理和放松的最佳方法是什么？",
-    tags: ["HealthandFitness"],
+    tags: ["HealthAndFitness"],
   },
   {
     preview: "",
@@ -7705,10 +7222,10 @@ const Users: User[] = [
       "“Describe eight supermarket items that are frequently mentioned as being inexpensive, unusually healthy, and underrated.”",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn:
       "“描述八种经常被提及的超市商品，这些商品价格低廉、异常健康且被低估。”",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7717,9 +7234,9 @@ const Users: User[] = [
       "“Describe six safe and effective yoga poses or stretches for people of all ages.”",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "“为所有年龄段的人描述六种安全有效的瑜伽姿势或伸展运动。”",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7728,10 +7245,10 @@ const Users: User[] = [
       "“Create innovative ways to get people in wheelchairs around that will raise their social status and give them more freedom.”",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn:
       "“创造创新的方式让轮椅上的人四处走动，这将提高他们的社会地位并给予他们更多的自由。”",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7740,9 +7257,9 @@ const Users: User[] = [
       "“Total Daily Energy Expenditure based on my daily activities and food consumption.”",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "“基于我的日常活动和食物消耗的每日总能量消耗。”",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7750,9 +7267,9 @@ const Users: User[] = [
     description: "“Make a list of abs-boosting gym workouts.”",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "“列一张增强腹肌的健身房锻炼清单。”",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7761,9 +7278,9 @@ const Users: User[] = [
       "Let’s start with a basic one – what’s the difference between a virus and bacteria?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "让我们从一个基本的开始——病毒和细菌有什么区别？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7772,9 +7289,9 @@ const Users: User[] = [
       "Headaches are a common issue, but do you know the most common cause of them?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "头痛是一个常见问题，但您知道引起头痛的最常见原因吗？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7783,9 +7300,9 @@ const Users: User[] = [
       "Exercise is great for your physical health, but have you heard about its benefits for mental health too?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "运动对您的身体健康大有裨益，但您是否听说过它对心理健康也有好处？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7794,9 +7311,9 @@ const Users: User[] = [
       "Anxiety can be a tough thing to deal with. Can you identify the symptoms of anxiety disorder?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "焦虑可能是一件很难处理的事情。你能确定焦虑症的症状吗？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7805,9 +7322,9 @@ const Users: User[] = [
       "The common cold is a nuisance, but what steps can you take to prevent it?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "普通感冒令人讨厌，但您可以采取哪些措施来预防它呢？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7816,9 +7333,9 @@ const Users: User[] = [
       "COVID-19 is still a concern for many of us. How does someone get tested for it?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "COVID-19 仍然是我们许多人关注的问题。有人如何接受测试？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7827,10 +7344,10 @@ const Users: User[] = [
       "Your diet can play a big role in many aspects of your health, including heart disease. Want to know more?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn:
       "您的饮食可以在您健康的许多方面发挥重要作用，包括心脏病。想知道更多？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7839,9 +7356,9 @@ const Users: User[] = [
       "Staying hydrated is important, but how much water should an adult be drinking every day?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "保持水分很重要，但成年人每天应该喝多少水？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7850,9 +7367,9 @@ const Users: User[] = [
       "Smoking is bad for you, but quitting can be difficult. What’s the most effective way to quit smoking?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "吸烟对您有害，但戒烟可能很困难。戒烟最有效的方法是什么？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7861,9 +7378,9 @@ const Users: User[] = [
       "Depression can be overwhelming. What treatments are available for it?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "抑郁症可能是压倒性的。有哪些治疗方法？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7872,9 +7389,9 @@ const Users: User[] = [
       "Meditation is becoming more and more popular, but do you know its benefits?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "冥想越来越流行，但是你知道它的好处吗？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7883,10 +7400,10 @@ const Users: User[] = [
       "Stress can have a negative impact on many parts of your body, including your immune system. Want to know more?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn:
       "压力会对您身体的许多部位产生负面影响，包括您的免疫系统。想知道更多？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7895,10 +7412,10 @@ const Users: User[] = [
       "Diabetes is a common health issue, but did you know there are two different types? Let’s discuss type 1 and type 2.",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn:
       "糖尿病是一种常见的健康问题，但您知道有两种不同的类型吗？让我们讨论类型 1 和类型 2。",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7907,9 +7424,9 @@ const Users: User[] = [
       "Chemotherapy is a powerful treatment, but it also comes with side effects. Explain.",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "化疗是一种强大的治疗方法，但它也有副作用。解释。",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7918,9 +7435,9 @@ const Users: User[] = [
       "High blood pressure can be dangerous, but what are some effective ways to reduce it?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "高血压可能很危险，但有哪些有效的降压方法？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7929,9 +7446,9 @@ const Users: User[] = [
       "Alcohol is a part of many people’s lives, but how does it impact liver health?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "酒精是许多人生活的一部分，但它如何影响肝脏健康？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7940,9 +7457,9 @@ const Users: User[] = [
       "Heart attacks can be serious, but do you know the warning signs and what to do if you experience them?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "心脏病发作可能很严重，但您知道警告信号吗？如果遇到它们该怎么办？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7951,9 +7468,9 @@ const Users: User[] = [
       "Chronic pain can be debilitating, but what are some ways to manage it effectively?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "慢性疼痛可能会使人虚弱，但有哪些方法可以有效控制它？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7962,9 +7479,9 @@ const Users: User[] = [
       "Infertility is an issue for many couples, but what causes infertility in men and women?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "不孕不育是许多夫妇的问题，但是是什么原因导致男性和女性不孕？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7973,9 +7490,9 @@ const Users: User[] = [
       "Steroids can be helpful in some cases, but what are the long-term effects of using them?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "类固醇在某些情况下可能会有帮助，但使用它们的长期影响是什么？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7984,9 +7501,9 @@ const Users: User[] = [
       "There are many options for birth control, but what is the most effective form?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "节育有很多选择，但最有效的形式是什么？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -7995,9 +7512,9 @@ const Users: User[] = [
       "Sleep and weight gain are linked, but how exactly do they impact each other?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "睡眠和体重增加是相关的，但它们究竟是如何相互影响的呢？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -8006,9 +7523,9 @@ const Users: User[] = [
       "Our environment can have a big impact on our health. Want to know more?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "我们的环境会对我们的健康产生重大影响。想知道更多？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -8017,9 +7534,9 @@ const Users: User[] = [
       "A sedentary lifestyle can be harmful to your health. Let’s talk about the dangers of it.",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "久坐不动的生活方式可能对您的健康有害。让我们谈谈它的危险。",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -8028,9 +7545,9 @@ const Users: User[] = [
       "Boosting your immune system can help keep you healthy, but what’s the best way to do it?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "增强免疫系统有助于保持健康，但最好的方法是什么？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -8039,9 +7556,9 @@ const Users: User[] = [
       "Air pollution is a growing concern, but how does it impact respiratory health?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "空气污染日益受到关注，但它如何影响呼吸系统健康？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -8050,9 +7567,9 @@ const Users: User[] = [
       "Osteoporosis is a condition that affects bone health, but what are its symptoms?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "骨质疏松症是一种影响骨骼健康的疾病，但它的症状是什么？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -8061,9 +7578,9 @@ const Users: User[] = [
       "Your gut bacteria plays a big role in your overall health. Want to learn more?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "您的肠道细菌对您的整体健康起着重要作用。想了解更多？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -8072,9 +7589,9 @@ const Users: User[] = [
       "Stress and anxiety can be tough to manage, but what are some of the best ways to do so?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "压力和焦虑可能很难控制，但最好的方法是什么？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -8083,9 +7600,9 @@ const Users: User[] = [
       "Strokes can be serious, but do you know the warning signs and what to do if you experience them?",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "中风可能很严重，但您知道警告信号吗？如果遇到它们该怎么办？",
-    tags: ["HealthandMedicine"],
+    tags: ["HealthMedicine"],
   },
   {
     preview: "",
@@ -8094,7 +7611,7 @@ const Users: User[] = [
       "Describe eight supermarket goods that are frequently cited as being cheap, unusually healthful, and underestimated.",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "描述八种经常被认为便宜、非常健康和被低估的超市商品。",
     tags: ["HealthMedicine"],
   },
@@ -8105,7 +7622,7 @@ const Users: User[] = [
       "Describe six effective yoga poses or stretches that are safe and excellent for people of all ages.",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn:
       "描述六种有效的瑜伽姿势或伸展运动，它们对所有年龄段的人都安全且出色。",
     tags: ["HealthMedicine"],
@@ -8117,7 +7634,7 @@ const Users: User[] = [
       "Think up innovative ways to get persons in wheelchairs around that will elevate their status in society and provide them more freedom.",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn:
       "想出创新的方法让轮椅上的人四处走动，这将提高他们的社会地位并为他们提供更多的自由。",
     tags: ["HealthMedicine"],
@@ -8129,7 +7646,7 @@ const Users: User[] = [
       "Calculate for Total Daily Energy Expenditure based on my daily activities and food",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "根据我的日常活动和食物计算每日总能量消耗",
     tags: ["HealthMedicine"],
   },
@@ -8139,7 +7656,7 @@ const Users: User[] = [
     description: "Make a list of abs-boosting workouts in the gym.",
     remark: "",
     source: "",
-    title: "健康与医药",
+    title: "健康与医学",
     descn: "列出在健身房进行的腹肌训练。",
     tags: ["HealthMedicine"],
   },
@@ -8153,7 +7670,7 @@ const Users: User[] = [
     title: "医疗保健和福利",
     descn:
       "列出杂货店出售的八种商品，这些商品通常被认为价格低廉、营养丰富且被低估。",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8164,7 +7681,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福利",
     descn: "描述六种有效的瑜伽姿势或拉伸背部和颈部疼痛",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8174,7 +7691,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福利",
     descn: "你能推荐一些缓解压力的自我保健活动吗？",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8184,7 +7701,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福利",
     descn: "有哪些减少焦虑的正念练习？",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8195,17 +7712,17 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福利",
     descn: "适合工作专业人士的简单且适合初学者的健身程序",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "I need motivation to < achieve a specific task or goal>",
+    description: "I need motivation to[ achieve a specific task or goal]",
     remark: "",
     source: "",
     title: "医疗保健和福利",
-    descn: "我需要动力来<完成特定任务或目标>",
-    tags: ["HealthcareandWellbeing"],
+    descn: "我需要动力来[完成特定任务或目标]",
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8215,7 +7732,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福利",
     descn: "培养成长型思维的方法有哪些？",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8227,7 +7744,7 @@ const Users: User[] = [
     title: "医疗保健和福利",
     descn:
       "我需要帮助以保持工作积极性。你能给我一些关于如何保持专注和积极性的建议吗？",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8238,7 +7755,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福利",
     descn: "想出 10 道可以在半小时或更短时间内准备好的营养餐。",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8249,7 +7766,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福利",
     descn: "制定一个 30 天的锻炼计划，帮助我每周减掉 2 磅。",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8260,7 +7777,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福利",
     descn: "详细解释替代医学实践的益处和风险，例如针灸和草药疗法。",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8272,7 +7789,7 @@ const Users: User[] = [
     title: "医疗保健和福祉。",
     descn:
       "列出杂货店出售的八种商品，这些商品通常被认为价格低廉、营养丰富且被低估。",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8283,7 +7800,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福祉。",
     descn: "描述六种有效的瑜伽姿势或拉伸背部和颈部疼痛",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8293,7 +7810,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福祉。",
     descn: "你能推荐一些缓解压力的自我保健活动吗？",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8303,7 +7820,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福祉。",
     descn: "有哪些减少焦虑的正念练习？",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8314,17 +7831,17 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福祉。",
     descn: "适合工作专业人士的简单且适合初学者的健身程序",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "I need motivation to < achieve a specific task or goal>",
+    description: "I need motivation to[ achieve a specific task or goal]",
     remark: "",
     source: "",
     title: "医疗保健和福祉。",
-    descn: "我需要动力来<完成特定任务或目标>",
-    tags: ["HealthcareandWellbeing"],
+    descn: "我需要动力来[完成特定任务或目标]",
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8334,7 +7851,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福祉。",
     descn: "培养成长型思维的方法有哪些？",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8346,7 +7863,7 @@ const Users: User[] = [
     title: "医疗保健和福祉。",
     descn:
       "我需要帮助以保持工作积极性。你能给我一些关于如何保持专注和积极性的建议吗？",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8357,7 +7874,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福祉。",
     descn: "想出 10 道可以在半小时或更短时间内准备好的营养餐。",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8368,7 +7885,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福祉。",
     descn: "制定一个 30 天的锻炼计划，帮助我每周减掉 2 磅。",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8379,7 +7896,7 @@ const Users: User[] = [
     source: "",
     title: "医疗保健和福祉。",
     descn: "详细解释替代医学实践的益处和风险，例如针灸和草药疗法。",
-    tags: ["HealthcareandWellbeing"],
+    tags: ["HealthCareAndWellbeing"],
   },
   {
     preview: "",
@@ -8400,7 +7917,7 @@ const Users: User[] = [
     remark: "",
     source: "",
     title: "历史",
-    descn: "我想更多地了解女性在美国内战中的作用。你能告诉我更多吗？",
+    descn: "我想更多地了解女性在中国内战中的作用。你能告诉我更多吗？",
     tags: ["History"],
   },
   {
@@ -8433,7 +7950,7 @@ const Users: User[] = [
     remark: "",
     source: "",
     title: "历史",
-    descn: "我想更多地了解导致美国革命的事件。你能告诉我吗？",
+    descn: "我想更多地了解导致中国革命的事件。你能告诉我吗？",
     tags: ["History"],
   },
   {
@@ -8545,7 +8062,7 @@ const Users: User[] = [
     remark: "",
     source: "",
     title: "历史",
-    descn: "我有兴趣了解更多关于美国民权运动的信息。你能给我一个事件的概述吗？",
+    descn: "我有兴趣了解更多关于中国民权运动的信息。你能给我一个事件的概述吗？",
     tags: ["History"],
   },
   {
@@ -8614,7 +8131,7 @@ const Users: User[] = [
     remark: "",
     source: "",
     title: "历史",
-    descn: "你能给我一个关于美国独立战争的概况吗？",
+    descn: "你能给我一个关于中国独立战争的概况吗？",
     tags: ["History"],
   },
   {
@@ -8753,7 +8270,7 @@ const Users: User[] = [
     source: "",
     title: "鼓舞人心的社交媒体帖子",
     descn: "为目标受众写一篇鼓舞人心的社交媒体信息。",
-    tags: ["InspirationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8764,7 +8281,7 @@ const Users: User[] = [
     source: "",
     title: "鼓舞人心的社交媒体帖子",
     descn: "创建一个社交媒体帖子，分享关于 主题 的励志名言。",
-    tags: ["InspirationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8774,7 +8291,7 @@ const Users: User[] = [
     source: "",
     title: "鼓舞人心的社交媒体帖子",
     descn: "发帖分享有关 主题 的鼓舞人心的成功故事。",
-    tags: ["InspirationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8785,7 +8302,7 @@ const Users: User[] = [
     source: "",
     title: "鼓舞人心的社交媒体帖子",
     descn: "写一篇关于如何克服 失败/挑战 的鼓舞人心的社交媒体帖子。",
-    tags: ["InspirationalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8795,7 +8312,7 @@ const Users: User[] = [
     source: "",
     title: "互动社交媒体帖子",
     descn: "开始关于话题的社交媒体辩论。",
-    tags: ["InteractiveSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8805,7 +8322,7 @@ const Users: User[] = [
     source: "",
     title: "互动社交媒体帖子",
     descn: "写一篇社交媒体帖子，询问有关 topic 的问题",
-    tags: ["InteractiveSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8816,17 +8333,17 @@ const Users: User[] = [
     source: "",
     title: "互动社交媒体帖子",
     descn: "创建社交媒体帖子，征求电影、书籍、播客等推荐。",
-    tags: ["InteractiveSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "List x social media contest ideas.",
+    description: "List[X]social media contest ideas.",
     remark: "",
     source: "",
     title: "互动社交媒体帖子",
-    descn: "列出 x 个社交媒体竞赛创意。",
-    tags: ["InteractiveSocialMediaPosts"],
+    descn: "列出[X]个社交媒体竞赛创意。",
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8836,7 +8353,7 @@ const Users: User[] = [
     source: "",
     title: "互动社交媒体帖子",
     descn: "为 产品/服务 创建一个社交媒体赠品帖子。",
-    tags: ["InteractiveSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8846,7 +8363,7 @@ const Users: User[] = [
     source: "",
     title: "互动社交媒体帖子",
     descn: "创建关于 主题 的社交媒体民意调查/测验。",
-    tags: ["InteractiveSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8856,17 +8373,17 @@ const Users: User[] = [
     source: "",
     title: "互动社交媒体帖子",
     descn: "创建一个社交媒体帖子，宣布现场问答环节。",
-    tags: ["InteractiveSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Create X poll options for a quiz about topic.",
+    description: "Create[X]poll options for a quiz about topic.",
     remark: "",
     source: "",
     title: "互动社交媒体帖子",
-    descn: "为关于 主题 的测验创建 X 投票选项。",
-    tags: ["InteractiveSocialMediaPosts"],
+    descn: "为关于 主题 的测验创建[X]投票选项。",
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -9061,11 +8578,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Analyze these below metrics to improve email open rates for a fashion brand <paste metrics>",
+      "Analyze these below metrics to improve email open rates for a fashion brand[paste metrics]",
     remark: "分析指标以提高电子邮件打开率",
     source: "",
     title: "市场营销",
-    descn: "分析以下这些指标以提高时尚品牌的电子邮件打开率<粘贴指标>",
+    descn: "分析以下这些指标以提高时尚品牌的电子邮件打开率[粘贴指标]",
     tags: ["Marketing"],
   },
   {
@@ -9161,11 +8678,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a 100-character meta description for my blog post about <topic>.",
+      "Write a 100-character meta description for my blog post about[topic].",
     remark: "为博文撰写元描述",
     source: "",
     title: "市场营销",
-    descn: "为我关于 <topic> 的博文写一个 100 个字符的元描述。",
+    descn: "为我关于[topic] 的博文写一个 100 个字符的元描述。",
     tags: ["Marketing"],
   },
   {
@@ -9248,11 +8765,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Analyze these below metrics to improve email open rates for a fashion brand <paste metrics>",
+      "Analyze these below metrics to improve email open rates for a fashion brand[paste metrics]",
     remark: "",
     source: "",
     title: "营销",
-    descn: "分析以下这些指标以提高时尚品牌的电子邮件打开率<粘贴指标>",
+    descn: "分析以下这些指标以提高时尚品牌的电子邮件打开率[粘贴指标]",
     tags: ["Marketing"],
   },
   {
@@ -9348,11 +8865,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a 100-character meta description for my blog post about <topic>.",
+      "Write a 100-character meta description for my blog post about[topic].",
     remark: "",
     source: "",
     title: "营销",
-    descn: "为我关于 <topic> 的博文写一个 100 个字符的元描述。",
+    descn: "为我关于[topic] 的博文写一个 100 个字符的元描述。",
     tags: ["Marketing"],
   },
   {
@@ -9469,7 +8986,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "为（目标受众）写一封关于（主题）的销售信函。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9480,7 +8997,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "撰写一系列介绍性电子邮件，让（目标受众）购买（产品、服务）。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9490,7 +9007,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "使用 PAS（疼痛、搅拌、解决方案）营销论坛。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9501,7 +9018,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "给我一个（业务类型）服务（目标受众）的分步营销计划。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9511,7 +9028,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "给我一个关于 XYZ 的 30 秒视频的脚本。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9521,7 +9038,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "为 20 秒的商业广告制作脚本。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9532,7 +9049,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "如何为 XYZ 创建成功的社交媒体营销活动。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9543,7 +9060,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "为针对年轻人的应用编写 10 个富有创意和说服力的标语。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9554,7 +9071,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "为针对老年人的医疗保健产品创建 10 个强有力的客户推荐",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9565,7 +9082,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "为一篇关于使用有机化妆品的重要性的博客文章想出 5 个吸引人的标题",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9576,7 +9093,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "为镇上的一家新餐厅设计 10 个引人入胜的社交媒体广告",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9587,7 +9104,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "在针对千禧一代的调查中提出 7 个发人深省的问题",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9598,7 +9115,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "制作 5 个引人注目的标语来说明新珠宝系列的特点",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9609,7 +9126,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "撰写 8 个引人注目的电子邮件主题行，向小型企业介绍 HR 服务",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9620,7 +9137,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "构建 10 条内容丰富且简洁的推文，让人们了解节能的最新趋势",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9631,7 +9148,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "开发 7 个引人入胜且巧妙的标语来宣传在线教育课程",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9642,7 +9159,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "为宠物美容产品创建 5 个有效且令人信服的销售宣传",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9653,7 +9170,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "集思广益 10 个想法，以帮助传播对回收最佳实践的认识。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9664,7 +9181,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "构建 8 个与环保汽车共享计划相关的有说服力的号召性用语。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9675,17 +9192,17 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "使用不同的文案技巧将这封电子邮件重写三遍。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "What’s the best copywriting formula to use to get X to Y?",
+    description: "What’s the best copywriting formula to use to get[X]to Y?",
     remark: "",
     source: "",
     title: "营销和文案",
-    descn: "将 X 转化为 Y 的最佳文案公式是什么？",
-    tags: ["MarketingAndCopywriting"],
+    descn: "将[X]转化为 Y 的最佳文案公式是什么？",
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9695,7 +9212,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "给我一个能产生紧迫感的 CTA。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9705,7 +9222,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "给我写一份（产品或服务）的销售宣传模板。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9715,7 +9232,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "影响者营销对品牌知名度的影响。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9725,7 +9242,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "使用电子邮件营销来推动转化。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9735,7 +9252,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "内容营销对企业的好处。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9745,7 +9262,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "如何衡量您的营销工作是否成功。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9755,7 +9272,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "为您的品牌利用视频营销的力量。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9765,7 +9282,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "最大化营销预算的投资回报率。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9775,7 +9292,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "品牌故事在营销中的重要性。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9785,7 +9302,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "使用数据驱动的洞察力为营销决策提供信息。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9796,7 +9313,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "用户生成的内容对您的营销策略的影响。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9807,7 +9324,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "创建适合移动设备的营销活动的最佳实践。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9817,7 +9334,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "事件营销在建立品牌知名度中的作用。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9827,7 +9344,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "创建多渠道营销方法的好处。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9837,7 +9354,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "如何通过营销有效地瞄准您的受众。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9847,7 +9364,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "个性化对营销和销售的影响。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9858,7 +9375,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "整合传统营销和数字营销以获得最大影响。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9869,7 +9386,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "实时衡量和调整营销策略的重要性。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9880,7 +9397,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "客户体验在现代营销策略中的作用。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9890,7 +9407,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "讲故事在品牌和营销中的作用。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9901,7 +9418,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "搜索引擎优化 (SEO) 对您的营销策略的影响。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9911,7 +9428,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "使用客户数据改进您的营销策略。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9922,7 +9439,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "如何为新产品发布制定有效的营销策略。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9933,7 +9450,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "客户反馈在塑造您的营销方法中的作用。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9943,7 +9460,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "虚拟现实和增强现实对营销的影响。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9954,7 +9471,7 @@ const Users: User[] = [
     source: "",
     title: "营销和文案",
     descn: "如何创建与目标受众产生共鸣的营销活动。",
-    tags: ["MarketingAndCopywriting"],
+    tags: ["Marketing"],
   },
   {
     preview: "",
@@ -9970,12 +9487,12 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Modify the following chord progression to make it more like <according to some directive, like composer or genre>: <Code progression>",
+      "Modify the following chord progression to make it more like[according to some directive, like composer or genre]:[Code progression]",
     remark: "修改以下和弦使其更像某一艺术风格",
     source: "",
     title: "音乐",
     descn:
-      "修改以下和弦进行，使其更像 <according to some directive, like composer or genre>: <Code progression>",
+      "修改以下和弦进行，使其更像[according to some directive, like composer or genre]:[Code progression]",
     tags: ["Music"],
   },
   {
@@ -10013,34 +9530,34 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Create a poem or song for <target audience> that explains <topic of your choice>. The song should have a distinct character and traits for each participant, as well as punctuation such as.,!?, and so on. Make it last as long as possible.",
+      "Create a poem or song for[target audience] that explains[topic of your choice]. The song should have a distinct character and traits for each participant, as well as punctuation such as.,!?, and so on. Make it last as long as possible.",
     remark: "为目标受众编写诗歌/歌曲阐明自己的想法",
     source: "",
     title: "音乐",
     descn:
-      "为 <target audience> 创作一首诗或歌曲来解释 <topic of your choice>。这首歌应该对每个参与者都有鲜明的特点和特点，以及标点符号，如 .,!? 等。让它持续尽可能长的时间。",
+      "为[target audience] 创作一首诗或歌曲来解释[topic of your choice]。这首歌应该对每个参与者都有鲜明的特点和特点，以及标点符号，如 .,!? 等。让它持续尽可能长的时间。",
     tags: ["Music"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "How would you encode the melody to “<Song of your choice>” as MusicXML?",
+      "How would you encode the melody to “[Song of your choice]” as MusicXML?",
     remark: "如何将旋律编码为MusicXML？",
     source: "",
     title: "音乐",
-    descn: "您如何将旋律编码为“<Song of your choice>”作为 MusicXML？",
+    descn: "您如何将旋律编码为“[Song of your choice]”作为 MusicXML？",
     tags: ["Music"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a song in the pentatonic scale and 4/4 time to the <artist and song of your choice>",
+      "Write a song in the pentatonic scale and 4/4 time to the[artist and song of your choice]",
     remark: "以五声音阶和 4/4 拍为特定的艺术家写一首歌曲",
     source: "",
     title: "音乐",
-    descn: "以五声音阶和 4/4 拍为<您选择的艺术家和歌曲>写一首歌曲",
+    descn: "以五声音阶和 4/4 拍为[您选择的艺术家和歌曲]写一首歌曲",
     tags: ["Music"],
   },
   {
@@ -10080,11 +9597,11 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Write a song about X in the style of Y.",
+    description: "Write a song about[X]in the style of Y.",
     remark: "",
     source: "",
     title: "音乐",
-    descn: "以 Y 的风格写一首关于 X 的歌曲。",
+    descn: "以 Y 的风格写一首关于[X]的歌曲。",
     tags: ["Music"],
   },
   {
@@ -10517,12 +10034,12 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Modify the following chord progression to make it more like <according to some directive, like composer or genre>: <Code progression>",
+      "Modify the following chord progression to make it more like[according to some directive, like composer or genre]:[Code progression]",
     remark: "",
     source: "",
     title: "音乐",
     descn:
-      "修改以下和弦进行，使其更像 <according to some directive, like composer or genre>: <Code progression>",
+      "修改以下和弦进行，使其更像[according to some directive, like composer or genre]:[Code progression]",
     tags: ["Music"],
   },
   {
@@ -10560,34 +10077,34 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Create a poem or song for <target audience> that explains <topic of your choice>. The song should have a distinct character and traits for each participant, as well as punctuation such as.,!?, and so on. Make it last as long as possible.",
+      "Create a poem or song for[target audience] that explains[topic of your choice]. The song should have a distinct character and traits for each participant, as well as punctuation such as.,!?, and so on. Make it last as long as possible.",
     remark: "",
     source: "",
     title: "音乐",
     descn:
-      "为 <target audience> 创作一首诗或歌曲来解释 <topic of your choice>。这首歌应该对每个参与者都有鲜明的特点和特点，以及标点符号，如 .,!? 等。让它持续尽可能长的时间。",
+      "为[target audience] 创作一首诗或歌曲来解释[topic of your choice]。这首歌应该对每个参与者都有鲜明的特点和特点，以及标点符号，如 .,!? 等。让它持续尽可能长的时间。",
     tags: ["Music"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "How would you encode the melody to “<Song of your choice>” as MusicXML?",
+      "How would you encode the melody to “[Song of your choice]” as MusicXML?",
     remark: "",
     source: "",
     title: "音乐",
-    descn: "您如何将旋律编码为“<Song of your choice>”作为 MusicXML？",
+    descn: "您如何将旋律编码为“[Song of your choice]”作为 MusicXML？",
     tags: ["Music"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a song in the pentatonic scale and 4/4 time to the <artist and song of your choice>",
+      "Write a song in the pentatonic scale and 4/4 time to the[artist and song of your choice]",
     remark: "",
     source: "",
     title: "音乐",
-    descn: "以五声音阶和 4/4 拍为<您选择的艺术家和歌曲>写一首歌曲",
+    descn: "以五声音阶和 4/4 拍为[您选择的艺术家和歌曲]写一首歌曲",
     tags: ["Music"],
   },
   {
@@ -10936,11 +10453,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Generate X pin titles ideas for a post about topic/product/service.",
+      "Generate[X]pin titles ideas for a post about topic/product/service.",
     remark: "",
     source: "",
     title: "Pinterest 帖子",
-    descn: "为关于 主题/产品/服务 的帖子生成 X 个 pin 标题创意。",
+    descn: "为关于 主题/产品/服务 的帖子生成[X]个 pin 标题创意。",
     tags: ["PinterestPosts"],
   },
   {
@@ -11071,7 +10588,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "根据以上内容写一篇宣传社交媒体的帖子。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11081,7 +10598,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "为产品/服务制作促销社交媒体帖子。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11092,7 +10609,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "撰写有关 产品/变更/发布 的社交媒体公告。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11103,7 +10620,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "撰写社交媒体帖子，为 产品/服务 带来潜在客户。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11113,7 +10630,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "撰写社交媒体帖子，为 网站 带来流量。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11124,7 +10641,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "写一篇社交媒体帖子，宣传折扣/代金券/促销。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11135,7 +10652,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "为关于 主题 的文章创建一个社交媒体宣传帖子。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11145,7 +10662,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "撰写社交媒体帖子，宣传活动类型 + 日期。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11156,7 +10673,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "撰写关于 产品/服务 的社交媒体帖子并包含 客户痛点",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11167,18 +10684,18 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "描述将产品/功能用作专业/业务的影响",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write X engaging hooks ideas for a social media post about topic.",
+      "Write[X]engaging hooks ideas for a social media post about topic.",
     remark: "",
     source: "",
     title: "促销社交媒体帖子",
-    descn: "为关于 主题 的社交媒体帖子写 X 引人入胜的想法。",
-    tags: ["PromotionalSocialMediaPosts"],
+    descn: "为关于 主题 的社交媒体帖子写[X]引人入胜的想法。",
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11189,7 +10706,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "为 产品/服务 制作社交媒体帖子，以解决积极的客户情绪。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11200,7 +10717,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "完成本段：我们正在推出 产品名称 来帮助您 获益。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11211,7 +10728,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "生成一个帖子，宣布推出我们的新产品 产品名称。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11222,7 +10739,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "创建一个帖子突出我们产品 产品名称 的独特功能。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11233,7 +10750,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "发帖展示使用我们的产品 产品名称 解决 特定问题/问题 的好处。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11244,7 +10761,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "为我们的产品 product name 开发一个促销限时促销或折扣的帖子。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11255,7 +10772,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "创建帖子以鼓励客户对我们的产品 产品名称 发表评论",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11266,7 +10783,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "生成帖子以营造购买我们产品 产品名称 的紧迫感",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11278,7 +10795,7 @@ const Users: User[] = [
     title: "促销社交媒体帖子",
     descn:
       "创建一个社交媒体帖子，将我们的产品 产品名称 与市场上的类似产品进行比较。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11289,7 +10806,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "开发一个社交媒体帖子，展示客户对我们产品 产品名称 的评价。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11300,7 +10817,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "发布社交媒体帖子，展示我们的产品 产品名称 如何在现实生活中使用。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11312,7 +10829,7 @@ const Users: User[] = [
     title: "促销社交媒体帖子",
     descn:
       "创建针对 特定受众 的社交媒体帖子，并解释我们的产品 产品名称 如何帮助他们。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11323,7 +10840,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "制作一篇社交媒体帖子，列出 产品/服务 对 客户类型 的好处。",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11333,7 +10850,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "为以上内容写一个 PAS。 （问题、搅动、解决）",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11344,7 +10861,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "为上面的内容写一个AIDA。 （注意力、兴趣、欲望、行动）",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11354,7 +10871,7 @@ const Users: User[] = [
     source: "",
     title: "促销社交媒体帖子",
     descn: "写一篇关于以上内容的BAB。 （之前，之后，桥梁）",
-    tags: ["PromotionalSocialMediaPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -11365,7 +10882,7 @@ const Users: User[] = [
     source: "",
     title: "个人简历",
     descn: "为我最近的 insert job title 角色创建要点，以展示我的成就和影响。",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11376,7 +10893,7 @@ const Users: User[] = [
     source: "",
     title: "个人简历",
     descn: "为我最近的 insert job title 角色创建要点，以展示我的成就和影响。",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11387,7 +10904,7 @@ const Users: User[] = [
     source: "",
     title: "个人简历",
     descn: "为我最近的 insert job title 角色创建要点，以展示我的成就和影响。",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11398,7 +10915,7 @@ const Users: User[] = [
     source: "",
     title: "个人简历",
     descn: "生成一份摘要，强调我的独特卖点并使我与其他候选人区分开来。",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11406,11 +10923,11 @@ const Users: User[] = [
     description:
       "Create a summary that conveys my passion for insert industry/field and my career aspirations.",
     remark:
-      "创建个人简介，需要表达对于<insert industry/field>的热情以及自己的职业抱负",
+      "创建个人简介，需要表达对于[insert industry/field]的热情以及自己的职业抱负",
     source: "",
     title: "个人简历",
     descn: "创建一个摘要，表达我对 插入行业/领域 的热情和我的职业抱负。",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11418,11 +10935,11 @@ const Users: User[] = [
     description:
       "Create bullet points highlighting my experience managing insert relevant task, e.g., budgets, teams, etc.",
     remark:
-      "列出管理<insert relevant task, e.g., budgets, teams, etc.>方面的亮点",
+      "列出管理[insert relevant task, e.g., budgets, teams, etc.]方面的亮点",
     source: "",
     title: "个人简历",
     descn: "创建要点，突出我的管理经验插入相关任务，例如预算、团队等",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11430,11 +10947,11 @@ const Users: User[] = [
     description:
       "Please review my resume and suggest any improvements or edits.",
     remark:
-      "用符号列表呈现管理经验，需要列出管理<insert relevant task, e.g., budgets, teams, etc.>方面的亮点",
+      "用符号列表呈现管理经验，需要列出管理[insert relevant task, e.g., budgets, teams, etc.]方面的亮点",
     source: "",
     title: "个人简历",
     descn: "请查看我的简历并提出任何改进或修改建议。",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11445,17 +10962,17 @@ const Users: User[] = [
     source: "",
     title: "个人简历",
     descn: "求职者在简历中常犯的错误有哪些？",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Write CV bullet points with a quantifiable matrix for X role",
+    description: "Write CV bullet points with a quantifiable matrix for[X]role",
     remark: "用可量化的指标为X role编写简历符号列表",
     source: "",
     title: "个人简历",
-    descn: "为 X role 写下带有可量化矩阵的 CV 要点",
-    tags: ["resume"],
+    descn: "为[X]role 写下带有可量化矩阵的 CV 要点",
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11466,7 +10983,7 @@ const Users: User[] = [
     source: "",
     title: "恢复",
     descn: "创建一个感谢电子邮件模板以在面试后发送",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11477,7 +10994,7 @@ const Users: User[] = [
     source: "",
     title: "恢复",
     descn: "为我最近的 insert job title 角色创建要点，以展示我的成就和影响。",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11488,7 +11005,7 @@ const Users: User[] = [
     source: "",
     title: "恢复",
     descn: "生成一份摘要，强调我的独特卖点并使我与其他候选人区分开来。",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11499,7 +11016,7 @@ const Users: User[] = [
     source: "",
     title: "恢复",
     descn: "创建一个摘要，表达我对 插入行业/领域 的热情和我的职业抱负。",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11510,7 +11027,7 @@ const Users: User[] = [
     source: "",
     title: "恢复",
     descn: "创建要点，突出我的管理经验插入相关任务，例如预算、团队等",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11521,7 +11038,7 @@ const Users: User[] = [
     source: "",
     title: "恢复",
     descn: "请查看我的简历并提出任何改进或修改建议。",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11532,17 +11049,17 @@ const Users: User[] = [
     source: "",
     title: "恢复",
     descn: "求职者在简历中常犯的错误有哪些？",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Write CV bullet points with a quantifiable matrix for X role",
-    remark: "使用可量化的矩阵为 X 角色 编写 CV 项目符号点",
+    description: "Write CV bullet points with a quantifiable matrix for[X]role",
+    remark: "使用可量化的矩阵为[X]角色 编写 CV 项目符号点",
     source: "",
     title: "恢复",
-    descn: "为 X role 写下带有可量化矩阵的 CV 要点",
-    tags: ["resume"],
+    descn: "为[X]role 写下带有可量化矩阵的 CV 要点",
+    tags: ["Resume"],
   },
   {
     preview: "",
@@ -11553,52 +11070,52 @@ const Users: User[] = [
     source: "",
     title: "恢复",
     descn: "创建一个感谢电子邮件模板以在面试后发送",
-    tags: ["resume"],
+    tags: ["Resume"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Create a personalized sales email for a potential customer for my <niche> company selling <product>",
+      "Create a personalized sales email for a potential customer for my[niche] company selling[product]",
     remark: "为客户创建一个个性化的销售电子邮件",
     source: "",
     title: "销售",
     descn:
-      "为我的 <niche> 公司销售 <product> 的潜在客户创建个性化的销售电子邮件",
+      "为我的[niche] 公司销售[product] 的潜在客户创建个性化的销售电子邮件",
     tags: ["Sales"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a cold email to a prospective customer to introduce them to my <niche> company and how it can benefit them with <insert unique selling points>",
+      "Write a cold email to a prospective customer to introduce them to my[niche] company and how it can benefit them with[insert unique selling points]",
     remark: "编写冷邮件介绍公司",
     source: "",
     title: "销售",
     descn:
-      "给潜在客户写一封冷电子邮件，向他们介绍我的 <niche> 公司以及它如何通过 <insert unique selling points> 让他们受益",
+      "给潜在客户写一封冷电子邮件，向他们介绍我的[niche] 公司以及它如何通过[insert unique selling points] 让他们受益",
     tags: ["Sales"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "What product customization would you recommend for this customer? <include customer details below>",
+      "What product customization would you recommend for this customer?[include customer details below]",
     remark: "根据客户详情推荐哪些产品定制方案",
     source: "",
     title: "销售",
-    descn: "您会为该客户推荐什么样的产品定制？ <在下方包含客户详细信息>",
+    descn: "您会为该客户推荐什么样的产品定制？[在下方包含客户详细信息]",
     tags: ["Sales"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "What are some creative ways to generate leads for my <niche> company?",
+      "What are some creative ways to generate leads for my[niche] company?",
     remark: "公司创意潜在客户获取方法",
     source: "",
     title: "销售",
-    descn: "有哪些创造性的方法可以为我的 <niche> 公司带来潜在客户？",
+    descn: "有哪些创造性的方法可以为我的[niche] 公司带来潜在客户？",
     tags: ["Sales"],
   },
   {
@@ -11616,48 +11133,48 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Create a personalized sales email for a potential customer for my <niche> company selling <product>",
+      "Create a personalized sales email for a potential customer for my[niche] company selling[product]",
     remark:
-      "为潜在客户创建个性化的销售电子邮件，以便我公司<niche>销售<product>",
+      "为潜在客户创建个性化的销售电子邮件，以便我公司[niche]销售[product]",
     source: "",
     title: "销售",
     descn:
-      "为我的 <niche> 公司销售 <product> 的潜在客户创建个性化的销售电子邮件",
+      "为我的[niche] 公司销售[product] 的潜在客户创建个性化的销售电子邮件",
     tags: ["Sales"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a cold email to a prospective customer to introduce them to my <niche> company and how it can benefit them with <insert unique selling points>",
+      "Write a cold email to a prospective customer to introduce them to my[niche] company and how it can benefit them with[insert unique selling points]",
     remark:
-      "给潜在客户写一封冷电子邮件，向他们介绍我的<niche>公司，以及如何通过<插入独特的卖点>使他们受益。",
+      "给潜在客户写一封冷电子邮件，向他们介绍我的[niche]公司，以及如何通过[插入独特的卖点]使他们受益。",
     source: "",
     title: "销售",
     descn:
-      "给潜在客户写一封冷电子邮件，向他们介绍我的 <niche> 公司以及它如何通过 <insert unique selling points> 让他们受益",
+      "给潜在客户写一封冷电子邮件，向他们介绍我的[niche] 公司以及它如何通过[insert unique selling points] 让他们受益",
     tags: ["Sales"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "What product customization would you recommend for this customer? <include customer details below>",
-    remark: "您会为此客户推荐什么产品定制？<在下面包括客户详细信息>",
+      "What product customization would you recommend for this customer?[include customer details below]",
+    remark: "您会为此客户推荐什么产品定制？[在下面包括客户详细信息]",
     source: "",
     title: "销售",
-    descn: "您会为该客户推荐什么样的产品定制？ <在下方包含客户详细信息>",
+    descn: "您会为该客户推荐什么样的产品定制？[在下方包含客户详细信息]",
     tags: ["Sales"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "What are some creative ways to generate leads for my <niche> company?",
-    remark: "有哪些创造性的方法可以为我的公司产生潜在客户<niche>？",
+      "What are some creative ways to generate leads for my[niche] company?",
+    remark: "有哪些创造性的方法可以为我的公司产生潜在客户[niche]？",
     source: "",
     title: "销售",
-    descn: "有哪些创造性的方法可以为我的 <niche> 公司带来潜在客户？",
+    descn: "有哪些创造性的方法可以为我的[niche] 公司带来潜在客户？",
     tags: ["Sales"],
   },
   {
@@ -11997,10 +11514,10 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description: "Give me 10 SEO-optimized titles for a blog post about X.",
-    remark: "给我 10 个 SEO 优化的标题，用于一篇关于 X 的博客文章。",
+    remark: "给我 10 个 SEO 优化的标题，用于一篇关于[X]的博客文章。",
     source: "",
     title: "搜索引擎优化",
-    descn: "给我 10 个关于 X 的博文的 SEO 优化标题。",
+    descn: "给我 10 个关于[X]的博文的 SEO 优化标题。",
     tags: ["SEO"],
   },
   {
@@ -12451,7 +11968,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体 CTA",
     descn: "为 产品 写一个号召性用语，让读者采取 行动。",
-    tags: ["SocialMediaCTAs"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12461,7 +11978,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体 CTA",
     descn: "为 产品/服务 编写 CTA。",
-    tags: ["SocialMediaCTAs"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12471,7 +11988,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体 CTA",
     descn: "为以上内容写一个号召性用语。",
-    tags: ["SocialMediaCTAs"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12482,7 +11999,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体 CTA",
     descn: "写一个形容词 CTA，为客户类型推广产品/服务。",
-    tags: ["SocialMediaCTAs"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12493,17 +12010,17 @@ const Users: User[] = [
     source: "",
     title: "社交媒体 CTA",
     descn: "说服我的听众购买产品/服务并包含 CTA：您的 CTA",
-    tags: ["SocialMediaCTAs"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Provide X powerful calls to action about product/service.",
-    remark: "提供 X 个关于 产品/服务 的有力号召性用语。",
+    description: "Provide[X]powerful calls to action about product/service.",
+    remark: "提供[X]个关于 产品/服务 的有力号召性用语。",
     source: "",
     title: "社交媒体 CTA",
-    descn: "提供关于 产品/服务 的 X 项强有力的号召性用语。",
-    tags: ["SocialMediaCTAs"],
+    descn: "提供关于 产品/服务 的[X]项强有力的号召性用语。",
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12513,7 +12030,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "创建一个有趣的社交媒体帖子来庆祝 假期。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12524,7 +12041,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "写一篇社交媒体帖子，谈论著名的节日传统。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12535,7 +12052,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "制作一篇社交媒体帖子，谈论 假期 是如何创建的。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12545,7 +12062,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "分享 假期 书籍/电影/歌曲列表。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12558,7 +12075,7 @@ const Users: User[] = [
     title: "社交媒体假日帖子",
     descn:
       "创建一个描述 假日经典电影 的社交媒体帖子，但不透露名字，并让观众猜一猜。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12568,7 +12085,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "写一篇关于 假期 必备品的社交媒体帖子。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12579,7 +12096,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "为关于假日装饰品的社交媒体帖子写一个标题。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12589,7 +12106,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "为假期写一个温馨的故事。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12599,7 +12116,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "创建一个社交媒体来宣传 假日 促销活动。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12609,7 +12126,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "写一篇关于 假期 食谱的帖子。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12619,7 +12136,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "创建关于未知 假期 事实的社交媒体帖子。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12629,7 +12146,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "生成有关 假期 的社交媒体帖子想法。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12640,7 +12157,7 @@ const Users: User[] = [
     source: "",
     title: "社交媒体假日帖子",
     descn: "生成以 假日 为主题的社交媒体竞赛/赠品/挑战。",
-    tags: ["SocialMediaHolidayPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -12891,7 +12408,7 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "What makes the Olympic Games so special?",
+    description: "What makes the Olympic GameTeamwork so special?",
     remark: "奥运会特别的原因",
     source: "",
     title: "体育",
@@ -12923,10 +12440,10 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description: "What is the most popular sport in the United States?",
-    remark: "美国最受欢迎的运动是什么？",
+    remark: "中国最受欢迎的运动是什么？",
     source: "",
     title: "体育",
-    descn: "美国最受欢迎的运动是什么？",
+    descn: "中国最受欢迎的运动是什么？",
     tags: ["Sports"],
   },
   {
@@ -12952,11 +12469,11 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Write a story about X in the style of Y.",
+    description: "Write a story about[X]in the style of Y.",
     remark: "以Y的风格写一个关于X的故事。",
     source: "",
     title: "讲故事",
-    descn: "用 Y 的风格写一个关于 X 的故事。",
+    descn: "用 Y 的风格写一个关于[X]的故事。",
     tags: ["Storytelling"],
   },
   {
@@ -13289,11 +12806,11 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Write an essay about X in the style of Y.",
+    description: "Write an essay about[X]in the style of Y.",
     remark: "以Y的风格写一篇关于X的文章。",
     source: "",
     title: "学生",
-    descn: "以 Y 的风格写一篇关于 X 的文章。",
+    descn: "以 Y 的风格写一篇关于[X]的文章。",
     tags: ["Students"],
   },
   {
@@ -13396,11 +12913,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write an article about X that could be published in a magazine or newspaper.",
+      "Write an article about[X]that could be published in a magazine or newspaper.",
     remark: "写一篇关于X的文章，可以在杂志或报纸上发表。",
     source: "",
     title: "学生",
-    descn: "写一篇关于 X 的文章，可以发表在杂志或报纸上。",
+    descn: "写一篇关于[X]的文章，可以发表在杂志或报纸上。",
     tags: ["Students"],
   },
   {
@@ -13580,11 +13097,11 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "What research would be most relevant for X topic?",
+    description: "What research would be most relevant for[X]topic?",
     remark: "",
     source: "",
     title: "学生",
-    descn: "什么研究与 X 主题最相关？",
+    descn: "什么研究与[X]主题最相关？",
     tags: ["Students"],
   },
   {
@@ -14193,7 +13710,7 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "What is the future of commerce and how will technology impact online shopping and retail?",
+      "What is the future of Commerce and how will technology impact online shopping and retail?",
     remark: "",
     source: "",
     title: "科技",
@@ -14214,11 +13731,11 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Write X TikTok Captions for a video about topic.",
+    description: "Write[X]TikTok Captions for a video about topic.",
     remark: "",
     source: "",
     title: "抖音帖子",
-    descn: "为有关 主题 的视频写 X 个 TikTok 字幕。",
+    descn: "为有关 主题 的视频写[X]个 TikTok 字幕。",
     tags: ["TikTokPosts"],
   },
   {
@@ -14234,11 +13751,11 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Give me X TikTok challenge ideas.",
+    description: "Give me[X]TikTok challenge ideas.",
     remark: "",
     source: "",
     title: "抖音帖子",
-    descn: "给我 X 个 TikTok 挑战想法。",
+    descn: "给我[X]个 TikTok 挑战想法。",
     tags: ["TikTokPosts"],
   },
   {
@@ -14504,17 +14021,17 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description: "How to plan a road trip in the USA?",
-    remark: "",
+    remark: "如何规划中国的公路旅行？",
     source: "",
     title: "旅行",
-    descn: "如何规划美国的公路旅行？",
+    descn: "如何规划中国的公路旅行？",
     tags: ["Travel"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description: "How to travel safely during the pandemic?",
-    remark: "",
+    remark: "疫情期间如何安全出行？",
     source: "",
     title: "旅行",
     descn: "疫情期间如何安全出行？",
@@ -14785,12 +14302,12 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "How much money do I need as a tourist for X days in Location?",
+      "How much money do I need as a tourist for[X]days in Location?",
     remark: "",
     source: "",
     title: "旅行",
-    descn: "作为一名游客在 Location 待 X 天需要多少钱？",
-    tags: ["TravelAndTourism"],
+    descn: "作为一名游客在 Location 待[X]天需要多少钱？",
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14800,17 +14317,17 @@ const Users: User[] = [
     source: "",
     title: "旅行",
     descn: "我需要多少钱才能在 location 生存一天？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Pick X cities for a Y-day trip in location",
+    description: "Pick[X]cities for a Y-day trip in location",
     remark: "",
     source: "",
     title: "旅行",
     descn: "在location选择X个城市进行Y天的旅行",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14820,7 +14337,7 @@ const Users: User[] = [
     source: "",
     title: "旅行",
     descn: "计划花 1500 美元在巴黎进行为期 5 天的旅行。给我行程单",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14830,17 +14347,17 @@ const Users: User[] = [
     source: "",
     title: "旅行",
     descn: "从斯德哥尔摩去悉尼或巴厘岛便宜吗？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "What is the most convenient airline to go from X to Y?",
+    description: "What is the most convenient airline to go from[X]to Y?",
     remark: "",
     source: "",
     title: "旅行",
-    descn: "从 X 到 Y 乘坐哪家航空公司最方便？",
-    tags: ["TravelAndTourism"],
+    descn: "从[X]到 Y 乘坐哪家航空公司最方便？",
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14851,7 +14368,7 @@ const Users: User[] = [
     source: "",
     title: "旅行",
     descn: "在每人 100 欧元的预算下，阿姆斯特丹最受欢迎的餐厅有哪些？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14863,18 +14380,18 @@ const Users: User[] = [
     title: "旅行",
     descn:
       "我想计划一次为期三周的穿越欧洲的背包旅行。我有学生预算，我喜欢寻找当地的街头美食和开放市场。你能为我推荐一个行程吗？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "How much money do I need as a tourist for X days in Location?",
+      "How much money do I need as a tourist for[X]days in Location?",
     remark: "",
     source: "",
     title: "旅行和旅游",
-    descn: "作为一名游客在 Location 待 X 天需要多少钱？",
-    tags: ["TravelAndTourism"],
+    descn: "作为一名游客在 Location 待[X]天需要多少钱？",
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14884,17 +14401,17 @@ const Users: User[] = [
     source: "",
     title: "旅行和旅游",
     descn: "我需要多少钱才能在 location 生存一天？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Pick X cities for a Y-day trip in location",
+    description: "Pick[X]cities for a Y-day trip in location",
     remark: "",
     source: "",
     title: "旅行和旅游",
     descn: "在location选择X个城市进行Y天的旅行",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14904,7 +14421,7 @@ const Users: User[] = [
     source: "",
     title: "旅行和旅游",
     descn: "计划花 1500 美元在巴黎进行为期 5 天的旅行。给我行程单",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14914,17 +14431,17 @@ const Users: User[] = [
     source: "",
     title: "旅行和旅游",
     descn: "从斯德哥尔摩去悉尼或巴厘岛便宜吗？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "What is the most convenient airline to go from X to Y?",
+    description: "What is the most convenient airline to go from[X]to Y?",
     remark: "",
     source: "",
     title: "旅行和旅游",
-    descn: "从 X 到 Y 乘坐哪家航空公司最方便？",
-    tags: ["TravelAndTourism"],
+    descn: "从[X]到 Y 乘坐哪家航空公司最方便？",
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14935,7 +14452,7 @@ const Users: User[] = [
     source: "",
     title: "旅行和旅游",
     descn: "在每人 100 欧元的预算下，阿姆斯特丹最受欢迎的餐厅有哪些？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14947,29 +14464,29 @@ const Users: User[] = [
     title: "旅行和旅游",
     descn:
       "我想计划一次为期三周的穿越欧洲的背包旅行。我有学生预算，我喜欢寻找当地的街头美食和开放市场。你能为我推荐一个行程吗？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Here is a list of product titles: product titles, Perform the following modifications to each product title: <modifications>",
+      "Here is a list of product titles: product titles, Perform the following modifications to each product title:[modifications]",
     remark: "",
     source: "",
     title: "旅行和旅游",
-    descn: "以下是产品标题列表：产品标题，对每个产品标题执行以下修改：<修改>",
-    tags: ["TravelAndTourism"],
+    descn: "以下是产品标题列表：产品标题，对每个产品标题执行以下修改：[修改]",
+    tags: ["Travel"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "How much money do I need as a tourist for X days in Location?",
+      "How much money do I need as a tourist for[X]days in Location?",
     remark: "",
     source: "",
     title: "旅行和旅游",
-    descn: "作为一名游客在 Location 待 X 天需要多少钱？",
-    tags: ["TravelAndTourism"],
+    descn: "作为一名游客在 Location 待[X]天需要多少钱？",
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14979,17 +14496,17 @@ const Users: User[] = [
     source: "",
     title: "旅行和旅游",
     descn: "我需要多少钱才能在 location 生存一天？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Pick X cities for a Y-day trip in location",
+    description: "Pick[X]cities for a Y-day trip in location",
     remark: "",
     source: "",
     title: "旅行和旅游",
     descn: "在location选择X个城市进行Y天的旅行",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -14999,7 +14516,7 @@ const Users: User[] = [
     source: "",
     title: "旅行和旅游",
     descn: "计划花 1500 美元在巴黎进行为期 5 天的旅行。给我行程单",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -15009,17 +14526,17 @@ const Users: User[] = [
     source: "",
     title: "旅行和旅游",
     descn: "从斯德哥尔摩去悉尼或巴厘岛便宜吗？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "What is the most convenient airline to go from X to Y?",
+    description: "What is the most convenient airline to go from[X]to Y?",
     remark: "",
     source: "",
     title: "旅行和旅游",
-    descn: "从 X 到 Y 乘坐哪家航空公司最方便？",
-    tags: ["TravelAndTourism"],
+    descn: "从[X]到 Y 乘坐哪家航空公司最方便？",
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -15030,7 +14547,7 @@ const Users: User[] = [
     source: "",
     title: "旅行和旅游",
     descn: "在每人 100 欧元的预算下，阿姆斯特丹最受欢迎的餐厅有哪些？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -15042,7 +14559,7 @@ const Users: User[] = [
     title: "旅行和旅游",
     descn:
       "我想计划一次为期三周的穿越欧洲的背包旅行。我有学生预算，我喜欢寻找当地的街头美食和开放市场。你能为我推荐一个行程吗？",
-    tags: ["TravelAndTourism"],
+    tags: ["Travel"],
   },
   {
     preview: "",
@@ -15377,22 +14894,22 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Develop an architecture and code for a <website description> website with JavaScript.",
+      "Develop an architecture and code for a[website description] website with JavaScript.",
     remark: "使用 JavaScript 为网站开发架构和编写代码",
     source: "",
     title: "Web 开发",
-    descn: "使用 JavaScript 为 <website description> 网站开发架构和代码。",
+    descn: "使用 JavaScript 为[website description] 网站开发架构和代码。",
     tags: ["WebDevelopment"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Help me find mistakes in the following code <paste code below>.",
+      "Help me find mistakes in the following code[paste code below].",
     remark: "找程序代码中存在的错误",
     source: "",
     title: "Web 开发",
-    descn: "帮助我找出以下代码中的错误<在下面粘贴代码>。",
+    descn: "帮助我找出以下代码中的错误[在下面粘贴代码]。",
     tags: ["WebDevelopment"],
   },
   {
@@ -15411,11 +14928,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Please continue writing this code for JavaScript <post code below>",
+      "Please continue writing this code for JavaScript[post code below]",
     remark: "利用JavaScript续写代码",
     source: "",
     title: "Web 开发",
-    descn: "请继续为 JavaScript 编写此代码 <post code below>",
+    descn: "请继续为 JavaScript 编写此代码[post code below]",
     tags: ["WebDevelopment"],
   },
   {
@@ -15433,11 +14950,11 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Find the bug with this code: <post code below>",
+    description: "Find the bug with this code:[post code below]",
     remark: "寻找代码中存在的错误",
     source: "",
     title: "Web 开发",
-    descn: "使用此代码查找错误：<下面的代码>",
+    descn: "使用此代码查找错误：[下面的代码]",
     tags: ["WebDevelopment"],
   },
   {
@@ -15487,11 +15004,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a docstring for the following function <paste function below>.",
+      "Write a docstring for the following function[paste function below].",
     remark: "为函数编写文档字符串",
     source: "",
     title: "Web 开发",
-    descn: "为以下函数编写文档字符串<粘贴下面的函数>。",
+    descn: "为以下函数编写文档字符串[粘贴下面的函数]。",
     tags: ["WebDevelopment"],
   },
   {
@@ -15848,7 +15365,7 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Can you talk about the challenges and benefits of implementing commerce functionality on a website?",
+      "Can you talk about the challenges and benefits of implementing Commerce functionality on a website?",
     remark: "",
     source: "",
     title: "Web开发",
@@ -15859,22 +15376,22 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Develop an architecture and code for a <website description> website with JavaScript.",
+      "Develop an architecture and code for a[website description] website with JavaScript.",
     remark: "",
     source: "",
     title: "web开发",
-    descn: "使用 JavaScript 为 <website description> 网站开发架构和代码。",
+    descn: "使用 JavaScript 为[website description] 网站开发架构和代码。",
     tags: ["WebDevelopment"],
   },
   {
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Help me find mistakes in the following code <paste code below>.",
+      "Help me find mistakes in the following code[paste code below].",
     remark: "",
     source: "",
     title: "web开发",
-    descn: "帮助我找出以下代码中的错误<在下面粘贴代码>。",
+    descn: "帮助我找出以下代码中的错误[在下面粘贴代码]。",
     tags: ["WebDevelopment"],
   },
   {
@@ -15893,11 +15410,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Please continue writing this code for JavaScript <post code below>",
+      "Please continue writing this code for JavaScript[post code below]",
     remark: "",
     source: "",
     title: "web开发",
-    descn: "请继续为 JavaScript 编写此代码 <post code below>",
+    descn: "请继续为 JavaScript 编写此代码[post code below]",
     tags: ["WebDevelopment"],
   },
   {
@@ -15915,11 +15432,11 @@ const Users: User[] = [
   {
     preview: "",
     website: "https://ai.redtom.com",
-    description: "Find the bug with this code: <post code below>",
+    description: "Find the bug with this code:[post code below]",
     remark: "",
     source: "",
     title: "web开发",
-    descn: "使用此代码查找错误：<下面的代码>",
+    descn: "使用此代码查找错误：[下面的代码]",
     tags: ["WebDevelopment"],
   },
   {
@@ -15969,11 +15486,11 @@ const Users: User[] = [
     preview: "",
     website: "https://ai.redtom.com",
     description:
-      "Write a docstring for the following function <paste function below>.",
+      "Write a docstring for the following function[paste function below].",
     remark: "",
     source: "",
     title: "web开发",
-    descn: "为以下函数编写文档字符串<粘贴下面的函数>。",
+    descn: "为以下函数编写文档字符串[粘贴下面的函数]。",
     tags: ["WebDevelopment"],
   },
   {
@@ -16200,7 +15717,7 @@ const Users: User[] = [
     source: "",
     title: "Web开发",
     descn:
-      "请仅使用 p5.js 代码回复。请简洁地实现一个30行以内的元胞自动机生命游戏。 – 800,800 x 800 像素 - 抱歉，没有换行符。请不要留下评论。",
+      "请仅使用 p5.js 代码回复。请简洁地实现一个30行以内的元胞自动机生命游戏。 – 800,800[X]800 像素 - 抱歉，没有换行符。请不要留下评论。",
     tags: ["WebDevelopment"],
   },
   {
@@ -16267,7 +15784,7 @@ const Users: User[] = [
     remark: "",
     source: "",
     title: "作家",
-    descn: " “写一篇关于网络托管产品的好处的文章，例如美国专用主机”",
+    descn: " “写一篇关于网络托管产品的好处的文章，例如中国专用主机”",
     tags: ["Writers", "Favorite"],
   },
   {
@@ -16350,6 +15867,22 @@ export const Tags: { [type in TagType]: Tag } = {
     }),
     color: "#F13557",
   },
+  SocialMedia: {
+    label: translate({ message: "社交媒体" }),
+    description: translate({
+      message: "社交媒体",
+      id: "showcase.tag.SocialMedia.description",
+    }),
+    color: "#E3D463",
+  },
+  SEO: {
+    label: translate({ message: "搜索引擎优化" }),
+    description: translate({
+      message: "搜索引擎优化",
+      id: "showcase.tag.SEO.description",
+    }),
+    color: "#36F9E5",
+  },
   Marketing: {
     label: translate({ message: "市场营销" }),
     description: translate({
@@ -16358,7 +15891,6 @@ export const Tags: { [type in TagType]: Tag } = {
     }),
     color: "#9179A7",
   },
-
   Business: {
     label: translate({ message: "商业" }),
     description: translate({
@@ -16367,16 +15899,46 @@ export const Tags: { [type in TagType]: Tag } = {
     }),
     color: "#86699e",
   },
-
-  Content: {
-    label: translate({ message: "内容" }),
+  Developers: {
+    label: translate({ message: "开发者" }),
     description: translate({
-      message: "内容",
+      message: "开发者",
+      id: "showcase.tag.Developers.description",
+    }),
+    color: "#DC2020",
+  },
+  Resume: {
+    label: translate({ message: "个人简历" }),
+    description: translate({
+      message: "个人简历",
+      id: "showcase.tag.resume.description",
+    }),
+    color: "#338668",
+  },
+  Music: {
+    label: translate({ message: "音乐" }),
+    description: translate({
+      message: "音乐",
+      id: "showcase.tag.Musicdescription",
+    }),
+    color: "#F1EDA3",
+  },
+  Game: {
+    label: translate({ message: "游戏" }),
+    description: translate({
+      message: "游戏",
+      id: "showcase.tag.Game.description",
+    }),
+    color: "#F4B28F",
+  },
+  Content: {
+    label: translate({ message: "内容生成" }),
+    description: translate({
+      message: "内容生成",
       id: "showcase.tag.Content.description",
     }),
     color: "#805F2C",
   },
-
   WebDevelopment: {
     label: translate({ message: "Web开发" }),
     description: translate({
@@ -16404,15 +15966,6 @@ export const Tags: { [type in TagType]: Tag } = {
     color: "#C1A384",
   },
 
-  Music: {
-    label: translate({ message: "音乐" }),
-    description: translate({
-      message: "音乐",
-      id: "showcase.tag.Musicdescription",
-    }),
-    color: "#F1EDA3",
-  },
-
   Fun: {
     label: translate({ message: "乐趣" }),
     description: translate({
@@ -16422,38 +15975,20 @@ export const Tags: { [type in TagType]: Tag } = {
     color: "#AB5B41",
   },
 
-  HealthcareAndWellbeing: {
-    label: translate({ message: "医疗保健和福利" }),
+  HealthCareAndWellbeing: {
+    label: translate({ message: "医疗保健" }),
     description: translate({
-      message: "医疗保健和福利",
+      message: "医疗保健",
       id: "showcase.tag.HealthcareAndWellbeing.description",
     }),
     color: "#FE5D24", // Facebook blue
   },
 
-  AIART: {
-    label: translate({ message: "人工智能艺术（中途）" }),
-    description: translate({
-      message: "人工智能艺术（中途）",
-      id: "showcase.tag.AIART.description",
-    }),
-    color: "#C373D6",
-  },
-
-  FoodAndCooking: {
-    label: translate({ message: "食物和烹饪" }),
-    description: translate({
-      message: "食物和烹饪",
-      id: "showcase.tag.FoodAndCooking.description",
-    }),
-    color: "#CC9BDA",
-  },
-
-  Games: {
+  GameTeamwork: {
     label: translate({ message: "游戏（团队协作）" }),
     description: translate({
       message: "游戏（团队协作）",
-      id: "showcase.tag.Games.description",
+      id: "showcase.tag.GameTeamwork.description",
     }),
     color: "#26898A",
   },
@@ -16467,14 +16002,7 @@ export const Tags: { [type in TagType]: Tag } = {
     color: "#7A4E4E",
   },
 
-  resume: {
-    label: translate({ message: "个人简历" }),
-    description: translate({
-      message: "个人简历",
-      id: "showcase.tag.resume.description",
-    }),
-    color: "#338668",
-  },
+  
 
   Analytics: {
     label: translate({ message: "分析" }),
@@ -16530,40 +16058,22 @@ export const Tags: { [type in TagType]: Tag } = {
     color: "#5AE461",
   },
 
-  TravelAndTourism: {
+  Travel: {
     label: translate({ message: "旅行" }),
     description: translate({
       message: "旅行",
-      id: "showcase.tag.TravelAndTourism.description",
+      id: "showcase.tag.Travel.description",
     }),
     color: "#1C7371",
   },
 
-  commerce: {
+  Commerce: {
     label: translate({ message: "电子商务" }),
     description: translate({
       message: "电子商务",
-      id: "showcase.tag.commerce.description",
+      id: "showcase.tag.Commerce.description",
     }),
     color: "#3DBA28",
-  },
-
-  SEOs: {
-    label: translate({ message: "搜索引擎优化" }),
-    description: translate({
-      message: "搜索引擎优化",
-      id: "showcase.tag.SEOs.description",
-    }),
-    color: "#36F9E5",
-  },
-
-  Developers: {
-    label: translate({ message: "开发者" }),
-    description: translate({
-      message: "开发者",
-      id: "showcase.tag.Developers.description",
-    }),
-    color: "#DC2020",
   },
 
   ExcelSheet: {
@@ -16583,15 +16093,6 @@ export const Tags: { [type in TagType]: Tag } = {
     }),
     color: "#93AF86",
   },
-
-  HealthAndMedicine: {
-    label: translate({ message: "健康与医药" }),
-    description: translate({
-      message: "健康与医药",
-      id: "showcase.tag.HealthAndMedicine.description",
-    }),
-    color: "#C4BFFF",
-  },
   Accountants: {
     label: translate({ message: "会计师" }),
     description: translate({
@@ -16605,14 +16106,6 @@ export const Tags: { [type in TagType]: Tag } = {
     description: translate({
       message: "游戏开发商",
       id: "showcase.tag.GameDevelopers.description",
-    }),
-    color: "#E3D463",
-  },
-  SocialMedia: {
-    label: translate({ message: "社交媒体" }),
-    description: translate({
-      message: "社交媒体",
-      id: "showcase.tag.SocialMedia.description",
     }),
     color: "#E3D463",
   },
@@ -16632,22 +16125,6 @@ export const Tags: { [type in TagType]: Tag } = {
     }),
     color: "#F1EDA3",
   },
-  SEO: {
-    label: translate({ message: "搜索引擎" }),
-    description: translate({
-      message: "搜索引擎",
-      id: "showcase.tag.SEO.description",
-    }),
-    color: "#AB5B41",
-  },
-  MarketingAndCopywriting: {
-    label: translate({ message: "营销和文案" }),
-    description: translate({
-      message: "营销和文案",
-      id: "showcase.tag.MarketingAndCopywriting.description",
-    }),
-    color: "#FE5D24",
-  },
   Storytelling: {
     label: translate({ message: "讲故事" }),
     description: translate({
@@ -16665,9 +16142,9 @@ export const Tags: { [type in TagType]: Tag } = {
     color: "#CC9BDA",
   },
   Comedy: {
-    label: translate({ message: "有趣的事情" }),
+    label: translate({ message: "喜剧" }),
     description: translate({
-      message: "有趣的事情",
+      message: "喜剧",
       id: "showcase.tag.Comedy.description",
     }),
     color: "#26898A",
@@ -16687,14 +16164,6 @@ export const Tags: { [type in TagType]: Tag } = {
       id: "showcase.tag.Art.description",
     }),
     color: "#338668",
-  },
-  Gaming: {
-    label: translate({ message: "赌博" }),
-    description: translate({
-      message: "赌博",
-      id: "showcase.tag.Gaming.description",
-    }),
-    color: "#F4B28F",
   },
   Pets: {
     label: translate({ message: "宠物" }),
@@ -16745,111 +16214,14 @@ export const Tags: { [type in TagType]: Tag } = {
     }),
     color: "#1C7371",
   },
-  Travel: {
-    label: translate({ message: "旅行和旅游" }),
-    description: translate({
-      message: "旅行和旅游",
-      id: "showcase.tag.Travel.description",
-    }),
-    color: "#3DBA28",
-  },
-  HealthMedicine: {
-    label: translate({ message: "顾客服务" }),
-    description: translate({
-      message: "顾客服务",
-      id: "showcase.tag.HealthMedicine.description",
-    }),
-    color: "#36F9E5",
-  },
   FoodCooking: {
-    label: translate({ message: "食品与烹饪" }),
+    label: translate({ message: "烹饪" }),
     description: translate({
-      message: "食品与烹饪",
+      message: "烹饪",
       id: "showcase.tag.FoodCooking.description",
     }),
     color: "#DC2020",
   },
-  Game: {
-    label: translate({ message: "游戏" }),
-    description: translate({
-      message: "游戏",
-      id: "showcase.tag.Game.description",
-    }),
-    color: "#E38D8D",
-  },
-  PromotionalSocialMediaPosts: {
-    label: translate({ message: "促销社交媒体帖子" }),
-    description: translate({
-      message: "促销社交媒体帖子",
-      id: "showcase.tag.PromotionalSocialMediaPosts.description",
-    }),
-    color: "#93AF86",
-  },
-  SocialMediaCTAs: {
-    label: translate({ message: "社交媒体CTA" }),
-    description: translate({
-      message: "社交媒体CTA",
-      id: "showcase.tag.SocialMediaCTAs.description",
-    }),
-    color: "#C4BFFF",
-  },
-  FunSocialMediaPosts: {
-    label: translate({ message: "有趣的社交媒体帖子" }),
-    description: translate({
-      message: "有趣的社交媒体帖子",
-      id: "showcase.tag.FunSocialMediaPosts.description",
-    }),
-    color: "#F13557",
-  },
-  EducationalSocialMediaPosts: {
-    label: translate({ message: "教育社交媒体帖子" }),
-    description: translate({
-      message: "教育社交媒体帖子",
-      id: "showcase.tag.EducationalSocialMediaPosts.description",
-    }),
-    color: "#9179A7",
-  },
-  InteractiveSocialMediaPosts: {
-    label: translate({ message: "互动社交媒体帖子" }),
-    description: translate({
-      message: "互动社交媒体帖子",
-      id: "showcase.tag.InteractiveSocialMediaPosts.description",
-    }),
-    color: "#805F2C",
-  },
-  InspirationalSocialMediaPosts: {
-    label: translate({ message: "鼓舞人心的社交媒体帖子" }),
-    description: translate({
-      message: "鼓舞人心的社交媒体帖子",
-      id: "showcase.tag.InspirationalSocialMediaPosts.description",
-    }),
-    color: "#E3D463",
-  },
-  CompanyRelatedSocialMediaPosts: {
-    label: translate({ message: "与公司相关的社交媒体帖子" }),
-    description: translate({
-      message: "与公司相关的社交媒体帖子",
-      id: "showcase.tag.CompanyRelatedSocialMediaPosts.description",
-    }),
-    color: "#E3D463",
-  },
-  SocialMediaHolidayPosts: {
-    label: translate({ message: "社交媒体假日帖子" }),
-    description: translate({
-      message: "社交媒体假日帖子",
-      id: "showcase.tag.SocialMediaHolidayPosts.description",
-    }),
-    color: "#C1A384",
-  },
-  DifferentSocialMediaPlatforms: {
-    label: translate({ message: "不同的社交媒体平台" }),
-    description: translate({
-      message: "不同的社交媒体平台",
-      id: "showcase.tag.DifferentSocialMediaPlatforms.description",
-    }),
-    color: "#F1EDA3",
-  },
-
   FacebookPosts: {
     label: translate({ message: "脸书帖子" }),
     description: translate({
@@ -16890,14 +16262,6 @@ export const Tags: { [type in TagType]: Tag } = {
     }),
     color: "#26898A",
   },
-  GoogleBusinessProfilePosts: {
-    label: translate({ message: "谷歌商家资料帖子" }),
-    description: translate({
-      message: "LinkedIn帖子",
-      id: "showcase.tag.GoogleBusinessProfilePosts.description",
-    }),
-    color: "#7A4E4E",
-  },
   TikTokPosts: {
     label: translate({ message: "抖音帖子" }),
     description: translate({
@@ -16914,6 +16278,14 @@ export const Tags: { [type in TagType]: Tag } = {
     }),
     color: "#F4B28F",
   },
+  GoogleBusinessProfilePosts: {
+    label: translate({ message: "谷歌商家资料帖子" }),
+    description: translate({
+      message: "LinkedIn帖子",
+      id: "showcase.tag.GoogleBusinessProfilePosts.description",
+    }),
+    color: "#7A4E4E",
+  },
   BoostYourContent: {
     label: translate({ message: "推荐内容" }),
     description: translate({
@@ -16922,37 +16294,13 @@ export const Tags: { [type in TagType]: Tag } = {
     }),
     color: "#F78545",
   },
-  FoodandCooking: {
-    label: translate({ message: "烹饪" }),
-    description: translate({
-      message: "烹饪",
-      id: "showcase.tag.FoodandCooking.description",
-    }),
-    color: "#625F68",
-  },
-  HealthandFitness: {
-    label: translate({ message: "健康与健身" }),
-    description: translate({
-      message: "健康与健身",
-      id: "showcase.tag.HealthandFitness.description",
-    }),
-    color: "#1C58B4",
-  },
-  HealthandMedicine: {
+  HealthMedicine: {
     label: translate({ message: "健康与医学" }),
     description: translate({
       message: "健康与医学",
-      id: "showcase.tag.HealthandMedicine.description",
+      id: "showcase.tag.HealthMedicine.description",
     }),
     color: "#E7B534",
-  },
-  HealthcareandWellbeing: {
-    label: translate({ message: "保健" }),
-    description: translate({
-      message: "保健",
-      id: "showcase.tag.HealthcareandWellbeingdescription",
-    }),
-    color: "#5AE461",
   },
 };
 
@@ -16960,9 +16308,9 @@ export const TagList = Object.keys(Tags) as TagType[];
 function sortUsers() {
   let result = Users;
   // Sort by site name
-  // result = sortBy(result, (user) => user.title.toLowerCase());
+  // result = sortBy(result, (user) =] user.title.toLowerCase());
   // Sort by Marketing tag, Marketings first
-  // result = sortBy(result, (user) => !user.tags.includes("Marketing"));
+  // result = sortBy(result, (user) =] !user.tags.includes("Marketing"));
   return result;
 }
 
