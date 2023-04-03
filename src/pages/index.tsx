@@ -32,7 +32,7 @@ import ShowcaseFilterToggle, {
   type Operator,
   readOperator,
 } from "./_components/ShowcaseFilterToggle";
-import ShowcaseCard from "./_components/ShowcaseCard";
+import ShowcaseCard from "./_components/ShowcaseCard/cn";
 import ShowcaseTooltip from "./_components/ShowcaseTooltip";
 
 
@@ -148,7 +148,7 @@ function useSiteCountPlural() {
           id: "showcase.filters.resultCount",
           description:
             'Pluralized label for the number of sites found on the showcase. Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
-          message: "{sitesCount} prompts",
+          message: "{sitesCount}个提示",
         },
         { sitesCount }
       )
@@ -164,7 +164,7 @@ function ShowcaseFilters() {
         <div className={styles.filterCheckbox}>
           <div className={styles["filter-bar"]}>
             <Heading as="h2" className={styles.h2}>
-              <Translate id="showcase.filters.title">Filters</Translate>
+              <Translate id="showcase.filters.title">筛选</Translate>
             </Heading>
             <span className={styles["total-span"]}>
               {siteCountPlural(filteredUsers.length)}
@@ -305,7 +305,7 @@ function SearchBar() {
         <input
           id="searchbar"
           placeholder={translate({
-            message: "Search for prompts...",
+            message: "搜索",
             id: "showcase.searchBar.placeholder",
           })}
           value={value ?? undefined}
@@ -350,7 +350,7 @@ function ShowcaseCards() {
               >
                 <Heading as="h2">
                   <Translate id="showcase.favoritesList.title">
-                    Our favorites
+                    最爱
                   </Translate>
                 </Heading>
                 <FavoriteIcon svgClass={styles.svgIconFavorite} />
@@ -365,9 +365,7 @@ function ShowcaseCards() {
           </div>
           <div className="container">
             <Heading as="h2" className={styles.showcaseHeader}>
-              <Translate id="showcase.usersList.allUsers">
-                All prompts
-              </Translate>
+              <Translate id="showcase.usersList.allUsers">全部</Translate>
             </Heading>
             <ul className={clsx("clean-list", styles.showcaseList)}>
               {otherUsers.map((user, index) => (
