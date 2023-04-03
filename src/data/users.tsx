@@ -48,13 +48,6 @@ export type TagType =
   | "Science"
   | "Technology"
   | "Sports"
-  | "FacebookPosts"
-  | "InstagramPosts"
-  | "TwitterPosts"
-  | "LinkedInPosts"
-  | "PinterestPosts"
-  | "TikTokPosts"
-  | "YouTubePosts"
   | "GoogleBusinessProfilePosts"
   | "BoostYourContent"
 
@@ -327,7 +320,7 @@ const Users: User[] = [
     source: "",
     title: "诙谐的Instagram标题",
     descn: "写一个关于 主题 的诙谐 Instagram 标题。",
-    tags: ["InstagramPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -337,7 +330,7 @@ const Users: User[] = [
     source: "",
     title: "病毒式想法",
     descn: "生成 10 个关于 主题 的病毒式 Instagram Reel 想法。",
-    tags: ["InstagramPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -4982,7 +4975,7 @@ const Users: User[] = [
     source: "",
     title: "脸书帖子",
     descn: "写一篇关于上述公司的引人入胜的 Facebook 帖子。",
-    tags: ["FacebookPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -4992,7 +4985,7 @@ const Users: User[] = [
     source: "",
     title: "脸书帖子",
     descn: "生成有关 主题 好处的 Facebook 状态。",
-    tags: ["FacebookPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5002,7 +4995,7 @@ const Users: User[] = [
     source: "",
     title: "脸书帖子",
     descn: "写一篇关于 主题 的 Facebook 帖子",
-    tags: ["FacebookPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5014,7 +5007,7 @@ const Users: User[] = [
     title: "脸书帖子",
     descn:
       "给我一个有趣的问题，让我在我的 Facebook 群组上发布关于 topic 的问题。",
-    tags: ["FacebookPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5024,7 +5017,7 @@ const Users: User[] = [
     source: "",
     title: "脸书帖子",
     descn: "将上面的内容改写为吸引人的 Facebook 帖子。",
-    tags: ["FacebookPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -5035,7 +5028,7 @@ const Users: User[] = [
     source: "",
     title: "脸书帖子",
     descn: "为关于 主题 的 Facebook 民意调查/测验生成问题想法。",
-    tags: ["FacebookPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8394,7 +8387,7 @@ const Users: User[] = [
     source: "",
     title: "LinkedIn帖子",
     descn: "写一篇关于网络和建立专业关系的重要性的 LinkedIn 帖子。",
-    tags: ["LinkedInPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8405,7 +8398,7 @@ const Users: User[] = [
     source: "",
     title: "LinkedIn帖子",
     descn: "生成有关持续学习和专业发展的好处的 LinkedIn 帖子。",
-    tags: ["LinkedInPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8416,7 +8409,7 @@ const Users: User[] = [
     source: "",
     title: "LinkedIn帖子",
     descn: "在 LinkedIn 上发表一篇关于建立强大个人品牌的重要性的帖子。",
-    tags: ["LinkedInPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8427,7 +8420,7 @@ const Users: User[] = [
     source: "",
     title: "LinkedIn帖子",
     descn: "生成有关了解最新行业趋势和新闻的重要性的 LinkedIn 帖子。",
-    tags: ["LinkedInPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8439,7 +8432,7 @@ const Users: User[] = [
     title: "LinkedIn帖子",
     descn:
       "在 LinkedIn 上发表一篇关于设定职业目标和制定实现这些目标的计划的重要性的帖子。",
-    tags: ["LinkedInPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8451,7 +8444,7 @@ const Users: User[] = [
     title: "LinkedIn帖子",
     descn:
       "在 LinkedIn 上写一篇关于在你的职业生涯中承担有计划的风险的好处的帖子。",
-    tags: ["LinkedInPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8463,7 +8456,7 @@ const Users: User[] = [
     title: "LinkedIn帖子",
     descn:
       "在 LinkedIn 上生成一篇关于在专业互动中保持真实和透明的重要性的帖子。",
-    tags: ["LinkedInPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8473,7 +8466,7 @@ const Users: User[] = [
     source: "",
     title: "LinkedIn帖子",
     descn: "创建一篇 LinkedIn 帖子，宣传关于 主题 的博客帖子",
-    tags: ["LinkedInPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8485,7 +8478,7 @@ const Users: User[] = [
     title: "LinkedIn帖子",
     descn:
       "创建一个 LinkedIn 宣传帖子，介绍使用 产品/服务 让人们采取 行动 的好处。",
-    tags: ["LinkedInPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -8496,7 +8489,7 @@ const Users: User[] = [
     source: "",
     title: "LinkedIn帖子",
     descn: "为关于 主题 的 Facebook 民意调查/测验生成问题想法。",
-    tags: ["LinkedInPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -10458,7 +10451,7 @@ const Users: User[] = [
     source: "",
     title: "Pinterest 帖子",
     descn: "为关于 主题/产品/服务 的帖子生成[X]个 pin 标题创意。",
-    tags: ["PinterestPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -10469,7 +10462,7 @@ const Users: User[] = [
     source: "",
     title: "Pinterest 帖子",
     descn: "为 产品/服务 写一篇促销 Pinterest 帖子，让人们采取 行动。",
-    tags: ["PinterestPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -10479,7 +10472,7 @@ const Users: User[] = [
     source: "",
     title: "Pinterest 帖子",
     descn: "写一篇关于 主题 的鼓舞人心的 Pinterest 帖子。",
-    tags: ["PinterestPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -10489,7 +10482,7 @@ const Users: User[] = [
     source: "",
     title: "Pinterest 帖子",
     descn: "创建一个 Pinterest 帖子，讨论 主题 提示和技巧。",
-    tags: ["PinterestPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -13736,7 +13729,7 @@ const Users: User[] = [
     source: "",
     title: "抖音帖子",
     descn: "为有关 主题 的视频写[X]个 TikTok 字幕。",
-    tags: ["TikTokPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -13746,7 +13739,7 @@ const Users: User[] = [
     source: "",
     title: "抖音帖子",
     descn: "编写关于 主题 的 TikTok 视频脚本。",
-    tags: ["TikTokPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -13756,7 +13749,7 @@ const Users: User[] = [
     source: "",
     title: "抖音帖子",
     descn: "给我[X]个 TikTok 挑战想法。",
-    tags: ["TikTokPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -14569,7 +14562,7 @@ const Users: User[] = [
     source: "",
     title: "推特帖子",
     descn: "写一个关于 topic 的 Twitter 线程。",
-    tags: ["TwitterPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -14579,7 +14572,7 @@ const Users: User[] = [
     source: "",
     title: "推特帖子",
     descn: "生成关于 主题 的有趣推文。",
-    tags: ["TwitterPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -14589,7 +14582,7 @@ const Users: User[] = [
     source: "",
     title: "推特帖子",
     descn: "关于 topic 的 10 条推文是什么？",
-    tags: ["TwitterPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -14599,7 +14592,7 @@ const Users: User[] = [
     source: "",
     title: "推特帖子",
     descn: "根据以上信息制作 10 条推文。",
-    tags: ["TwitterPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -14609,7 +14602,7 @@ const Users: User[] = [
     source: "",
     title: "推特帖子",
     descn: "将上面的内容重写为推文。",
-    tags: ["TwitterPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -14619,7 +14612,7 @@ const Users: User[] = [
     source: "",
     title: "推特帖子",
     descn: "用 形容词 语气写一条关于 主题 的推文。",
-    tags: ["TwitterPosts"],
+    tags: ["SocialMedia"],
   },
   {
     preview: "",
@@ -16221,62 +16214,6 @@ export const Tags: { [type in TagType]: Tag } = {
       id: "showcase.tag.FoodCooking.description",
     }),
     color: "#DC2020",
-  },
-  FacebookPosts: {
-    label: translate({ message: "脸书帖子" }),
-    description: translate({
-      message: "脸书帖子",
-      id: "showcase.tag.FacebookPosts.description",
-    }),
-    color: "#AB5B41",
-  },
-  InstagramPosts: {
-    label: translate({ message: "Instagram 帖子" }),
-    description: translate({
-      message: "Instagram 帖子",
-      id: "showcase.tag.InstagramPosts.description",
-    }),
-    color: "#FE5D24",
-  },
-  TwitterPosts: {
-    label: translate({ message: "推特帖子" }),
-    description: translate({
-      message: "推特帖子",
-      id: "showcase.tag.TwitterPosts.description",
-    }),
-    color: "#C373D6",
-  },
-  LinkedInPosts: {
-    label: translate({ message: "LinkedIn帖子" }),
-    description: translate({
-      message: "LinkedIn帖子",
-      id: "showcase.tag.LinkedInPosts.description",
-    }),
-    color: "#CC9BDA",
-  },
-  PinterestPosts: {
-    label: translate({ message: "Pinterest帖子" }),
-    description: translate({
-      message: "Pinterest帖子",
-      id: "showcase.tag.PinterestPosts.description",
-    }),
-    color: "#26898A",
-  },
-  TikTokPosts: {
-    label: translate({ message: "抖音帖子" }),
-    description: translate({
-      message: "LinkedIn帖子",
-      id: "showcase.tag.TikTokPosts.description",
-    }),
-    color: "#338668",
-  },
-  YouTubePosts: {
-    label: translate({ message: "YouTube" }),
-    description: translate({
-      message: "LinkedIn帖子",
-      id: "showcase.tag.YouTubePosts.description",
-    }),
-    color: "#F4B28F",
   },
   GoogleBusinessProfilePosts: {
     label: translate({ message: "谷歌商家资料帖子" }),

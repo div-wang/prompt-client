@@ -415,7 +415,7 @@ const scrollPage = (e:any) => {
 export default function Showcase(): JSX.Element {
   return (
     <Layout title={TITLE} description={DESCRIPTION}>
-      <main className={clsx('margin-vert--lg', styles['index-page'])} onScroll={scrollPage}>
+      <main className={clsx('', styles['index-page'])} onScroll={scrollPage}>
         <ShowcaseHeader />
         <ShowcaseFilters />
         <ShowcaseCards />
