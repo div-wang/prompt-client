@@ -19,10 +19,13 @@
   border-radius: 0.4rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  border: none;
+  border: 1px solid #FFF;
 }
 .showcaseCardCenter:hover {
-  transform: scale(1.05);
   border: 1px solid #F13557;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
 }
 .showcaseCardHeader {
   display: flex;
@@ -74,7 +77,7 @@
 }
 
 .showcaseCardHeader .svgIconFavorite {
-  color: var(--site-color-svg-icon-favorite);
+  color: #F13557;
 }
 
 .showcaseCardSrcBtn {
@@ -91,6 +94,12 @@
   font-size: 0.75rem;
   padding: 0.31875rem, 0.90625rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showcaseCardSrcBtn:hover {
+  text-decoration: none;
 }
 
 .showcaseCardSrcBtn:focus-visible {

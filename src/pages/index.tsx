@@ -42,8 +42,14 @@ const TITLE = translate({
   message: "ChatGPT Shortcut - 简单易用的 ChatGPT 快捷指令表，让生产力倍增！",
 });
 const DESCRIPTION = translate({
-  message: "让生产力加倍的 ChatGPT 快捷指令",
+  message: "快速使用ChatGPT工作学习赚钱",
 });
+
+// 页面滚动使用
+const innerH = window.innerHeight || 500
+// 是否显示回顶部
+// let [isShowToTop, setIsShowToTop] = useState<string | null>(null);
+
 type UserState = {
   scrollTopPosition: number;
   focusedElementId: string | undefined;
@@ -131,7 +137,7 @@ function ShowcaseHeader() {
     <div className={styles["top-bg"]}>
       <img className={styles["top-img"]} src="https://prompt.redtom.com/static/imgs/index/bg.png" alt="背景图" />
       <section className={clsx("text--center", styles["top-text"])}>
-        <Heading as="h1">ChatGPT Shortcut</Heading>
+        <Heading as="h1">ChatGPT提问模版</Heading>
         <p className={styles["top-p"]}>{DESCRIPTION}</p>
       </section>
     </div>
@@ -158,6 +164,11 @@ function useSiteCountPlural() {
 function ShowcaseFilters() {
   const filteredUsers = useFilteredUsers();
   const siteCountPlural = useSiteCountPlural();
+  let [isExpand, setIsExpand] = useState<string | null>(null);
+  const changeIsExpand = (statusVal: string): any => {
+    // setIsExpand(statusVal)
+  }
+  // isUnfold = false
   return (
     <section className={clsx("container margin-top--l", styles["filter-view"])}>
       <div className={styles["filter-view-inner"]}>
@@ -170,48 +181,53 @@ function ShowcaseFilters() {
               {siteCountPlural(filteredUsers.length)}
             </span>
           </div>
-          <ShowcaseFilterToggle />
         </div>
-        <ul className={clsx("clean-list", styles.checkboxList)}>
-          {TagList.map((tag, i) => {
-            const { label, description, color } = Tags[tag];
-            const id = `showcase_checkbox_id_${tag}`;
-            const isFirstTag = i === 0;
-            return (
-              <li key={i} className={styles.checkboxListItem}>
-                <ShowcaseTooltip
-                  id={id}
-                  text={description}
-                  anchorEl="#__docusaurus"
-                >
-                  <ShowcaseTagSelect
-                    tag={tag}
+        <div className={isExpand ? styles["filter-expand"] : styles["filter-retract"]}>
+          <ul className={clsx("clean-list", styles.checkboxList)}>
+            {TagList.map((tag, i) => {
+              const { label, description, color } = Tags[tag];
+              const id = `showcase_checkbox_id_${tag}`;
+              const isFirstTag = i === 0;
+              return (
+                <li key={i} className={styles.checkboxListItem}>
+                  <ShowcaseTooltip
                     id={id}
-                    label={label}
-                    icon={
-                      isFirstTag ? (
-                        <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
-                      ) : tag === "Favorite" ? (
-                        <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
-                      ) : (
-                        <span
-                          style={{
-                            backgroundColor: color,
-                            width: 12,
-                            height: 12,
-                            borderRadius: "50%",
-                            marginLeft: 8,
-                            display: "inline-block",
-                          }}
-                        />
-                      )
-                    }
-                  />
-                </ShowcaseTooltip>
-              </li>
-            );
-          })}
-        </ul>
+                    text={description}
+                    anchorEl="#__docusaurus"
+                  >
+                    <ShowcaseTagSelect
+                      tag={tag}
+                      id={id}
+                      label={label}
+                      icon={
+                        isFirstTag ? (
+                          <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
+                        ) : tag === "Favorite" ? (
+                          <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
+                        ) : (
+                          <span
+                            style={{
+                              backgroundColor: color,
+                              width: 12,
+                              height: 12,
+                              borderRadius: "50%",
+                              marginLeft: 8,
+                              display: "inline-block",
+                            }}
+                          />
+                        )
+                      }
+                    />
+                  </ShowcaseTooltip>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+       {/*  {isExpand ? 
+          <div className={clsx(styles.icon, styles.retract)} onClick={changeIsExpand('retract')}>收起</div> 
+        :
+          <div className={clsx(styles.icon, styles.expand)} onClick={changeIsExpand('expand')}>展开</div>} */}
       </div>
     </section>
   );
@@ -350,7 +366,7 @@ function ShowcaseCards() {
               >
                 <Heading as="h2">
                   <Translate id="showcase.favoritesList.title">
-                    最爱
+                    热门
                   </Translate>
                 </Heading>
                 <FavoriteIcon svgClass={styles.svgIconFavorite} />
@@ -391,14 +407,19 @@ function ShowcaseCards() {
     </section>
   );
 }
-
+const scrollPage = (e:any) => {
+  const isShow = e.target.scrollTop >= innerH * 2 ? 'show' : 'hide'
+  // setIsShowToTop(isShow)
+  console.log(e.target.scrollTop, 'scrollPage')
+}
 export default function Showcase(): JSX.Element {
   return (
     <Layout title={TITLE} description={DESCRIPTION}>
-      <main className="margin-vert--lg">
+      <main className={clsx('margin-vert--lg', styles['index-page'])} onScroll={scrollPage}>
         <ShowcaseHeader />
         <ShowcaseFilters />
         <ShowcaseCards />
+        {/* <ShowSuspendBtn :isShowToTop={isShowToTop === 'show'}/> */}
       </main>
     </Layout>
   );

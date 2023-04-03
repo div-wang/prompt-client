@@ -69,28 +69,12 @@ function getCardImage(user: User): string {
     )}/showcase`
   );
 }
-
 function ShowcaseCard({ user }: { user: User }) {
   const image = getCardImage(user);
   // 复制
   const [copied, setShowCopied] = useState(false);
-  const toReTom = () => {
-    window.open('https://ai.redtom.com/home', 'target')
-    /* if (user.description) {
-      copy(user.description);
-    }
-    setShowCopied(true);
-    setTimeout(() => setShowCopied(false), 2000); */
-  };
   // 点击显示中文文本
   const [paragraphText, setParagraphText] = useState(user.descn);
-  function handleParagraphClick() {
-    if (paragraphText === user.descn) {
-      setParagraphText(user.description);
-    } else {
-      setParagraphText(user.descn);
-    }
-  }
   return (
     <li key={user.title} className={clsx("card", styles.showcaseCardCenter)}>
       {/* <div className={clsx("card__image", styles.showcaseCardImage)}>
@@ -99,33 +83,18 @@ function ShowcaseCard({ user }: { user: User }) {
       <div className="card__body">
         <div className={clsx(styles.showcaseCardHeader)}>
           <Heading as="h4" className={styles.showcaseCardTitle}>
-            <Link href={user.website} className={styles.showcaseCardLink}>
+            <div className={styles.showcaseCardLink}>
               {user.title}
-            </Link>
+            </div>
           </Heading>
-          <button
-            className={styles.showcaseCardSrcBtn}
-            type="button"
-            onClick={toReTom}
-          >
+          <Link href={'http://chat.redtom.com/?text=' + encodeURIComponent(paragraphText)} className={styles.showcaseCardSrcBtn}>
             去提问
-          </button>
+          </Link>
         </div>
-        {user.remark ? <Tooltip
-          id="remark"
-          text={user.remark}
-        >
-          <p className={styles.showcaseCardBody}>👉 {user.remark}</p>
-        </Tooltip> :  ``}
-        <Tooltip
-          id="paragraphText"
-          text={paragraphText}
-        >
-          <p onClick={handleParagraphClick} className={styles.showcaseCardBody}>
-            {paragraphText}
-          </p>
-        </Tooltip>
-        
+        {user.remark ?<p className={styles.showcaseCardBody}>👉 {user.remark}</p> :  ``}
+        <p className={styles.showcaseCardBody}>
+          {paragraphText}
+        </p>
       </div>
       <ul className={clsx("card__footer", styles.cardFooter)}>
         <ShowcaseCardTag tags={user.tags} />

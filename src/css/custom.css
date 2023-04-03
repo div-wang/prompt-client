@@ -1,3 +1,9 @@
+html,body, body>div, .main-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 :root {
   --site-primary-hue-saturation: 167 68%;
   --site-primary-hue-saturation-light: 167 56%; /* do we really need this extra one? */

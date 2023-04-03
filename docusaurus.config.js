@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "标签筛选、关键词搜索和一键复制 Prompts",
+  title: "ChatGPT提问模版：快速使用ChatGPT工作学习赚钱",
   // tagline: '方便中文使用 ChatGPT 快捷指令',
   favicon: 'https://prompt.redtom.com/static/imgs/index/logo.png',
 
@@ -93,7 +93,7 @@ const config = {
         logo: {
           alt: "ChatGPT Shortcuts",
           src: 'https://prompt.redtom.com/static/imgs/index/logo.svg',
-          href: '/cn',
+          href: '/',
         },
         items: [
           {
@@ -102,12 +102,12 @@ const config = {
             position: 'left',
           },
           {
-            to: 'https://chat.redtom.com/',
+            to: 'http://chat.redtom.com/',
             label: 'AI聊天',
             position: 'left',
           },
           { 
-            to: '/cn',
+            to: '/',
             label: 'AI提示库',
             position: 'left',
             className: 'nav-text-gray'

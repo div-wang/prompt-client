@@ -20,6 +20,7 @@ import {
   type Tag,
 } from "@site/src/data/users";
 import { sortBy } from "@site/src/utils/jsUtils";
+import { chatLink } from "@site/src/utils/linkUrl";
 import Heading from "@theme/Heading";
 import Tooltip from "../ShowcaseTooltip";
 import styles from "./styles.module.css";
@@ -74,8 +75,8 @@ function ShowcaseCard({ user }: { user: User }) {
   const image = getCardImage(user);
   // 复制
   const [copied, setShowCopied] = useState(true);
-  const toReTom = () => {
-    window.open('https://ai.redtom.com/home', 'target')
+  const toReTom = (text: string): any => {
+    window.open(chatLink + '?text==' + encodeURIComponent(text), 'target')
     /* if (user.description) {
       copy(user.description);
     }
@@ -97,32 +98,19 @@ function ShowcaseCard({ user }: { user: User }) {
         <div className={clsx(styles.showcaseCardHeader)}>
           <Heading as="div" className={styles.showcaseCardTitle}>
             <div className={styles.showcaseCardTitlebcg}>
-              <Link href={user.website} className={styles.showcaseCardLink}>
+              <div className={styles.showcaseCardLink}>
                 {user.title}
-              </Link>
+              </div>
             </div>
           </Heading>
-          <button
-            className={styles.showcaseCardSrcBtn}
-            type="button"
-            onClick={toReTom}
-          >
+          <Link href={'http://chat.redtom.com/?text=' + encodeURIComponent(paragraphText)} className={styles.showcaseCardSrcBtn}>
             去提问
-          </button>
+          </Link>
         </div>
-        <Tooltip
-          id="remark"
-          text={user.remark}>
-          <p className={styles.showcaseCardBody}>👉 {user.remark}</p>
-        </Tooltip>
-        <Tooltip
-          id="paragraphText"
-          text={paragraphText}
-        >
-          <p onClick={handleParagraphClick} className={styles.showcaseCardBody}>
-            {paragraphText}
-          </p>
-        </Tooltip>
+        {user.remark ? <p className={styles.showcaseCardBody}>👉 {user.remark}</p> : ``}
+        <p onClick={handleParagraphClick} className={styles.showcaseCardBody}>
+          {paragraphText}
+        </p>
       </div>
       <ul className={clsx("card__footer", styles.cardFooter)}>
         <ShowcaseCardTag tags={user.tags} />
