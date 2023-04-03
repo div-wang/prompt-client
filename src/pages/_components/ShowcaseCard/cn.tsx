@@ -111,12 +111,12 @@ function ShowcaseCard({ user }: { user: User }) {
             去提问
           </button>
         </div>
-        <Tooltip
+        {user.remark ? <Tooltip
           id="remark"
           text={user.remark}
         >
           <p className={styles.showcaseCardBody}>👉 {user.remark}</p>
-        </Tooltip>
+        </Tooltip> :  ``}
         <Tooltip
           id="paragraphText"
           text={paragraphText}
@@ -125,6 +125,7 @@ function ShowcaseCard({ user }: { user: User }) {
             {paragraphText}
           </p>
         </Tooltip>
+        
       </div>
       <ul className={clsx("card__footer", styles.cardFooter)}>
         <ShowcaseCardTag tags={user.tags} />

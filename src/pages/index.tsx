@@ -12,7 +12,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 import { useHistory, useLocation } from "@docusaurus/router";
 import { usePluralForm } from "@docusaurus/theme-common";
 import { debounce } from "lodash";
-import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
@@ -35,17 +35,15 @@ import ShowcaseFilterToggle, {
 import ShowcaseCard from "./_components/ShowcaseCard";
 import ShowcaseTooltip from "./_components/ShowcaseTooltip";
 
+
 import styles from "./styles.module.css";
-import TopBgPng from '../../static/img/bg.png';
+
 const TITLE = translate({
   message: "ChatGPT Shortcut - 简单易用的 ChatGPT 快捷指令表，让生产力倍增！",
 });
 const DESCRIPTION = translate({
   message: "让生产力加倍的 ChatGPT 快捷指令",
 });
-const SUBMIT_URL =
-  "https://github.com/rockbenben/ChatGPT-Shortcut/discussions/11";
-
 type UserState = {
   scrollTopPosition: number;
   focusedElementId: string | undefined;
@@ -131,7 +129,7 @@ function useFilteredUsers() {
 function ShowcaseHeader() {
   return (
     <div className={styles["top-bg"]}>
-      <img className={styles["top-img"]} src={useBaseUrl('/img/bg.png')} alt="背景图" />
+      <img className={styles["top-img"]} src="https://prompt.redtom.com/static/imgs/index/bg.png" alt="背景图" />
       <section className={clsx("text--center", styles["top-text"])}>
         <Heading as="h1">ChatGPT Shortcut</Heading>
         <p className={styles["top-p"]}>{DESCRIPTION}</p>
@@ -181,39 +179,35 @@ function ShowcaseFilters() {
             const isFirstTag = i === 0;
             return (
               <li key={i} className={styles.checkboxListItem}>
-                <div className={styles.checkboxListItemInner}>
-                  <ShowcaseTooltip
+                <ShowcaseTooltip
+                  id={id}
+                  text={description}
+                  anchorEl="#__docusaurus"
+                >
+                  <ShowcaseTagSelect
+                    tag={tag}
                     id={id}
-                    text={description}
-                    anchorEl="#__docusaurus"
-                  >
-                    <ShowcaseTagSelect
-                      tag={tag}
-                      id={id}
-                      label={label}
-                      icon={
-                        isFirstTag ? (
-                          <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
-                        ) : tag === "Favorite" ? (
-                          <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
-                        ) : (
-                          <span
-                            style={{
-                              backgroundColor: color,
-                              width: 12,
-                              height: 12,
-                              borderRadius: "50%",
-                              marginLeft: 6,
-                              display: "inline-block",
-                              position: "relative",
-                              zIndex: 2,
-                            }}
-                          />
-                        )
-                      }
-                    />
-                  </ShowcaseTooltip>
-                </div>
+                    label={label}
+                    icon={
+                      isFirstTag ? (
+                        <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
+                      ) : tag === "Favorite" ? (
+                        <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
+                      ) : (
+                        <span
+                          style={{
+                            backgroundColor: color,
+                            width: 12,
+                            height: 12,
+                            borderRadius: "50%",
+                            marginLeft: 8,
+                            display: "inline-block",
+                          }}
+                        />
+                      )
+                    }
+                  />
+                </ShowcaseTooltip>
               </li>
             );
           })}
@@ -369,7 +363,7 @@ function ShowcaseCards() {
               </ul>
             </div>
           </div>
-          <div className="container margin-top--lg">
+          <div className="container">
             <Heading as="h2" className={styles.showcaseHeader}>
               <Translate id="showcase.usersList.allUsers">
                 All prompts

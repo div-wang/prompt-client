@@ -4,14 +4,15 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "标签筛选、关键词搜索和一键复制 Prompts",
   // tagline: '方便中文使用 ChatGPT 快捷指令',
-  favicon: 'img/logo.png',
+  favicon: 'https://prompt.redtom.com/static/imgs/index/logo.png',
 
   // Set the production url of your site here
-  url: "http://chat.redtom.com/",
+  url: "https://prompt.redtom.com/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/chatgpt/',
@@ -22,7 +23,7 @@ const config = {
   organizationName: "rockbenben", // Usually your GitHub org/user name.
   projectName: "ChatGPT-Shortcut", // Usually your repo name.
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "log",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -91,7 +92,7 @@ const config = {
         title: '',
         logo: {
           alt: "ChatGPT Shortcuts",
-          src: "img/logo.svg",
+          src: 'https://prompt.redtom.com/static/imgs/index/logo.svg',
           href: '/cn',
         },
         items: [
@@ -101,7 +102,7 @@ const config = {
             position: 'left',
           },
           {
-            to: 'http://chat.redtom.com/',
+            to: 'https://chat.redtom.com/',
             label: 'AI聊天',
             position: 'left',
           },
