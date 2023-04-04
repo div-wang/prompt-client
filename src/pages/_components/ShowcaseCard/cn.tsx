@@ -12,6 +12,8 @@ import Translate from "@docusaurus/Translate";
 import copy from "copy-text-to-clipboard";
 import Image from "@theme/IdealImage";
 import FavoriteIcon from "@site/src/components/svgIcons/FavoriteIcon";
+import Cookies from 'js-cookie'
+
 import {
   Tags,
   TagList,
@@ -74,21 +76,31 @@ function ShowcaseCard({ user }: { user: User }) {
   const [copied, setShowCopied] = useState(false);
   // 点击显示中文文本
   const [paragraphText, setParagraphText] = useState(user.descn);
+  const goChat = (text: string): any => {
+    if (text) {
+      const domain = window.location.hostname.split('.')
+      const BaseDomain = '.' + domain[1] + '.' + domain[2]
+      Cookies.set('chat_prompt_temp', text, { expires: 1, domain: BaseDomain })
+    }
+    setTimeout(() => {
+      window.open('http://chat.redtom.com/')
+    }, 500)
+  }
   return (
     <li key={user.title} className={clsx("card", styles.showcaseCardCenter)}>
       {/* <div className={clsx("card__image", styles.showcaseCardImage)}>
         <Image img={image} alt={user.title} />
       </div> */}
-      <div className="card__body">
-        <div className={clsx(styles.showcaseCardHeader)}>
+      <div className={styles['card-body']}>
+        <div className={clsx(styles.showcaseCardHeader)} onClick={() => goChat(paragraphText)}>
           <Heading as="h4" className={styles.showcaseCardTitle}>
             <div className={styles.showcaseCardLink}>
               {user.title}
             </div>
           </Heading>
-          <Link href={'http://chat.redtom.com/?text=' + encodeURIComponent(paragraphText)} className={styles.showcaseCardSrcBtn}>
+          <div className={styles.showcaseCardSrcBtn}>
             去提问
-          </Link>
+          </div>
         </div>
         <p className={styles.showcaseCardBody}>
           {paragraphText}

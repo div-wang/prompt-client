@@ -43,7 +43,7 @@
 }
 
 input[type='checkbox'] + .checkboxLabel {
-  font-size: .75rem;
+  font-size: .875rem;
   height: var(--height);
   line-height: 1;
   display: flex;
@@ -82,8 +82,8 @@ input:checked + .checkboxLabel:hover {
 }
 
 .span-selected {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background: #F13557;
   border-radius: 4px;
   display: flex;
@@ -93,13 +93,13 @@ input:checked + .checkboxLabel:hover {
 }
 .span-selected .show {
   display: block;
-  width: 10px!important;
-  height: 9px!important;
+  width: 8px!important;
+  height: 7px!important;
   margin: 0!important;
 }
 .span-un-selected {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background: #FFFFFF;
   mix-blend-mode: normal;
   border: 0.625px solid #DDE2E4;
@@ -108,7 +108,7 @@ input:checked + .checkboxLabel:hover {
 }
 .span-un-selected .hide {
   display: none!important;
-  width: 10px!important;
-  height: 9px!important;
+  width: 8px!important;
+  height: 7px!important;
   margin: 0!important;
 }

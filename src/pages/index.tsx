@@ -13,7 +13,6 @@ import { useHistory, useLocation } from "@docusaurus/router";
 import { usePluralForm } from "@docusaurus/theme-common";
 import { debounce } from "lodash";
 
-
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
 import FavoriteIcon from "@site/src/components/svgIcons/FavoriteIcon";
@@ -291,17 +290,18 @@ function SearchBar() {
       });
     }
   };
-  const handleBlur = (e: React.FormEvent<HTMLInputElement>) => {
+  const handleBlur = (e: any) => {
     setInputStatus('searchCenterBlur')
   }
-  const handleFocus = (e: React.FormEvent<HTMLInputElement>) => {
+  const handleFocus = (e: any) => {
     setInputStatus('searchCenterFocus')
   }
 
   return (
     <div className={styles.searchContainer}>
-      <div className={clsx(styles.searchCenter, inputStatus ? styles[inputStatus] : '')}>
+      <div className={clsx(styles.searchCenter, inputStatus === 'searchCenterFocus' ? styles[inputStatus] : '')}>
         <div className={styles.searchmagnifier}>
+          {inputStatus === 'searchCenterFocus'? 
           <svg
             width="32"
             height="32"
@@ -313,9 +313,25 @@ function SearchBar() {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M24.1402 14.666C24.1402 19.8982 19.8987 24.1397 14.6665 24.1397C9.43433 24.1397 5.19282 19.8982 5.19282 14.666C5.19282 9.43384 9.43433 5.19233 14.6665 5.19233C19.8987 5.19233 24.1402 9.43384 24.1402 14.666ZM21.7154 24.3785C19.7364 25.8173 17.3005 26.666 14.6665 26.666C8.03908 26.666 2.6665 21.2934 2.6665 14.666C2.6665 8.03859 8.03908 2.66602 14.6665 2.66602C21.2939 2.66602 26.6665 8.03859 26.6665 14.666C26.6665 17.5054 25.6803 20.1145 24.0318 22.1694L29.3466 27.4841C30.0714 28.2089 30.1524 29.303 29.5276 29.9279C28.9027 30.5527 27.8086 30.4717 27.0838 29.7469L21.7154 24.3785Z"
-              fill="#b4b4b4"
+              fill="#F13557"
             />
           </svg>
+          :
+          <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M24.1402 14.666C24.1402 19.8982 19.8987 24.1397 14.6665 24.1397C9.43433 24.1397 5.19282 19.8982 5.19282 14.666C5.19282 9.43384 9.43433 5.19233 14.6665 5.19233C19.8987 5.19233 24.1402 9.43384 24.1402 14.666ZM21.7154 24.3785C19.7364 25.8173 17.3005 26.666 14.6665 26.666C8.03908 26.666 2.6665 21.2934 2.6665 14.666C2.6665 8.03859 8.03908 2.66602 14.6665 2.66602C21.2939 2.66602 26.6665 8.03859 26.6665 14.666C26.6665 17.5054 25.6803 20.1145 24.0318 22.1694L29.3466 27.4841C30.0714 28.2089 30.1524 29.303 29.5276 29.9279C28.9027 30.5527 27.8086 30.4717 27.0838 29.7469L21.7154 24.3785Z"
+                fill="#b4b4b4"
+              />
+            </svg>
+          }
         </div>
         <input
           id="searchbar"
@@ -349,7 +365,6 @@ function ShowcaseCards() {
       </section>
     );
   }
-
   return (
     <section className="margin-top--lg margin-bottom--xl">
       {filteredUsers.length === sortedUsers.length ? (
@@ -370,7 +385,7 @@ function ShowcaseCards() {
                 <FavoriteIcon svgClass={styles.svgIconFavorite} />
                 <SearchBar />
               </div>
-              <ul className={clsx("clean-list", styles.showcaseList)}>
+              <ul className={clsx("clean-list", styles.showcaseList)} >
                 {favoriteUsers.map((user, index) => (
                   <ShowcaseCard key={index} user={user} />
                 ))}

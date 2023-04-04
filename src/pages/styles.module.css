@@ -103,17 +103,18 @@
 
 .showcaseFavoriteHeader > h2 {
   margin-bottom: 0;
+  font-size: 1.375rem;
 }
 
 .showcaseFavoriteHeader > svg {
-  width: 1.1rem;
-  height: auto;
-  margin-left: .6rem;
+  width: 1.0625rem;
+  height: .9375rem;
+  margin-left: .75rem;
 }
 
 .svgIconFavoriteXs,
 .svgIconFavorite {
-  color: #f13557;
+  color: #f13557!important;
 }
 
 .svgIconFavoriteXs {
@@ -128,24 +129,30 @@
 /* UI调整头部 */
 .top-bg {
   position: relative;
-  padding: 5.375rem 0 2.875rem 0;
+  padding: 5rem 0 42px 0;
 }
 .top-img {
-  content: "";
   position: absolute;
   top: 0rem;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 22.5625rem;
   z-index: 1;
+  object-fit: cover;
 }
 .top-p {
   padding: 0;
   margin: 0;
+  font-size: 1.25rem;
 }
 .top-text {
   position: relative;
   z-index: 2;
+}
+.top-text h1 {
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 2px;
 }
 /* filter */
 .filter-view {
@@ -238,7 +245,7 @@
 }
 .total-span {
   font-weight: 400;
-  font-size: 0.7rem;
+  font-size: .875rem;
   line-height: 1;
   display: flex;
   align-items: center;

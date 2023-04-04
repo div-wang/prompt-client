@@ -11,11 +11,12 @@ const config = {
   // tagline: '方便中文使用 ChatGPT 快捷指令',
   favicon: 'https://tiwen.redtom.com/static/imgs/index/logo.png',
 
-  // Set the production url of your site here
+  // 站点 URL
   url: "https://tiwen.redtom.com/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/chatgpt/',
+  // 站点的 base URL，带有末尾斜杠。
   baseUrl: "/",
 
   // GitHub pages deployment config.
@@ -87,30 +88,32 @@ const config = {
       // image: 'img/docusaurus-social-card.jpg',
       metadata: [{
         name: "keywords",
-        content: "prompt,ChatGPT,AI prompts，提示词"
+        content: "prompt,ChatGPT,AI prompts,提示词"
       }, ],
       navbar: {
         title: '',
         logo: {
           alt: "ChatGPT Shortcuts",
-          src: 'https://tiwen.redtom.com/static/imgs/index/logo.svg',
-          href: 'https://tiwen.redtom.com/',
+          src: 'https://tiwen.redtom.com/static/imgs/index/logo-zh-v1.svg',
+          href: 'https://tiwen.redtom.com',
         },
         items: [{
             to: 'https://ai.redtom.com/console/create',
             label: 'AI创作',
             position: 'left',
+            className: 'nav-text-gray'
           },
           {
             to: 'http://chat.redtom.com/',
             label: 'AI聊天',
             position: 'left',
+            className: 'nav-text-gray'
           },
           {
-            to: 'https://tiwen.redtom.com/',
+            to: 'https://tiwen.redtom.com',
             label: 'AI提示库',
             position: 'left',
-            className: 'nav-text-gray'
+            className: 'nav-text-light'
           }
         ],
       },

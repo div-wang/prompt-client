@@ -7,12 +7,12 @@
 
 .svgIcon {
   user-select: none;
-  width: 1em;
-  height: 1em;
+  width: .875rem;
+  height: .75rem;
   display: inline-block;
   fill: currentColor;
   flex-shrink: 0;
-  color: inherit;
+  color: #f13557;
 }
 
 /* font-size */

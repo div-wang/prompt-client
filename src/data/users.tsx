@@ -1121,7 +1121,7 @@ const Users: User[] = [
     title: "博主和内容创作者",
     descn:
       "有没有什么聪明的方法可以将信息图表整合到博客文章中，同时仍然保留文章本身的可读性和可用性？",
-    tags: ["BloggersAndContentCreators"],
+    tags: ["Favorite", "BloggersAndContentCreators"],
   },
   {
     preview: "",
