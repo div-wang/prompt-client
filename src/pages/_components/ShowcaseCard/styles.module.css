@@ -15,7 +15,6 @@
   width: 19.125rem;
 } */
 .showcaseCardCenter {
-  height: 306px;
   border-radius: 0.4rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -118,8 +117,8 @@
 .showcaseCardBody {
   font-style: normal;
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
+  font-size: .875rem;
+  line-height: 1.4;
   color: #454545;
   white-space: normal;
   -webkit-line-clamp: 4;
@@ -130,9 +129,10 @@
   margin: 0;
   margin-bottom: .75rem;
   display: -webkit-box;
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  min-height: 5rem;
 }
 
 .cardFooter {

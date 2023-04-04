@@ -87,7 +87,11 @@ function ShowcaseTagSelect(
       />
       <label ref={ref} htmlFor={id} className={styles.checkboxLabel}>
         {label}
-        {icon}
+        {icon ? icon : 
+          <div className={clsx(selected ? styles['span-selected'] : styles['span-un-selected'])} >
+            <img className={selected ? styles['show'] : styles['hide']}  src="https://tiwen.redtom.com/static/imgs/index/right.svg" alt="" />
+          </div>
+        }
       </label>
     </div>
   );

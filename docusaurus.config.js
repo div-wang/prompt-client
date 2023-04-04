@@ -7,9 +7,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "ChatGPT提问模版-快速使用ChatGPT工作学习赚钱 ",
+  title: "ChatGPT提问模版-快速使用ChatGPT工作学习赚钱",
   // tagline: '方便中文使用 ChatGPT 快捷指令',
-  favicon: 'https://prompt.redtom.com/static/imgs/index/logo.png',
+  favicon: 'https://tiwen.redtom.com/static/imgs/index/logo.png',
 
   // Set the production url of your site here
   url: "https://tiwen.redtom.com/",
@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "redtom", // Usually your GitHub org/user name.
-  projectName: "ChatGPT提问模版 ", // Usually your repo name.
+  projectName: "ChatGPT-prompts", // Usually your repo name.
 
   onBrokenLinks: "log",
   onBrokenMarkdownLinks: "warn",
@@ -85,18 +85,18 @@ const config = {
     ({
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
-      metadata: [
-        { name: "keywords", content: "prompt,ChatGPT,AI prompts，提示词" },
-      ],
+      metadata: [{
+        name: "keywords",
+        content: "prompt,ChatGPT,AI prompts，提示词"
+      }, ],
       navbar: {
         title: '',
         logo: {
           alt: "ChatGPT Shortcuts",
-          src: 'https://prompt.redtom.com/static/imgs/index/logo.svg',
-          href: '/',
+          src: 'https://tiwen.redtom.com/static/imgs/index/logo.svg',
+          href: 'https://tiwen.redtom.com/',
         },
-        items: [
-          {
+        items: [{
             to: 'https://ai.redtom.com/console/create',
             label: 'AI创作',
             position: 'left',
@@ -106,8 +106,8 @@ const config = {
             label: 'AI聊天',
             position: 'left',
           },
-          { 
-            to: '/',
+          {
+            to: 'https://tiwen.redtom.com/',
             label: 'AI提示库',
             position: 'left',
             className: 'nav-text-gray'

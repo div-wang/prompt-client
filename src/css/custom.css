@@ -225,9 +225,26 @@ html[data-theme="dark"] {
 .navbar__item svg {
   display: none;
 }
-.nav-text-gray{
+.nav-text-gray {
   color: #454545!important;
+  cursor: pointer;
+}
+.nav-text-gray:hover {
+  color: #F13557!important;
+}
+.nav-text-light {
+  color: #F13557!important;
   cursor: default;
+  position: relative;
+}
+.nav-text-light::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  background: linear-gradient(100.94deg, #D71718 1.35%, #B52DA4 99.1%);
 }
 .navbar {
   height: 4.625rem;

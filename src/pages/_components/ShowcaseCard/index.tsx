@@ -75,14 +75,6 @@ function ShowcaseCard({ user }: { user: User }) {
   const image = getCardImage(user);
   // 复制
   const [copied, setShowCopied] = useState(true);
-  const toReTom = (text: string): any => {
-    window.open(chatLink + '?text==' + encodeURIComponent(text), 'target')
-    /* if (user.description) {
-      copy(user.description);
-    }
-    setShowCopied(true);
-    setTimeout(() => setShowCopied(false), 2000); */
-  };
   // 点击显示中文文本
   const [paragraphText, setParagraphText] = useState(user.description);
   function handleParagraphClick() {
@@ -107,7 +99,6 @@ function ShowcaseCard({ user }: { user: User }) {
             去提问
           </Link>
         </div>
-        {user.remark ? <p className={styles.showcaseCardBody}>👉 {user.remark}</p> : ``}
         <p onClick={handleParagraphClick} className={styles.showcaseCardBody}>
           {paragraphText}
         </p>

@@ -27,8 +27,7 @@ import styles from "./styles.module.css";
 const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   ({ label, color, description }, ref) => (
     <li ref={ref} className={styles.tag} title={description}>
-      <span className={styles.textLabel}>{label.toLowerCase()}</span>
-      <span className={styles.colorLabel} style={{ backgroundColor: color }} />
+      <span className={styles.textLabel}># {label.toLowerCase()}</span>
     </li>
   )
 );
@@ -91,7 +90,6 @@ function ShowcaseCard({ user }: { user: User }) {
             去提问
           </Link>
         </div>
-        {user.remark ?<p className={styles.showcaseCardBody}>👉 {user.remark}</p> :  ``}
         <p className={styles.showcaseCardBody}>
           {paragraphText}
         </p>

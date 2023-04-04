@@ -128,12 +128,12 @@
 /* UI调整头部 */
 .top-bg {
   position: relative;
-  padding: 2rem 0 2.1rem 0;
+  padding: 5.375rem 0 2.875rem 0;
 }
 .top-img {
   content: "";
   position: absolute;
-  top: -1.97rem;
+  top: 0rem;
   left: 0;
   width: 100%;
   height: auto;
@@ -159,15 +159,17 @@
   left: 50%;
   width: 18.4rem;
   height: 18.4rem;
-  background: #e3f5ff;
+  background: url(https://tiwen.redtom.com/static/imgs/index/bg-yuan.png) no-repeat 0 0;
+  background-size: 100%;
   border-radius: 50%;
   z-index: 1;
   margin-left: -9.2rem;
+
 }
 .filter-view-inner {
   position: relative;
   z-index: 2;
-  padding: 1.875rem 1.25rem;
+  padding: 2rem 1.4375rem;
   margin-bottom: 3.6rem;
   background: rgba(255, 255, 255, 0.4);
   border: 2px solid #ffffff;
@@ -176,13 +178,47 @@
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 1.875rem;
 }
-/* .filter-retract {
-  height: 5.4rem;
-  overflow: hidden;
-} */
+.expand-bar {
+  width: 10rem;
+  height: 2.125rem;
+  font-weight: 600;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: #454545;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  /* background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), 30%); */
+}
+.filter-retract {
+  /* height: 8.4rem;
+  overflow: hidden; */
+}
 .filter-expand {
   height: auto;
   overflow: auto;
+}
+.expand-bar-span {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: #FFFFFF;
+  border: 1px solid #DDE2E4;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  border-radius: .25rem;
+  margin-left: .25rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expand-bar-up {
+  transform: rotate(180deg);
 }
 .filter-view .h2 {
   font-weight: 700;
@@ -209,3 +245,87 @@
   text-align: center;
   letter-spacing: -0.006em;
 }
+
+.suspend-view {
+  position: relative;
+  z-index: 10;
+}
+.btn-chat, .btn-top {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: .375rem .5rem;
+  gap: 4px;
+  border: 1px solid #DDE2E4;
+  box-shadow: 0px .25rem .25rem rgba(0, 0, 0, 0.06);
+  border-radius: .5rem;
+  background: #FFFFFF;
+  z-index: 10;
+  cursor: pointer;
+}
+.btn-chat {
+  position: fixed;
+  bottom: 11.5625rem;
+  right: 1.25rem
+}
+.btn-top {
+  position: fixed;
+  bottom: 8rem;
+  right: 1.25rem
+}
+.btn-chat .svg, .btn-top .svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+.btn-chat .span, .btn-top .span {
+  display: block;
+  font-weight: 400;
+  font-size: .75rem;
+  line-height: .875rem;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: -0.006rem;
+  color: #454545;
+}
+.btn-chat:hover, .btn-top:hover {
+  background-color: #F0F0F0;
+}
+.btn-top .svg {
+  margin-top: -7px;
+}
+.btn-top .span {
+  margin-top: -9px;
+}
+
+.hover-img-view {
+  padding: .1875rem;
+  filter: drop-shadow(0px .375rem .625rem rgba(0, 0, 0, 0.1));
+  position: fixed;
+  bottom: 7.9rem;
+  right: 4.6rem;
+  background: #FFFFFF;
+  border-radius: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hover-img-svg {
+  width: 18px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  margin-top: -6px;
+}
+.hover-img-view .img {
+  width: 10.375rem;
+  height: 10.375rem;
+}
+/* .btn-top .span {
+  margin-top: -.25rem;
+} */

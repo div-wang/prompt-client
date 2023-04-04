@@ -50,7 +50,7 @@ input[type='checkbox'] + .checkboxLabel {
   justify-content: center;
   align-items: center;
   background: #FAFAFA;
-  padding: .375rem .6rem;
+  padding: .5rem .75rem;
   border-radius: 2.5rem;
   position: relative;
   z-index: 3;
@@ -79,4 +79,36 @@ input:checked + .checkboxLabel {
 input:checked + .checkboxLabel:hover {
   background: none;
   /* box-shadow: 0 0 2px 1px var(--ifm-color-primary-dark); */
+}
+
+.span-selected {
+  width: 15px;
+  height: 15px;
+  background: #F13557;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0 0px 8px;
+}
+.span-selected .show {
+  display: block;
+  width: 10px!important;
+  height: 9px!important;
+  margin: 0!important;
+}
+.span-un-selected {
+  width: 15px;
+  height: 15px;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  border: 0.625px solid #DDE2E4;
+  border-radius: 4px;
+  margin: 0px 0 0px 8px;
+}
+.span-un-selected .hide {
+  display: none!important;
+  width: 10px!important;
+  height: 9px!important;
+  margin: 0!important;
 }
