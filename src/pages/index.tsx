@@ -37,9 +37,9 @@ import ShowcaseTooltip from "./_components/ShowcaseTooltip";
 
 import styles from "./styles.module.css";
 
-const TITLE = translate({
+/* const TITLE = translate({
   message: "ChatGPT提问模版-快速使用ChatGPT工作学习赚钱",
-});
+}); */
 const DESCRIPTION = translate({
   message: "快速使用ChatGPT工作学习赚钱",
 });
@@ -457,7 +457,7 @@ export default function Showcase(): JSX.Element {
     setIsShowToTop(isShow)
   }
   return (
-    <Layout title={TITLE} description={DESCRIPTION}>
+    <Layout description={DESCRIPTION}>
       <main className={clsx('', styles['index-page'])} onScroll={scrollPage} ref={topView}>
         <ShowcaseHeader />
         <ShowcaseFilters />

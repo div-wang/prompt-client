@@ -23,10 +23,10 @@
   cursor: pointer;
   border: none;
   border: 1px solid #FFF;
+  transition: all 0s ease-in-out;
 }
 .showcaseCardCenter:hover {
   border: 1px solid #F13557;
-  transition: all 0.3s ease-in-out;
   transform: scale(1.05);
 }
 .showcaseCardHeader {
