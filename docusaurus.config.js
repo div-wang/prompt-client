@@ -119,17 +119,7 @@ const config = {
       },
       footer: {
         style: "dark",
-        copyright: `<div style="display:flex;justify-content: space-between">
-        <div>
-        <a style="color:#FFFFFF" href='https://ai.redtom.com'><u>RedTom</u></a>提供技术支持  © RedTom GmbH ${new Date().getFullYear()} 
-        </div>
-        
-        <div>
-        <a style="margin-right: 1rem;color:#FFFFFF" href='https://ai.redtom.com/terms-of-use'>服务条款</a>
-        
-        <a style="color:#FFFFFF" href='https://ai.redtom.com/privacy-policy'>隐私政策</a>
-        </div>
-        </div>`,
+        copyright: `<div></div>`,
       },
       prism: {
         theme: lightCodeTheme,

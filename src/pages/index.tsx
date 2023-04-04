@@ -420,6 +420,21 @@ function ShowcaseCards() {
     </section>
   );
 }
+function ShowFooter() {
+  return (
+    <div className="footer-custom-bg">
+      <div className="footer-custom">
+        <div>
+          <span className="text"><Link href='https://ai.redtom.com'><u>RedTom</u></Link>提供技术支持</span>  © RedTom GmbH {new Date().getFullYear()}
+        </div>
+        <div>
+          <Link href='https://ai.redtom.com/terms-of-use'>服务条款</Link>
+          <Link href='https://ai.redtom.com/privacy-policy'>隐私政策</Link>
+        </div>
+      </div>
+    </div>
+  )
+}
 export default function Showcase(): JSX.Element {
   let [isShowQrcode, setIsShowQrcod] = useState<string | null>(null);
   function qrcodeEnter() {
@@ -471,6 +486,8 @@ export default function Showcase(): JSX.Element {
             <span className={styles.span}>顶部</span>
           </div> : '' }
         </section>
+        {/* 底部导航 */}
+        <ShowFooter/>
       </main>
     </Layout>
   );
