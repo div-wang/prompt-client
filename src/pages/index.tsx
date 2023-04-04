@@ -414,7 +414,7 @@ export default function Showcase(): JSX.Element {
     setIsShowQrcod('hide')
   }
   // 页面滚动使用
-  const innerH: number = window?.innerHeight || 500
+  const innerH: number = 500
   let topView = useRef<HTMLDivElement>(null);
   let [isShowToTop, setIsShowToTop] = useState<boolean | null>(null);
   let scrollToTop = () => {
